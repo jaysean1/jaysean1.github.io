@@ -10,6 +10,9 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Add Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -89,6 +92,32 @@
       border-radius: 50%;
       background: #2563eb;
     }
+    /* Highlight styles for key content */
+    .highlight-tech {
+      background-color: rgba(37, 99, 235, 0.1);
+      padding: 0 4px;
+      border-radius: 3px;
+    }
+    .highlight-skill {
+      background-color: rgba(16, 185, 129, 0.1);
+      padding: 0 4px;
+      border-radius: 3px;
+    }
+    .highlight-achievement {
+      background-color: rgba(245, 158, 11, 0.1);
+      padding: 0 4px;
+      border-radius: 3px;
+    }
+    .highlight-product {
+      background-color: rgba(139, 92, 246, 0.1);
+      padding: 0 4px;
+      border-radius: 3px;
+    }
+    .highlight-company {
+      background-color: rgba(236, 72, 153, 0.1);
+      padding: 0 4px;
+      border-radius: 3px;
+    }
   </style>
 </head>
 <body class="bg-white">
@@ -141,20 +170,20 @@
         <div class="flex flex-wrap items-center">
           <div class="w-full lg:w-3/5 pr-8">
             <p class="text-lg text-gray-700 mb-6">
-              I am a technical product leader with <strong class="font-bold text-primary">9 years</strong> of experience in internet product management, specializing in <strong class="font-bold text-primary">AI</strong> and <strong class="font-bold text-primary">IoT</strong> solutions. I have led key projects at top-tier companies such as <strong class="font-bold text-primary">Alibaba</strong>, overseeing the entire process from concept to implementation for products like <strong class="font-bold text-primary">smart cockpits</strong>, <strong class="font-bold text-primary">hybrid AI service desks</strong>, and <strong class="font-bold text-primary">warehouse video intelligent inspection systems</strong>, while also promoting <strong class="font-bold text-primary">technological innovation</strong> and <strong class="font-bold text-primary">social inclusion</strong>.
+              I am a technical product leader with <strong class="font-bold text-primary">9 years</strong> of experience in internet product management, specializing in <strong class="font-bold text-primary highlight-tech">AI</strong> and <strong class="font-bold text-primary highlight-tech">IoT</strong> solutions. I have led key projects at top-tier companies such as <strong class="font-bold text-primary highlight-company">Alibaba</strong>, overseeing the entire process from concept to implementation for products like <strong class="font-bold text-primary highlight-product">smart cockpits</strong>, <strong class="font-bold text-primary highlight-product">hybrid AI service desks</strong>, and <strong class="font-bold text-primary highlight-product">warehouse video intelligent inspection systems</strong>, while also promoting <strong class="font-bold text-primary highlight-skill">technological innovation</strong> and <strong class="font-bold text-primary highlight-skill">social inclusion</strong>.
             </p>
             <div class="grid grid-cols-3 gap-6 mb-8">
               <div class="p-4 bg-white rounded-lg shadow-sm">
                 <h3 class="font-semibold text-gray-900 mb-2">Product Planning</h3>
-                <p class="text-gray-600">Led key projects from concept to launch</p>
+                <p class="text-gray-600">Led key projects from <span class="highlight-skill">concept to launch</span></p>
               </div>
               <div class="p-4 bg-white rounded-lg shadow-sm">
                 <h3 class="font-semibold text-gray-900 mb-2">Team Management</h3>
-                <p class="text-gray-600">Coordinated cross-functional teams for efficient delivery</p>
+                <p class="text-gray-600">Coordinated <span class="highlight-skill">cross-functional teams</span> for efficient delivery</p>
               </div>
               <div class="p-4 bg-white rounded-lg shadow-sm">
                 <h3 class="font-semibold text-gray-900 mb-2">Patent Achievement</h3>
-                <p class="text-gray-600">1 Patent Application (<strong class="font-bold text-primary">CN113327114A</strong>)</p>
+                <p class="text-gray-600">1 Patent Application (<strong class="font-bold text-primary highlight-achievement">CN113327114A</strong>)</p>
               </div>
             </div>
             <div class="flex space-x-4">
@@ -187,7 +216,7 @@
                   <h5 class="font-medium text-gray-900">Company Introduction</h5>
                 </div>
                 <p class="text-gray-700">
-                  A comprehensive global e-commerce platform that connects buyers and sellers from all corners of the world. It serves as a hub for a vast array of products and services, enabling seamless transactions and providing a user-friendly experience. 
+                  A comprehensive <strong class="font-bold text-primary highlight-company">global e-commerce platform</strong> that connects buyers and sellers from all corners of the world. It serves as a hub for a vast array of products and services, enabling <strong class="font-bold text-primary highlight-skill">seamless transactions</strong> and providing a <strong class="font-bold text-primary highlight-skill">user-friendly experience</strong>. 
                 </p>
               </div>
               <div class="bg-gray-50 p-4 rounded-lg">
@@ -196,7 +225,7 @@
                   <h5 class="font-medium text-gray-900">My Responsibilities</h5>
                 </div>
                 <p class="text-gray-700">
-                  I was responsible for after-sales service products in the e-commerce department, including chatbots, customer service workstations, and logistics service automation.
+                  I was responsible for <strong class="font-bold text-primary highlight-product">after-sales service products</strong> in the e-commerce department, including <strong class="font-bold text-primary highlight-tech">chatbots</strong>, <strong class="font-bold text-primary highlight-product">customer service workstations</strong>, and <strong class="font-bold text-primary highlight-tech">logistics service automation</strong>.
                 </p>
               </div>
             </div>
@@ -215,7 +244,7 @@
                   <h5 class="font-medium text-gray-900">Company Introduction</h5>
                 </div>
                 <p class="text-gray-700">
-                  An intelligent driving solutions company under Alibaba Group, providing solutions such as autonomous driving and smart cockpits for enterprises.
+                  An <strong class="font-bold text-primary highlight-company">intelligent driving solutions</strong> company under Alibaba Group, providing solutions such as <strong class="font-bold text-primary highlight-product">autonomous driving</strong> and <strong class="font-bold text-primary highlight-product">smart cockpits</strong> for enterprises.
                 </p>
               </div>
               <div class="bg-gray-50 p-4 rounded-lg">
@@ -224,7 +253,7 @@
                   <h5 class="font-medium text-gray-900">My Responsibilities</h5>
                 </div>
                 <p class="text-gray-700">
-                  I was primarily responsible for in-vehicle large language models, including model fine-tuning and post-training, to enhance interactive capabilities for in-vehicle applications.
+                  I was primarily responsible for <strong class="font-bold text-primary highlight-tech">in-vehicle large language models</strong>, including model <strong class="font-bold text-primary highlight-tech">fine-tuning</strong> and <strong class="font-bold text-primary highlight-tech">post-training</strong>, to enhance <strong class="font-bold text-primary highlight-skill">interactive capabilities</strong> for in-vehicle applications.
                 </p>
               </div>
             </div>
@@ -243,18 +272,25 @@
           <!-- Alibaba Cloud - Banma Smart Cockpit Solutions Product Department -->
           <div class="timeline-item">
             <div class="bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-gray-900">Alibaba Cloud - Banma Smart Cockpit Solutions Product Department</h3>
-              <p class="text-gray-600 mt-1">May 2021 - Oct 2023 | Shanghai</p>
+              <div class="flex items-start">
+                <div class="mr-4 p-2 bg-primary/10 rounded-full">
+                  <i data-lucide="car" class="w-6 h-6 text-primary"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-gray-900">Alibaba Cloud - Banma Smart Cockpit Solutions Product Department</h3>
+                  <p class="text-gray-600 mt-1">May 2021 - Oct 2023 | Shanghai</p>
+                </div>
+              </div>
               <div class="mt-4">
                 <p class="text-gray-700 mb-4">
                   Product Leader: Responsible for the planning and implementation of the in-vehicle interactive cloud application and intelligent voice assistant.
                 </p>
                 <ul class="list-disc list-inside text-gray-700 space-y-2">
                   <li>
-                    <strong class="font-bold text-primary">In-Vehicle Citylife Service Cloud Application:</strong> Deployed on <strong class="font-bold text-primary">200,000</strong> in-vehicle devices with an average weekly active rate of <strong class="font-bold text-primary">10%</strong>.
+                    <strong class="font-bold text-primary highlight-product">In-Vehicle Citylife Service Cloud Application:</strong> Deployed on <strong class="font-bold text-primary highlight-achievement">200,000</strong> in-vehicle devices with an average weekly active rate of <strong class="font-bold text-primary highlight-achievement">10%</strong>.
                   </li>
                   <li>
-                    <strong class="font-bold text-primary">In-Vehicle AI Voice Assistant:</strong> Developed for <strong class="font-bold text-primary">LS6</strong> engineering vehicles and showcased at the <strong class="font-bold text-primary">Chengdu International Auto Show</strong>, supporting office assistance and traffic violation recognition.
+                    <strong class="font-bold text-primary highlight-product">In-Vehicle AI Voice Assistant:</strong> Developed for <strong class="font-bold text-primary highlight-product">LS6</strong> engineering vehicles and showcased at the <strong class="font-bold text-primary highlight-achievement">Chengdu International Auto Show</strong>, supporting <span class="highlight-skill">office assistance</span> and <span class="highlight-tech">traffic violation recognition</span>.
                   </li>
                 </ul>
               </div>
@@ -264,21 +300,28 @@
           <!-- Alibaba Group - Taobao Consulting Product Department -->
           <div class="timeline-item">
             <div class="bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-gray-900">Alibaba Group - Taobao Consulting Product Department</h3>
-              <p class="text-gray-600 mt-1">Sept 2018 - May 2021 | Hangzhou</p>
+              <div class="flex items-start">
+                <div class="mr-4 p-2 bg-primary/10 rounded-full">
+                  <i data-lucide="message-circle" class="w-6 h-6 text-primary"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-gray-900">Alibaba Group - Taobao Consulting Product Department</h3>
+                  <p class="text-gray-600 mt-1">Sept 2018 - May 2021 | Hangzhou</p>
+                </div>
+              </div>
               <div class="mt-4">
                 <p class="text-gray-700 mb-4">
                   Product Leader: Oversaw the design and implementation of Taobao platform consulting services.
                 </p>
                 <ul class="list-disc list-inside text-gray-700 space-y-2">
                   <li>
-                    <strong class="font-bold text-primary">Merchant Support Chatbot:</strong> Supported <strong class="font-bold text-primary">20,000</strong> daily conversations, with <strong class="font-bold text-primary">80%</strong> resolved by AI.
+                    <strong class="font-bold text-primary highlight-product">Merchant Support Chatbot:</strong> Supported <strong class="font-bold text-primary highlight-achievement">20,000</strong> daily conversations, with <strong class="font-bold text-primary highlight-achievement">80%</strong> resolved by <span class="highlight-tech">AI</span>.
                   </li>
                   <li>
-                    <strong class="font-bold text-primary">AI-Hybrid Service Desk:</strong> Served over <strong class="font-bold text-primary">50</strong> international enterprises, achieving product sales of over <strong class="font-bold text-primary">21,000,000 RMB</strong>.
+                    <strong class="font-bold text-primary highlight-product">AI-Hybrid Service Desk:</strong> Served over <strong class="font-bold text-primary highlight-achievement">50</strong> international enterprises, achieving product sales of over <strong class="font-bold text-primary highlight-achievement">21,000,000 RMB</strong>.
                   </li>
                   <li>
-                    <strong class="font-bold text-primary">Inclusive Product For Disabled:</strong> Created <strong class="font-bold text-primary">110,000</strong> job opportunities for disabled individuals, saving <strong class="font-bold text-primary">$2M</strong> per month.
+                    <strong class="font-bold text-primary highlight-product">Inclusive Product For Disabled:</strong> Created <strong class="font-bold text-primary highlight-achievement">110,000</strong> job opportunities for disabled individuals, saving <strong class="font-bold text-primary highlight-achievement">$2M</strong> per month.
                   </li>
                 </ul>
               </div>
@@ -288,18 +331,25 @@
           <!-- Alibaba Group - Logistics & After-Sales Product Department -->
           <div class="timeline-item">
             <div class="bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-gray-900">Alibaba Group - Logistics &amp; After-Sales Product Department</h3>
-              <p class="text-gray-600 mt-1">Mar 2016 - Sept 2018 | Hangzhou</p>
+              <div class="flex items-start">
+                <div class="mr-4 p-2 bg-primary/10 rounded-full">
+                  <i data-lucide="package" class="w-6 h-6 text-primary"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-gray-900">Alibaba Group - Logistics &amp; After-Sales Product Department</h3>
+                  <p class="text-gray-600 mt-1">Mar 2016 - Sept 2018 | Hangzhou</p>
+                </div>
+              </div>
               <div class="mt-4">
                 <p class="text-gray-700 mb-4">
                   Product Expert: Provided logistics and after-sales solutions for platform merchants.
                 </p>
                 <ul class="list-disc list-inside text-gray-700 space-y-2">
                   <li>
-                    <strong class="font-bold text-primary">Warehouse Video Intelligent Inspection Solution:</strong> Sold <strong class="font-bold text-primary">50,000</strong> units, saving <strong class="font-bold text-primary">$24M</strong> annually, and filed a technology patent.
+                    <strong class="font-bold text-primary highlight-product">Warehouse Video Intelligent Inspection Solution:</strong> Sold <strong class="font-bold text-primary highlight-achievement">50,000</strong> units, saving <strong class="font-bold text-primary highlight-achievement">$24M</strong> annually, and filed a technology patent.
                   </li>
                   <li>
-                    <strong class="font-bold text-primary">Logistics Service AI Plugin:</strong> Integrated with ERP systems to send over <strong class="font-bold text-primary">60,000</strong> abnormal logistics alerts daily, reducing refund rates by <strong class="font-bold text-primary">30%</strong>.
+                    <strong class="font-bold text-primary highlight-product">Logistics Service AI Plugin:</strong> Integrated with <span class="highlight-tech">ERP systems</span> to send over <strong class="font-bold text-primary highlight-achievement">60,000</strong> abnormal logistics alerts daily, reducing refund rates by <strong class="font-bold text-primary highlight-achievement">30%</strong>.
                   </li>
                 </ul>
               </div>
@@ -309,18 +359,25 @@
           <!-- Alibaba Group - Transaction Security Product Department -->
           <div class="timeline-item">
             <div class="bg-white p-6 rounded-lg shadow-sm">
-              <h3 class="text-xl font-bold text-gray-900">Alibaba Group - Transaction Security Product Department</h3>
-              <p class="text-gray-600 mt-1">Nov 2014 - Mar 2016 | Hangzhou</p>
+              <div class="flex items-start">
+                <div class="mr-4 p-2 bg-primary/10 rounded-full">
+                  <i data-lucide="shield" class="w-6 h-6 text-primary"></i>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-gray-900">Alibaba Group - Transaction Security Product Department</h3>
+                  <p class="text-gray-600 mt-1">Nov 2014 - Mar 2016 | Hangzhou</p>
+                </div>
+              </div>
               <div class="mt-4">
                 <p class="text-gray-700 mb-4">
                   Product Manager: Responsible for identifying high-risk transactions and providing VIP services.
                 </p>
                 <ul class="list-disc list-inside text-gray-700 space-y-2">
                   <li>
-                    <strong class="font-bold text-primary">Risk Transaction Prevention Product:</strong> Detected an average of <strong class="font-bold text-primary">1,000,000</strong> high-risk orders per month with a <strong class="font-bold text-primary">20%</strong> automated processing rate.
+                    <strong class="font-bold text-primary highlight-product">Risk Transaction Prevention Product:</strong> Detected an average of <strong class="font-bold text-primary highlight-achievement">1,000,000</strong> high-risk orders per month with a <strong class="font-bold text-primary highlight-achievement">20%</strong> automated processing rate.
                   </li>
                   <li>
-                    <strong class="font-bold text-primary">VIP Service Product:</strong> Provided dedicated account managers for the top <strong class="font-bold text-primary">200</strong> core merchants on the Alibaba platform.
+                    <strong class="font-bold text-primary highlight-product">VIP Service Product:</strong> Provided dedicated account managers for the top <strong class="font-bold text-primary highlight-achievement">200</strong> core merchants on the Alibaba platform.
                   </li>
                 </ul>
               </div>
@@ -343,7 +400,7 @@
             <div class="p-6">
               <h3 class="text-xl font-bold text-gray-900 mb-2">Smart Cockpit Solution</h3>
               <p class="text-gray-700 mb-4">
-                Combines visual perception and intelligent voice technology to automatically detect traffic violations and enable an in-vehicle office experience.
+                Combines <span class="highlight-tech">visual perception</span> and <span class="highlight-tech">intelligent voice technology</span> to automatically detect <span class="highlight-product">traffic violations</span> and enable an <span class="highlight-product">in-vehicle office experience</span>.
               </p>
               <a href="https://bmgw.oss-cn-shanghai.aliyuncs.com/%E5%AA%92%E4%BD%93%E8%B5%84%E6%96%99%E5%BA%93/%E5%AA%92%E4%BD%93%E8%B5%84%E6%96%99%E5%BA%932-%20%E7%82%B9%E5%92%96%E5%95%A1.mp4" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 !rounded-button bg-primary text-white font-medium hover:bg-primary/90 transition-colors whitespace-nowrap">
                 Learn More
@@ -357,7 +414,7 @@
             <div class="p-6">
               <h3 class="text-xl font-bold text-gray-900 mb-2">Hybrid AI Service Desk</h3>
               <p class="text-gray-700 mb-4">
-                Utilizes a crowdsourcing model and RNN intent recognition algorithm to support <strong class="font-bold text-primary">20,000</strong> daily consultations, serving over <strong class="font-bold text-primary">50</strong> international enterprises and creating <strong class="font-bold text-primary">110,000</strong> job opportunities.
+                Utilizes a <span class="highlight-skill">crowdsourcing model</span> and <span class="highlight-tech">RNN intent recognition algorithm</span> to support <strong class="font-bold text-primary highlight-achievement">20,000</strong> daily consultations, serving over <strong class="font-bold text-primary highlight-achievement">50</strong> international enterprises and creating <strong class="font-bold text-primary highlight-achievement">110,000</strong> job opportunities.
               </p>
               <a href="https://xixikf.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 !rounded-button bg-primary text-white font-medium hover:bg-primary/90 transition-colors whitespace-nowrap">
                 Learn More
@@ -371,7 +428,7 @@
             <div class="p-6">
               <h3 class="text-xl font-bold text-gray-900 mb-2">Warehouse Video Intelligent Inspection</h3>
               <p class="text-gray-700 mb-4">
-                A computer vision-based intelligent inspection system for warehouses, successfully sold <strong class="font-bold text-primary">50,000</strong> units while saving <strong class="font-bold text-primary">$24M</strong> annually.
+                A <span class="highlight-tech">computer vision</span>-based intelligent inspection system for warehouses, successfully sold <strong class="font-bold text-primary highlight-achievement">50,000</strong> units while saving <strong class="font-bold text-primary highlight-achievement">$24M</strong> annually.
               </p>
               <a href="https://gtxwsy.yuque.com/gtxwsy/miv5ag/ih3dqq?" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 !rounded-button bg-primary text-white font-medium hover:bg-primary/90 transition-colors whitespace-nowrap">
                 Learn More
@@ -401,19 +458,19 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           <div class="text-center">
             <div class="text-4xl font-bold text-primary mb-2" data-count="21000000">0</div>
-            <p class="text-gray-700">Product Sales (RMB)</p>
+            <p class="text-gray-700">Product Sales <span class="highlight-achievement">(RMB)</span></p>
           </div>
           <div class="text-center">
             <div class="text-4xl font-bold text-primary mb-2" data-count="200000">0</div>
-            <p class="text-gray-700">In-Vehicle Device Coverage</p>
+            <p class="text-gray-700"><span class="highlight-product">In-Vehicle Device</span> Coverage</p>
           </div>
           <div class="text-center">
             <div class="text-4xl font-bold text-primary mb-2" data-count="110000">0</div>
-            <p class="text-gray-700">Job Opportunities</p>
+            <p class="text-gray-700">Job <span class="highlight-achievement">Opportunities</span></p>
           </div>
           <div class="text-center">
             <div class="text-4xl font-bold text-primary mb-2" data-count="50000">0</div>
-            <p class="text-gray-700">Warehouse Units Sold</p>
+            <p class="text-gray-700"><span class="highlight-product">Warehouse Units</span> Sold</p>
           </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -424,10 +481,10 @@
               <li class="flex items-start">
                 <i class="fas fa-certificate text-primary mt-1 mr-3"></i>
                 <div>
-                  <h4 class="font-medium text-gray-900">Information Processing Method and Device &amp; Electronic Device</h4>
+                  <h4 class="font-medium text-gray-900"><span class="highlight-tech">Information Processing Method and Device</span> &amp; Electronic Device</h4>
                   <p class="text-gray-600 text-sm">
                     Patent No.: 
-                    <a href="https://eureka.patsnap.com/patent-CN113327114A" target="_blank" rel="noopener noreferrer" class="font-bold text-primary">CN113327114A</a>
+                    <a href="https://eureka.patsnap.com/patent-CN113327114A" target="_blank" rel="noopener noreferrer" class="font-bold text-primary highlight-achievement">CN113327114A</a>
                   </p>
                 </div>
               </li>
@@ -475,14 +532,14 @@
           <div class="bg-white rounded-lg shadow-sm overflow-hidden flex">
             <img src="https://ai-public.mastergo.com/ai/img_res/3ae82191c19d9aa040f994aa649cadf9.jpg" alt="AbleDesk" class="w-1/2 object-cover">
             <div class="p-6 w-1/2">
-              <h3 class="text-xl font-bold text-gray-900 mb-4">AbleDesk - Accessible Customer Service Desk</h3>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">AbleDesk - <span class="highlight-product">Accessible Customer Service Desk</span></h3>
               <p class="text-gray-700 mb-4">
-                An accessible platform designed specifically for visually impaired customer service representatives, supporting voice interaction and braille display to enable professional services.
+                An accessible platform designed specifically for <span class="highlight-skill">visually impaired customer service representatives</span>, supporting <span class="highlight-tech">voice interaction</span> and <span class="highlight-tech">braille display</span> to enable professional services.
               </p>
               <ul class="space-y-2 text-gray-700 mb-6">
-                <li>• Voice control and braille output</li>
-                <li>• AI-assisted comprehension and response</li>
-                <li>• Accessible workflow design</li>
+                <li>• <span class="highlight-tech">Voice control</span> and braille output</li>
+                <li>• <span class="highlight-tech">AI-assisted</span> comprehension and response</li>
+                <li>• <span class="highlight-skill">Accessible workflow</span> design</li>
               </ul>
               <a href="#" class="inline-flex items-center px-6 py-3 !rounded-button bg-primary text-white font-medium hover:bg-primary/90 transition-colors whitespace-nowrap">
                 View Details
@@ -494,14 +551,14 @@
           <div class="bg-white rounded-lg shadow-sm overflow-hidden flex">
             <img src="https://ai-public.mastergo.com/ai/img_res/c6278f2cade9d7c77b456583ad147800.jpg" alt="ServiceTrail" class="w-1/2 object-cover">
             <div class="p-6 w-1/2">
-              <h3 class="text-xl font-bold text-gray-900 mb-4">ServiceTrail - Customer Service Analysis &amp; Tracking</h3>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">ServiceTrail - <span class="highlight-product">Customer Service Analysis &amp; Tracking</span></h3>
               <p class="text-gray-700 mb-4">
-                A comprehensive analysis tool for customer service quality that uses AI to perform sentiment analysis and quality evaluation on customer conversations.
+                A comprehensive analysis tool for customer service quality that uses <span class="highlight-tech">AI</span> to perform <span class="highlight-tech">sentiment analysis</span> and quality evaluation on customer conversations.
               </p>
               <ul class="space-y-2 text-gray-700 mb-6">
-                <li>• Real-time sentiment analysis</li>
-                <li>• Service quality evaluation</li>
-                <li>• Data visualization reports</li>
+                <li>• Real-time <span class="highlight-tech">sentiment analysis</span></li>
+                <li>• Service <span class="highlight-skill">quality evaluation</span></li>
+                <li>• <span class="highlight-tech">Data visualization</span> reports</li>
               </ul>
               <a href="#" class="inline-flex items-center px-6 py-3 !rounded-button bg-primary text-white font-medium hover:bg-primary/90 transition-colors whitespace-nowrap">
                 View Details
@@ -513,14 +570,14 @@
           <div class="bg-white rounded-lg shadow-sm overflow-hidden flex">
             <img src="https://ai-public.mastergo.com/ai/img_res/8a8c9811337eb75e595f3c2fcc9238b1.jpg" alt="DriveGuardian" class="w-1/2 object-cover">
             <div class="p-6 w-1/2">
-              <h3 class="text-xl font-bold text-gray-900 mb-4">DriveGuardian - Driving Safety Guardian</h3>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">DriveGuardian - <span class="highlight-product">Driving Safety Guardian</span></h3>
               <p class="text-gray-700 mb-4">
-                An in-vehicle application that monitors driving behavior in real time, detects violations, collects precise evidence, and supports one-click safety report generation to ensure driving compliance and safety.
+                An in-vehicle application that <span class="highlight-skill">monitors driving behavior</span> in real time, <span class="highlight-tech">detects violations</span>, collects precise evidence, and supports <span class="highlight-product">one-click safety report generation</span> to ensure driving compliance and safety.
               </p>
               <ul class="space-y-2 text-gray-700 mb-6">
-                <li>• Real-time driving behavior analysis</li>
-                <li>• Accurate violation detection and evidence collection</li>
-                <li>• One-click safety report generation</li>
+                <li>• Real-time <span class="highlight-skill">driving behavior analysis</span></li>
+                <li>• <span class="highlight-tech">Accurate violation detection</span> and evidence collection</li>
+                <li>• <span class="highlight-product">One-click safety report generation</span></li>
               </ul>
               <a href="#" class="inline-flex items-center px-6 py-3 !rounded-button bg-primary text-white font-medium hover:bg-primary/90 transition-colors whitespace-nowrap">
                 View Details
@@ -532,14 +589,14 @@
           <div class="bg-white rounded-lg shadow-sm overflow-hidden flex">
             <img src="https://ai-public.mastergo.com/ai/img_res/81d14d4f7fcd463cd4b8cd306e9dfed8.jpg" alt="CloudServe" class="w-1/2 object-cover">
             <div class="p-6 w-1/2">
-              <h3 class="text-xl font-bold text-gray-900 mb-4">CloudServe - Elastic Customer Service Platform</h3>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">CloudServe - <span class="highlight-product">Elastic Customer Service Platform</span></h3>
               <p class="text-gray-700 mb-4">
-                A dynamic, on-demand customer service platform that connects enterprises with flexible customer service agents, providing elastic support solutions during peak periods.
+                A dynamic, on-demand customer service platform that connects enterprises with <span class="highlight-skill">flexible customer service agents</span>, providing <span class="highlight-product">elastic support solutions</span> during peak periods.
               </p>
               <ul class="space-y-2 text-gray-700 mb-6">
-                <li>• Intelligent customer service matching system</li>
-                <li>• Elastic resource allocation during peak periods</li>
-                <li>• Real-time workload monitoring and analysis</li>
+                <li>• <span class="highlight-tech">Intelligent customer service matching system</span></li>
+                <li>• <span class="highlight-product">Elastic resource allocation</span> during peak periods</li>
+                <li>• <span class="highlight-tech">Real-time workload monitoring</span> and analysis</li>
               </ul>
               <a href="#" class="inline-flex items-center px-6 py-3 !rounded-button bg-primary text-white font-medium hover:bg-primary/90 transition-colors whitespace-nowrap">
                 View Details
@@ -570,9 +627,9 @@
             <div class="flex items-center mb-4">
               <i class="fas fa-graduation-cap text-3xl text-primary mr-4"></i>
               <div>
-                <h3 class="text-xl font-bold text-gray-900">Zhejiang University of Technology</h3>
-                <p class="text-gray-600">Master of Applied Economics</p>
-                <p class="text-gray-500"><strong class="font-bold text-primary">Sep 2012 - Apr 2015</strong></p>
+                <h3 class="text-xl font-bold text-gray-900"><span class="highlight-company">Zhejiang University of Technology</span></h3>
+                <p class="text-gray-600">Master of <span class="highlight-skill">Applied Economics</span></p>
+                <p class="text-gray-500"><strong class="font-bold text-primary highlight-achievement">Sep 2012 - Apr 2015</strong></p>
               </div>
             </div>
           </div>
@@ -580,9 +637,9 @@
             <div class="flex items-center mb-4">
               <i class="fas fa-graduation-cap text-3xl text-primary mr-4"></i>
               <div>
-                <h3 class="text-xl font-bold text-gray-900">Zhejiang University of Technology Zhijiang College</h3>
-                <p class="text-gray-600">Bachelor's Degree in International Economics and Trade</p>
-                <p class="text-gray-500"><strong class="font-bold text-primary">Sep 2008 - Sep 2012</strong></p>
+                <h3 class="text-xl font-bold text-gray-900"><span class="highlight-company">Zhejiang University of Technology Zhijiang College</span></h3>
+                <p class="text-gray-600">Bachelor's Degree in <span class="highlight-skill">International Economics and Trade</span></p>
+                <p class="text-gray-500"><strong class="font-bold text-primary highlight-achievement">Sep 2008 - Sep 2012</strong></p>
               </div>
             </div>
           </div>
@@ -616,7 +673,7 @@
               <i class="fab fa-linkedin text-2xl text-primary"></i>
             </div>
             <h3 class="text-lg font-medium text-gray-900 mb-2">LinkedIn</h3>
-            <a href="#" class="text-primary hover:text-primary/90"><strong class="font-bold text-primary">View Profile</strong></a>
+            <a href="https://www.linkedin.com/in/sui-qian-7504892a0/" target="_blank" class="text-primary hover:text-primary/90"><strong class="font-bold text-primary">View Profile</strong></a>
           </div>
         </div>
       </div>
@@ -693,6 +750,13 @@
         });
         countObserver.observe(element);
       });
+    });
+  </script>
+  
+  <!-- Initialize Lucide icons -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      lucide.createIcons();
     });
   </script>
 </body>
