@@ -118,6 +118,177 @@
       padding: 0 4px;
       border-radius: 3px;
     }
+    
+    /* Capability Map Styles */
+    .capability-tabs {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .capability-tab {
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      border-left: 3px solid transparent;
+      background-color: transparent;
+      text-align: left;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+    
+    .capability-tab.active {
+      border-left-color: #2563eb;
+      background-color: white;
+    }
+    
+    .capability-tab:hover:not(.active) {
+      background-color: rgba(37, 99, 235, 0.05);
+    }
+    
+    .tab-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background-color: rgba(37, 99, 235, 0.1);
+      border-radius: 50%;
+      margin-right: 12px;
+    }
+    
+    .capability-tab span {
+      font-weight: 500;
+      color: #4b5563;
+    }
+    
+    .capability-tab.active span {
+      color: #1f2937;
+      font-weight: 600;
+    }
+    
+    .capability-content {
+      display: none;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.3s, transform 0.3s;
+    }
+    
+    .capability-content.active {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    @media (max-width: 1024px) {
+      .capability-tabs {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+        border-bottom: 1px solid #e5e7eb;
+      }
+      
+      .capability-tab {
+        flex-direction: column;
+        padding: 12px 16px;
+        border-left: none;
+        border-bottom: 3px solid transparent;
+      }
+      
+      .capability-tab.active {
+        border-left-color: transparent;
+        border-bottom-color: #2563eb;
+      }
+      
+      .tab-icon {
+        margin-right: 0;
+        margin-bottom: 8px;
+      }
+    }
+    
+    /* Toast notification styles */
+    .toast-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .toast {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-width: 300px;
+      max-width: 400px;
+      padding: 12px 16px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.3s, transform 0.3s;
+    }
+    
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .toast-content {
+      flex: 1;
+      padding-right: 12px;
+    }
+    
+    .toast-title {
+      font-weight: 600;
+      color: #1f2937;
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+    }
+    
+    .toast-description {
+      color: #6b7280;
+      font-size: 0.85rem;
+    }
+    
+    .toast-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      background-color: #2563eb;
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 500;
+      border-radius: 4px;
+      padding: 4px 10px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    
+    .toast-action:hover {
+      background-color: #1d4ed8;
+    }
+    
+    /* Aspect ratio utilities for video embedding */
+    .aspect-w-16 {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+    }
+    
+    .aspect-w-16 iframe,
+    .aspect-w-16 video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   </style>
 </head>
 <body class="bg-white">
@@ -131,7 +302,9 @@
         <div class="hidden md:block">
           <div class="ml-10 flex items-baseline space-x-8">
             <a href="#home" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Home</a>
+            <a href="#product-videos" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Product Videos</a>
             <a href="#about" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">About Me</a>
+            <a href="#capabilities" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Capabilities</a>
             <a href="#experience" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Experience</a>
             <a href="#projects" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Projects</a>
             <a href="#achievements" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Achievements &amp; Patents</a>
@@ -158,6 +331,76 @@
           Learn More
           <i class="fas fa-arrow-right ml-2"></i>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Video Section -->
+  <section id="product-videos" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="fade-in">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-16">Product Videos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+          <!-- Intelligent inspection Video -->
+          <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="aspect-w-16 aspect-h-9">
+              <iframe 
+                src="https://www.youtube.com/embed/aCCHTP_BOcc" 
+                title="Intelligent Inspection"
+                class="w-full h-full"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Intelligent Inspection</h3>
+              <p class="text-gray-700">
+                A <span class="highlight-tech">computer vision</span>-based intelligent inspection system for warehouses, successfully sold <strong class="font-bold text-primary highlight-achievement">50,000</strong> units while saving <strong class="font-bold text-primary highlight-achievement">$24M</strong> annually.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Storyboard AI Video -->
+          <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="aspect-w-16 aspect-h-9">
+              <iframe 
+                src="https://www.youtube.com/embed/6D3PtrpCy7Y" 
+                title="Storyboard AI"
+                class="w-full h-full"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Storyboard AI</h3>
+              <p class="text-gray-700">
+                A <span class="highlight-product">storyboard AI</span> is one of my personal projects. It uses the <span class="highlight-tech">qwen2.5pro model</span> and can generate storyboards and videos based on the storyboards.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Intelligent Cockpit Video -->
+          <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+            <div class="aspect-w-16 aspect-h-9">
+              <iframe 
+                src="https://www.youtube.com/embed/K--wfslZpvI" 
+                title="Intelligent Cockpit"
+                class="w-full h-full"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Intelligent Cockpit</h3>
+              <p class="text-gray-700">
+                Demonstration video of <span class="highlight-product">intelligent cockpit</span>. We deploy a <span class="highlight-tech">large model</span> on the vehicle-mounted computer to realize voice interaction of the intelligent cockpit. According to the scene, it intelligently judges the user's intention and combines the current geographical information to help users place orders and order meals.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -197,6 +440,139 @@
             <img src="https://ai-public.mastergo.com/ai/img_res/54dc21182561c81cd129221642b12548.jpg" alt="Profile Photo" class="w-full h-auto rounded-lg shadow-lg">
           </div>
         </div>
+
+        <!-- Capability Map Section -->
+        <section id="capabilities" class="py-20 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="fade-in">
+              <h2 class="text-3xl font-bold text-center text-gray-900 mb-16">Capability Map</h2>
+              
+              <div class="flex flex-col lg:flex-row bg-gray-50 rounded-lg shadow-sm overflow-hidden">
+                <!-- Sidebar - Capability List -->
+                <div class="w-full lg:w-1/4 bg-gray-100">
+                  <div class="capability-tabs">
+                    <button class="capability-tab active" data-tab="product-design">
+                      <div class="tab-icon"><i data-lucide="layout-dashboard" class="text-primary"></i></div>
+                      <span>Product Design</span>
+                    </button>
+                    <button class="capability-tab" data-tab="innovation">
+                      <div class="tab-icon"><i data-lucide="lightbulb" class="text-primary"></i></div>
+                      <span>Innovation Capability</span>
+                    </button>
+                    <button class="capability-tab" data-tab="agile">
+                      <div class="tab-icon"><i data-lucide="users" class="text-primary"></i></div>
+                      <span>Agile & Collaboration</span>
+                    </button>
+                    <button class="capability-tab" data-tab="commercialization">
+                      <div class="tab-icon"><i data-lucide="trending-up" class="text-primary"></i></div>
+                      <span>Product Commercialization</span>
+                    </button>
+                    <button class="capability-tab" data-tab="technical">
+                      <div class="tab-icon"><i data-lucide="code" class="text-primary"></i></div>
+                      <span>Technical Capability</span>
+                    </button>
+                  </div>
+                </div>
+                
+                <!-- Content - Capability Details -->
+                <div class="w-full lg:w-3/4 p-6 lg:p-8">
+                  <div class="capability-content active" id="product-design">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Product Design</h3>
+                    <p class="text-gray-700 mb-4">
+                      I possess <strong class="font-bold text-primary">solid product design capabilities</strong>, specializing in transforming potential user needs into tangible product features:
+                    </p>
+                    <ul class="space-y-3 text-gray-700">
+                      <li class="flex items-start">
+                        <i data-lucide="check-circle" class="text-primary mr-2 mt-1 flex-shrink-0"></i>
+                        <span>In smart cockpit and hybrid AI customer service projects, I can <span class="highlight-skill">identify user pain points</span> in current experiences, creating more user-friendly and impactful products.</span>
+                      </li>
+                      <li class="flex items-start">
+                        <i data-lucide="check-circle" class="text-primary mr-2 mt-1 flex-shrink-0"></i>
+                        <span>My inclusive design philosophy is reflected in systems developed for visually impaired users, ensuring that even visually impaired users can enjoy a <span class="highlight-skill">high-quality experience</span>.</span>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div class="capability-content" id="innovation">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Innovation Capability</h3>
+                    <p class="text-gray-700 mb-4">
+                      I also possess <strong class="font-bold text-primary">excellent product innovation capabilities</strong>:
+                    </p>
+                    <ul class="space-y-3 text-gray-700">
+                      <li class="flex items-start">
+                        <i data-lucide="check-circle" class="text-primary mr-2 mt-1 flex-shrink-0"></i>
+                        <span>In my logistics domain products, I <span class="highlight-skill">significantly improved warehouse inspection efficiency and security</span> by combining intelligent IoT devices with our RPA service operating system, and completed a patent application (<span class="highlight-achievement">CN113327114A</span>).</span>
+                      </li>
+                      <li class="flex items-start">
+                        <i data-lucide="check-circle" class="text-primary mr-2 mt-1 flex-shrink-0"></i>
+                        <span>I designed a cloud service distribution product that can be <span class="highlight-tech">quickly deployed to the cloud during peak service periods</span>, similar to Uber, allowing users to enjoy better service experiences without waiting.</span>
+                      </li>
+                      <li class="flex items-start">
+                        <i data-lucide="check-circle" class="text-primary mr-2 mt-1 flex-shrink-0"></i>
+                        <span>Developed a <span class="highlight-product">traffic violation detection system based on visual perception</span>, using a reverse product perspective to provide users with a better experience during complex traffic situations.</span>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div class="capability-content" id="agile">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Agile & Collaboration</h3>
+                    <p class="text-gray-700 mb-4">
+                      During my time at Alibaba, I led cross-functional teams to deliver complex projects, demonstrating <strong class="font-bold text-primary">excellent application of agile methodologies</strong> and stakeholder management capabilities:
+                    </p>
+                    <ul class="space-y-3 text-gray-700">
+                      <li class="flex items-start">
+                        <i data-lucide="check-circle" class="text-primary mr-2 mt-1 flex-shrink-0"></i>
+                        <span>Successfully drove large-scale project implementation (covering <span class="highlight-achievement">200,000 devices</span>, serving <span class="highlight-achievement">50+ enterprises</span>), maintaining efficient execution within complex organizational structures. The project that created <span class="highlight-achievement">110,000 job opportunities</span> showcased my ability to build inclusive collaborative environments.</span>
+                      </li>
+                      <li class="flex items-start">
+                        <i data-lucide="check-circle" class="text-primary mr-2 mt-1 flex-shrink-0"></i>
+                        <span>In the intelligent inspection project, after <span class="highlight-skill">one month of rapid iteration</span>, I led the team to complete the product prototype from scratch and successfully pushed it live, gaining recognition from the business unit.</span>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div class="capability-content" id="commercialization">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Product Commercialization</h3>
+                    <p class="text-gray-700 mb-4">
+                      I have excellent experience in product commercialization:
+                    </p>
+                    <ul class="space-y-3 text-gray-700">
+                      <li class="flex items-start">
+                        <i data-lucide="check-circle" class="text-primary mr-2 mt-1 flex-shrink-0"></i>
+                        <span>In the intelligent inspection project, my product achieved <span class="highlight-achievement">¥21 million in product sales</span>, <span class="highlight-achievement">50,000 warehouse units sold</span>, saving <span class="highlight-achievement">$24M in costs annually</span>.</span>
+                      </li>
+                      <li class="flex items-start">
+                        <i data-lucide="check-circle" class="text-primary mr-2 mt-1 flex-shrink-0"></i>
+                        <span>In the intelligent cockpit product, my product achieved a <span class="highlight-achievement">10% weekly active rate</span>. (The stock of cars in Shanghai reaches 10 million. With a 10% penetration rate of intelligent cockpits, there are 1 million cars.)</span>
+                      </li>
+                      <li class="flex items-start">
+                        <i data-lucide="check-circle" class="text-primary mr-2 mt-1 flex-shrink-0"></i>
+                        <span>In the customer service workstation project, I created more than <span class="highlight-achievement">110,000 jobs</span>.</span>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div class="capability-content" id="technical">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Technical Capability</h3>
+                    <p class="text-gray-700 mb-4">
+                      I have <strong class="font-bold text-primary">deep technical expertise</strong> in AI and IoT fields, covering <span class="highlight-tech">large language model fine-tuning</span>, <span class="highlight-tech">computer vision detection systems</span>, and <span class="highlight-tech">RNN intent recognition</span>.
+                    </p>
+                    <ul class="space-y-3 text-gray-700">
+                      <li class="flex items-start">
+                        <i data-lucide="check-circle" class="text-primary mr-2 mt-1 flex-shrink-0"></i>
+                        <span>My implemented smart cockpit and warehouse systems demonstrate my <span class="highlight-tech">IoT integration capabilities</span>. Through developing chatbots, voice assistants, and intelligent video analysis systems.</span>
+                      </li>
+                      <li class="flex items-start">
+                        <i data-lucide="check-circle" class="text-primary mr-2 mt-1 flex-shrink-0"></i>
+                        <span>Personal projects of mine have developed <span class="highlight-product">OOTD assistant</span>, <span class="highlight-product">Storyboard AI</span>, and <span class="highlight-product">Golden Relationship Assistant</span> using current large language models (LLMs). I have a <span class="highlight-skill">profound understanding of current large language models</span>.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <!-- Work History Section -->
         <div class="mt-16">
@@ -437,13 +813,17 @@
             </div>
           </div>
         </div>
-        <!-- 新增行动点 -->
+        <!-- Add See All Project action point -->
         <div class="mt-16 text-center fade-in">
           <a href="https://www.notion.so/qiansui/Sui-Qian-Portfolio-c6be6c3fe60c420faf915f35f73bb408" target="_blank" 
              class="inline-flex items-center px-8 py-3 !rounded-button bg-primary text-white hover:bg-primary/90 transition-colors text-lg">
             See All Project
             <i class="fas fa-arrow-right ml-3 text-sm"></i>
           </a>
+          <button onclick="showPortfolioToast()" class="inline-flex items-center px-8 py-3 !rounded-button bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors text-lg ml-4">
+            <i class="fas fa-lightbulb mr-2"></i>
+            Discover More
+          </button>
         </div>
       </div>
     </div>
@@ -612,6 +992,10 @@
             See All Project
             <i class="fas fa-arrow-right ml-3 text-sm"></i>
           </a>
+          <button onclick="showPortfolioToast()" class="inline-flex items-center px-8 py-3 !rounded-button bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors text-lg ml-4">
+            <i class="fas fa-lightbulb mr-2"></i>
+            Discover More
+          </button>
         </div>
       </div>
     </div>
@@ -712,6 +1096,9 @@
     </div>
   </footer>
 
+  <!-- Toast Container -->
+  <div id="toast-container" class="toast-container"></div>
+
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const fadeElements = document.querySelectorAll('.fade-in');
@@ -750,7 +1137,88 @@
         });
         countObserver.observe(element);
       });
+      
+      // Show toast after 3 seconds
+      setTimeout(showPortfolioToast, 3000);
+      
+      // Capability tabs functionality
+      const capabilityTabs = document.querySelectorAll('.capability-tab');
+      const capabilityContents = document.querySelectorAll('.capability-content');
+      
+      capabilityTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const tabId = tab.dataset.tab;
+          
+          // Remove active class from all tabs and contents
+          capabilityTabs.forEach(t => t.classList.remove('active'));
+          capabilityContents.forEach(c => c.classList.remove('active'));
+          
+          // Add active class to clicked tab and corresponding content
+          tab.classList.add('active');
+          document.getElementById(tabId).classList.add('active');
+        });
+      });
     });
+    
+    // Toast notification functions
+    function showToast(options) {
+      const { title, description, action } = options;
+      
+      // First, clear any existing toasts
+      const toastContainer = document.getElementById('toast-container');
+      toastContainer.innerHTML = '';
+      
+      const toast = document.createElement('div');
+      toast.className = 'toast';
+      
+      toast.innerHTML = `
+        <div class="toast-content">
+          <div class="toast-title">${title}</div>
+          ${description ? `<div class="toast-description">${description}</div>` : ''}
+        </div>
+        ${action ? `<button class="toast-action">${action.text}</button>` : ''}
+      `;
+      
+      toastContainer.appendChild(toast);
+      
+      // Trigger reflow for animation
+      void toast.offsetWidth;
+      
+      // Show toast
+      setTimeout(() => {
+        toast.classList.add('show');
+      }, 10);
+      
+      // Add click event to action button if provided
+      if (action && action.url) {
+        const actionButton = toast.querySelector('.toast-action');
+        actionButton.addEventListener('click', () => {
+          window.open(action.url, '_blank');
+          // Don't remove toast after click
+        });
+      }
+      
+      return toast;
+    }
+    
+    function removeToast(toast) {
+      toast.classList.remove('show');
+      setTimeout(() => {
+        toast.remove();
+      }, 300);
+    }
+    
+    function showPortfolioToast() {
+      showToast({
+        title: 'Looking for more?',
+        description: 'Explore my portfolio and unlock more wonderful projects',
+        action: {
+          text: 'See',
+          url: 'https://www.notion.so/qiansui/Sui-Qian-Portfolio-c6be6c3fe60c420faf915f35f73bb408'
+        }
+        // No duration parameter, so toast will be persistent
+      });
+    }
   </script>
   
   <!-- Initialize Lucide icons -->
