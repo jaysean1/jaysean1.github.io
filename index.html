@@ -342,6 +342,83 @@
         background-size: 100% 100%;
       }
     }
+
+    /* Testimonials Album Styles */
+    .testimonials-carousel-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding: 20px 0;
+    }
+    
+    .testimonials-row {
+      display: flex;
+      gap: 20px;
+      padding: 20px 80px;
+      overflow: hidden;
+      width: fit-content; /* Allow the row to size based on content */
+      margin-bottom: 20px; /* Add space between rows */
+    }
+    
+    .testimonials-row:first-child {
+      animation: scroll-left 30s linear infinite;
+    }
+    
+    .testimonials-row:last-child {
+      animation: scroll-right 30s linear infinite;
+    }
+    
+    @keyframes scroll-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(calc(-50%)); } /* Move exactly half the width */
+    }
+    
+    @keyframes scroll-right {
+      0% { transform: translateX(calc(-50%)); } /* Start from halfway point */
+      100% { transform: translateX(0); }
+    }
+    
+    .testimonial-image {
+      flex: 0 0 auto;
+      width: 480px;
+      height: 320px;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      background-color: #f3f4f6; /* Light background while loading */
+    }
+    
+    .testimonial-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block; /* Remove any default inline spacing */
+      transition: transform 0.3s ease;
+    }
+    
+    .testimonial-image:hover img {
+      transform: scale(1.05);
+    }
+    
+    .testimonials-shade-left,
+    .testimonials-shade-right {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 120px; /* Increased width for more gradient */
+      pointer-events: none;
+      z-index: 10;
+    }
+    
+    .testimonials-shade-left {
+      left: 0;
+      background: linear-gradient(to right, rgba(249, 250, 251, 1), rgba(249, 250, 251, 0));
+    }
+    
+    .testimonials-shade-right {
+      right: 0;
+      background: linear-gradient(to left, rgba(249, 250, 251, 1), rgba(249, 250, 251, 0));
+    }
   </style>
 </head>
 <body class="bg-white">
@@ -1156,6 +1233,56 @@
     </div>
   </section>
 
+  <!-- Testimonials Album Section -->
+  <section id="testimonials" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="fade-in">
+        <!-- Removed the "Client Testimonials" heading -->
+        
+        <!-- Testimonials Carousel Container -->
+        <div class="testimonials-carousel-container mb-10">
+          <!-- First Row -->
+          <div class="testimonials-row">
+            <div class="testimonial-image">
+              <img src="public/row_1/image.png" alt="Image 1" class="rounded-lg shadow-sm">
+            </div>
+            <div class="testimonial-image">
+              <img src="public/row_1/image copy.png" alt="Image 2" class="rounded-lg shadow-sm">
+            </div>
+            <div class="testimonial-image">
+              <img src="public/row_1/image copy 2.png" alt="Image 3" class="rounded-lg shadow-sm">
+            </div>
+            <div class="testimonial-image">
+              <img src="public/row_1/image copy 3.png" alt="Image 4" class="rounded-lg shadow-sm">
+            </div>
+           
+          </div>
+          
+          <!-- Second Row -->
+          <div class="testimonials-row">
+            <div class="testimonial-image">
+              <img src="public/row_2/image.png" alt="Image 6" class="rounded-lg shadow-sm">
+            </div>
+            <div class="testimonial-image">
+              <img src="public/row_2/image copy.png" alt="Image 7" class="rounded-lg shadow-sm">
+            </div>
+            <div class="testimonial-image">
+              <img src="public/row_2/image copy 2.png" alt="Image 8" class="rounded-lg shadow-sm">
+            </div>
+            <div class="testimonial-image">
+              <img src="public/row_2/image copy 3.png" alt="Image 9" class="rounded-lg shadow-sm">
+            </div>
+      
+          </div>
+          
+          <!-- Shade Effects -->
+          <div class="testimonials-shade-left"></div>
+          <div class="testimonials-shade-right"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="bg-gray-900 text-white py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1250,6 +1377,10 @@
           document.getElementById(tabId).classList.add('active');
         });
       });
+      
+      // Initialize testimonials carousel
+      // Already handled by load and resize event listeners
+      // setupTestimonialsCarousel();
     });
     
     // Toast notification functions
@@ -1447,6 +1578,69 @@
         heroSection.style.setProperty('--mouse-y', `${y}px`);
       });
     }
+
+    // Testimonials Carousel
+    function setupTestimonialsCarousel() {
+      const rows = document.querySelectorAll('.testimonials-row');
+      
+      // Function to ensure images are loaded before starting animations
+      function preloadImages(imageElements) {
+        return Promise.all(Array.from(imageElements).map(img => {
+          if (img.complete) return Promise.resolve();
+          return new Promise(resolve => {
+            img.onload = resolve;
+            img.onerror = resolve; // Continue even if some images fail
+          });
+        }));
+      }
+      
+      // Process each row
+      rows.forEach((row, index) => {
+        // First, reset any existing animation to ensure fresh start
+        row.style.animation = 'none';
+        row.offsetHeight; // Trigger reflow
+        
+        // Get original images
+        const originalImages = Array.from(row.querySelectorAll('.testimonial-image'));
+        
+        // Clear any existing clones to avoid duplication
+        row.querySelectorAll('.clone-image').forEach(clone => clone.remove());
+        
+        // Clone all images and append to create continuous loop effect
+        originalImages.forEach(image => {
+          const clone = image.cloneNode(true);
+          clone.classList.add('clone-image');
+          row.appendChild(clone);
+        });
+        
+        // Preload images before starting animation
+        const allImages = row.querySelectorAll('img');
+        preloadImages(allImages).then(() => {
+          // Reset the appropriate animation
+          row.style.animation = index === 0 
+            ? 'scroll-left 30s linear infinite'
+            : 'scroll-right 30s linear infinite';
+          
+          // Calculate the total content width and adjust animation speed
+          const totalWidth = row.scrollWidth / 2; // Half because we have duplicated content
+          const speed = Math.max(totalWidth / 60, 20); // Minimum 20s, adjust divisor for speed
+          row.style.animationDuration = `${speed}s`;
+        });
+        
+        // Add pause on hover functionality
+        row.addEventListener('mouseenter', () => {
+          row.style.animationPlayState = 'paused';
+        });
+        
+        row.addEventListener('mouseleave', () => {
+          row.style.animationPlayState = 'running';
+        });
+      });
+    }
+    
+    // Initialize on page load and window resize for responsive behavior
+    window.addEventListener('load', setupTestimonialsCarousel);
+    window.addEventListener('resize', setupTestimonialsCarousel);
 
     // Initialize Lucide icons (existing)
     lucide.createIcons();
