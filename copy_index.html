@@ -479,6 +479,129 @@
       right: 0;
       background: linear-gradient(to left, rgba(249, 250, 251, 1), rgba(249, 250, 251, 0));
     }
+    /* Responsive styles for mobile devices */
+    @media (max-width: 768px) {
+      html, body {
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+      }
+      body {
+        min-width: 0;
+        padding: 0 0 60px 0;
+      }
+      section, .bg-white {
+        border-radius: 0;
+        margin-bottom: 18px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        box-shadow: none;
+      }
+      .max-w-7xl, .mx-auto, .px-4, .sm\:px-6, .lg\:px-8 {
+        max-width: 100vw !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+      }
+      .nav-link {
+        font-size: 1.1em;
+        padding: 10px 0;
+        display: block;
+      }
+      nav.fixed {
+        position: static;
+        box-shadow: none;
+      }
+      .h-16 {
+        height: 48px !important;
+      }
+      .hero-highlight-container {
+        min-height: 300px;
+        height: auto !important;
+        padding: 24px 0 12px 0;
+      }
+      .fade-in {
+        padding: 8px 0;
+      }
+      .timeline-item {
+        padding-left: 18px;
+      }
+      .testimonial-image {
+        width: 98vw !important;
+        max-width: 340px !important;
+        height: 180px !important;
+      }
+      .testimonials-row {
+        gap: 12px;
+        padding: 10px 0;
+      }
+      .testimonials-shade-left, .testimonials-shade-right {
+        width: 40px;
+      }
+      h1 {
+        font-size: 2em !important;
+      }
+      h2 {
+        font-size: 1.4em !important;
+      }
+      h3 {
+        font-size: 1.1em !important;
+      }
+      .inline-flex.bg-primary, .toast-action {
+        padding: 8px 14px;
+        font-size: 1em;
+      }
+      .capability-tabs {
+        flex-direction: row;
+        overflow-x: auto;
+        border-bottom: 1px solid #e5e7eb;
+      }
+      .capability-tab {
+        flex-direction: column;
+        padding: 10px 8px;
+        min-width: 90px;
+      }
+      .capability-tab span {
+        font-size: 0.95em;
+      }
+      .tab-icon {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 6px;
+      }
+      .aspect-w-16 {
+        padding-bottom: 60%;
+      }
+      .toast {
+        min-width: 180px;
+        max-width: 95vw;
+        padding: 10px 8px;
+      }
+      .toast-title {
+        font-size: 1em;
+      }
+      .toast-description {
+        font-size: 0.93em;
+      }
+      .toast-container {
+        bottom: 10px;
+        right: 10px;
+        gap: 6px;
+      }
+    }
+
+    /* Optional: Hide scrollbars on mobile for horizontal sections */
+    @media (max-width: 768px) {
+      .capability-tabs::-webkit-scrollbar,
+      .testimonials-row::-webkit-scrollbar {
+        display: none;
+      }
+      .capability-tabs,
+      .testimonials-row {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    }
   </style>
 </head>
 <body class="bg-white">
