@@ -1,0 +1,81 @@
+---
+description: Overview of the personal resume website structure and architecture
+globs: 
+alwaysApply: false
+---
+# Personal Resume Website - Project Overview
+
+This is a personal resume/portfolio website for Sui Qian, a Senior Internet Product Manager and Technical Product Leader with 9 years of experience, specializing in AI and IoT solutions. The website showcases professional experience, projects, achievements, and skills in a modern, interactive format.
+
+## Project Structure
+
+- [copy_index.html](mdc:copy_index.html): The main HTML file containing the entire website structure, styling, and scripts.
+- `public/`: Directory containing all static assets:
+  - `img/`: Contains personal and project images
+  - `company_icon/`: Contains company logos (Alibaba, Alibaba Cloud)
+  - `timeline/`: Timeline-related images organized by experience sections
+  - `row_1/` and `row_2/`: Images for the testimonials carousel
+
+## Technical Stack
+
+- **HTML5**: Semantic markup for content structure
+- **CSS3**: Custom styling with responsive design principles
+- **JavaScript**: Interactive features and animations
+- **Tailwind CSS**: Utility-first CSS framework (loaded via CDN)
+- **Font Awesome**: Icon library for basic icons
+- **Lucide Icons**: Additional icon library for detailed icons
+- **ECharts**: Data visualization library
+- **Google Analytics**: Website traffic tracking
+- **Google Fonts**: Custom typography (Pacifico)
+
+## Website Sections
+
+1. **Navigation**: Fixed top navigation bar with links to main sections
+2. **Hero Section**: Introduction featuring name, title, experience highlights, company logos, and call-to-action
+3. **Product Videos**: YouTube video showcase of professional projects and achievements
+4. **Projects**: Selected owner projects including Smart Cockpit Solution, Hybrid AI Service Desk, and Warehouse Video Intelligent Inspection
+5. **About Me**: Personal introduction, capability map with interactive tabs, and work history
+6. **Experience**: Professional experience timeline with detailed job descriptions and image galleries
+7. **Achievements & Patents**: Patent information, statistics, and industry impact
+8. **Education**: Academic background showing degrees and institutions
+9. **Contact**: Contact information including email, phone, and LinkedIn profile
+10. **Testimonials Album**: Auto-scrolling image carousel showcasing work examples
+11. **Footer**: Site footer with contact information and quick links
+
+## Design System
+
+The website uses a dark theme with the following key design elements:
+
+- **Color Palette**: 
+  - Primary blue (#2563eb)
+  - Dark backgrounds (#15171a, #23262b)
+  - Light text (#f4f4f5, #e0e7ef)
+  - Highlight colors for skills, achievements, etc.
+- **Typography**: 
+  - System fonts for content
+  - Pacifico for the name/logo
+  - Clear hierarchy with different sizes and weights
+- **UI Components**: Cards, timelines, tabs, toast notifications, carousels
+- **Responsive Design**: Adapts to mobile and desktop views with specific breakpoints
+
+## Interactive Features
+
+- **Capability Map Tabs**: Interactive tabs showing different professional capabilities
+- **Timeline Visualization**: Visual representation of work history with image galleries
+- **Toast Notifications**: Pop-up notifications prompting visitors to explore the portfolio
+- **Image Carousel**: Automatic scrolling gallery of work examples that pauses on hover
+- **Fade-in Animations**: Elements smoothly fade in as they enter the viewport
+- **Interactive Hero Highlight**: Mouse movement creates a spotlight effect in the hero section
+- **Image Lightbox**: Modal gallery view with navigation controls for timeline images
+- **Animated Statistics**: Numbers that count up when scrolled into view
+
+## Performance Optimizations
+
+- Responsive images for different device sizes
+- Optimized font loading with preconnect
+- Modern CSS animations with hardware acceleration
+- Efficient event handling with delegation where appropriate
+- Mobile-specific optimizations for touch interfaces
+
+This single-page website efficiently presents Sui Qian's professional background, showcasing his extensive experience at companies like Alibaba and his expertise in AI, IoT, and product management.
+

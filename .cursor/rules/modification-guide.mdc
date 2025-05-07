@@ -1,0 +1,82 @@
+---
+description: Guidelines for modifying and extending the website
+globs: 
+ruleType: agentRequested
+---
+# Website Modification Guide
+
+This document provides guidance on how to modify and extend the personal resume website.
+
+## File Organization
+
+The website currently uses a single HTML file ([copy_index.html](mdc:copy_index.html)) that contains all markup, styles, and scripts. When making changes:
+
+1. For small updates: Modify the relevant section in the HTML file
+2. For larger restructuring: Consider extracting styles and scripts to separate files
+
+## Adding Content
+
+### New Project or Experience
+
+To add a new project or experience:
+
+1. Find the appropriate section (`#projects` or `#experience`)
+2. Copy an existing card/timeline item structure
+3. Update the content, images, and links
+4. For project images, add them to the appropriate folder in `public/`
+
+### New Section
+
+To add a completely new section:
+
+1. Create a new `<section>` element with a unique ID
+2. Follow the existing pattern for section structure (heading, content, cards)
+3. Add a link in the navigation bar if needed
+4. Add any necessary styles to the `<style>` tag
+5. For interactive elements, add required JavaScript to the end of the file
+
+## Styling Changes
+
+### Changing the Theme
+
+The site uses a dark theme with blue accents. To modify the color scheme:
+
+1. Update the Tailwind configuration in the `<script>` tag at the top of the file
+2. Update the custom color variables in the `<style>` tag
+3. Update specific component colors as needed
+
+### Responsive Adjustments
+
+To modify responsive behavior:
+
+1. Check existing media queries in the `<style>` tag (mainly `@media (max-width: 768px)`)
+2. Update or add media queries as needed
+3. Use Tailwind's responsive prefixes for inline responsive styling
+
+## Adding Features
+
+### New Interactive Component
+
+To add a new interactive component:
+
+1. Add the HTML structure in the appropriate section
+2. Add the required CSS to the `<style>` tag
+3. Add the JavaScript functionality in a new `<script>` tag or in the existing script at the bottom
+4. Initialize the component in the `DOMContentLoaded` event listener
+
+### Third-Party Integrations
+
+To add new third-party libraries or services:
+
+1. Add the script or link tag in the `<head>` section
+2. Initialize and configure the service in a new script tag
+3. Make sure to test compatibility with existing features
+
+## Performance Considerations
+
+When modifying the site, keep these performance tips in mind:
+
+1. Optimize images before adding them (compress, proper dimensions)
+2. Minimize JavaScript execution in render-blocking positions
+3. Consider lazy-loading images that are not visible on initial load
+4. Test responsive layouts on various screen sizes

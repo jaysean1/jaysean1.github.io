@@ -1,0 +1,114 @@
+---
+description: Guide to the content organization and structure of the resume website
+globs: 
+ruleType: agentRequested
+---
+# Content Organization Guide
+
+This guide explains how content is organized in Sui Qian's personal resume website.
+
+## Section Structure
+
+Each section in [copy_index.html](mdc:copy_index.html) follows a consistent pattern:
+
+```html
+<section id="section-name" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="fade-in">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-16">Section Title</h2>
+      <!-- Section-specific content -->
+    </div>
+  </div>
+</section>
+```
+
+## Content Types
+
+### Text Content
+
+Text content is structured with clear hierarchy:
+- `<h2>` for section titles
+- `<h3>` for major subsections
+- `<h4>` for card or item titles
+- `<p>` for descriptive text
+- `<ul>` and `<li>` for lists
+
+### Highlight Spans
+
+Special content is highlighted using custom classes:
+- `.highlight-tech`: Technical skills (#60a5fa blue background)
+- `.highlight-skill`: Professional skills (#4ade80 green background)
+- `.highlight-achievement`: Accomplishments (#fbbf24 yellow background)
+- `.highlight-product`: Products built (#a78bfa purple background)
+- `.highlight-company`: Company names (#f472b6 pink background)
+
+Example:
+```html
+<span class="highlight-tech">computer vision</span>
+```
+
+### Timeline Structure
+
+Experience timeline items follow this structure:
+```html
+<div class="timeline-item">
+  <div class="bg-white p-6 rounded-lg shadow-sm">
+    <!-- Company header -->
+    <div class="flex items-start">
+      <!-- Logo and company info -->
+    </div>
+    <!-- Job details -->
+    <div class="mt-4">
+      <!-- Description and achievements -->
+      <!-- Image gallery -->
+    </div>
+  </div>
+</div>
+```
+
+### Project Cards
+
+Project cards follow this structure:
+```html
+<div class="group bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+  <img src="..." alt="..." class="w-full h-48 object-cover">
+  <div class="p-5">
+    <h3 class="text-xl font-semibold text-white mb-2">Project Title</h3>
+    <p class="text-gray-400 text-sm">Project description with highlights</p>
+    <a href="..." class="inline-flex items-center px-4 py-2">Learn More</a>
+  </div>
+</div>
+```
+
+## Image Organization
+
+Images are organized in the `public/` directory with subdirectories:
+- `img/`: General images
+- `company_icon/`: Company logos 
+- `timeline/`: Images organized by work experience section
+- `row_1/` and `row_2/`: Images for the testimonials carousel
+
+## Link Structure
+
+External links follow this pattern:
+```html
+<a href="https://example.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center">
+  Link Text
+  <i data-lucide="external-link" class="w-4 h-4 ml-2"></i>
+</a>
+```
+
+## Icon Usage
+
+The site uses two icon systems:
+1. **Font Awesome** for basic icons: `<i class="fas fa-icon-name"></i>`
+2. **Lucide Icons** for more detailed icons: `<i data-lucide="icon-name"></i>`
+
+## Video Embedding
+
+Videos are embedded as YouTube thumbnails in the Product Videos section:
+```html
+<a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank" class="block relative pb-[56.25%]">
+  <img src="https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg" alt="Video Title" class="absolute inset-0 w-full h-full object-cover" />
+</a>
+```

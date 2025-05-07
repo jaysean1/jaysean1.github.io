@@ -325,7 +325,7 @@
       flex-shrink: 0;
       background-color: #2563eb;
       color: #fff;
-      font-size: 0.85rem;
+      font-size: 1rem;
       font-weight: 600;
       border-radius: 6px;
       padding: 6px 16px;
@@ -337,6 +337,42 @@
     .toast-action:hover {
       background-color: #1d4ed8;
       color: #fff;
+    }
+    
+    /* Toast close button styles */
+    .toast-close {
+      position: absolute;
+      top: 0px; 
+      right: 5px;
+      background: none;
+      border: none;
+      color: #e0e7ef; /* Match text color */
+      font-size: 1.3rem;
+      cursor: pointer;
+      padding: 0;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.2s, color 0.2s;
+      z-index: 2; /* Ensure it's above other elements */
+    }
+
+    .toast-close:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+    
+    /* Ensure action button doesn't overlap with close button */
+    .toast-action {
+      margin-right: 15px; /* Add space for the close button */
+    }
+
+    /* Position adjustment for toast content */
+    .toast-content {
+      padding-right: 50px; /* Make room for close button */
     }
     
     /* Aspect ratio utilities for video embedding */
@@ -659,6 +695,35 @@
       .company-logo span {
         font-size: 0.95rem;
       }
+    }
+    /* Hover effect for timeline images */
+    .timeline-item .timeline-image-wrapper:hover img {
+      transform: scale(1.05);
+    }
+    /* Hover effect for timeline images */
+    .timeline-image-wrapper {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .timeline-image-wrapper:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 16px rgba(20,30,60,0.2);
+    }
+
+    /* Aspect ratio utilities for video embedding */
+    .aspect-w-16 {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+    }
+    
+    .aspect-w-16 iframe,
+    .aspect-w-16 video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
@@ -1098,9 +1163,15 @@
                   <li><strong class="font-bold text-primary">AI-Driven Operations:</strong> Used LLMs for automation, email processing, creative previews, and data-driven content distribution.</li>
                 </ul>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-10 mt-6">
-                  <img src="public/timeline/KOL Manager/image.png" alt="KOL Manager Image 1" class="w-full h-64 object-contain rounded-lg shadow-sm cursor-pointer" onclick="showImagePreview(this)">
-                  <img src="public/timeline/KOL Manager/image copy.png" alt="KOL Manager Image 2" class="w-full h-64 object-contain rounded-lg shadow-sm cursor-pointer" onclick="showImagePreview(this)">
-                  <img src="public/timeline/KOL Manager/image copy 2.png" alt="KOL Manager Image 3" class="w-full h-64 object-contain rounded-lg shadow-sm cursor-pointer" onclick="showImagePreview(this)">
+                  <div class="group bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <img src="public/timeline/KOL Manager/image.png" alt="KOL Manager Image 1" class="w-full h-64 object-contain cursor-pointer" onclick="showImagePreview(this)">
+                  </div>
+                  <div class="group bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <img src="public/timeline/KOL Manager/image copy.png" alt="KOL Manager Image 2" class="w-full h-64 object-contain cursor-pointer" onclick="showImagePreview(this)">
+                  </div>
+                  <div class="group bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <img src="public/timeline/KOL Manager/image copy 2.png" alt="KOL Manager Image 3" class="w-full h-64 object-contain cursor-pointer" onclick="showImagePreview(this)">
+                  </div>
                 </div>
               </div>
             </div>
@@ -1130,10 +1201,18 @@
                   </li>
                 </ul>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-10 mt-6">
-                  <img src="public/timeline/Banma Smart Cockpit Solutions Product Department/image.png" alt="Banma Image 1" class="w-full h-64 object-contain rounded-lg shadow-sm cursor-pointer" onclick="showImagePreview(this)">
-                  <img src="public/timeline/Banma Smart Cockpit Solutions Product Department/image copy.png" alt="Banma Image 2" class="w-full h-64 object-contain rounded-lg shadow-sm cursor-pointer" onclick="showImagePreview(this)">
-                  <img src="public/timeline/Banma Smart Cockpit Solutions Product Department/image copy 2.png" alt="Banma Image 3" class="w-full h-64 object-contain rounded-lg shadow-sm cursor-pointer" onclick="showImagePreview(this)">
-                  <img src="public/timeline/Banma Smart Cockpit Solutions Product Department/image copy 3.png" alt="Banma Image 4" class="w-full h-64 object-contain rounded-lg shadow-sm cursor-pointer" onclick="showImagePreview(this)">
+                  <div class="group bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <img src="public/timeline/Banma Smart Cockpit Solutions Product Department/image.png" alt="Banma Image 1" class="w-full h-64 object-contain cursor-pointer" onclick="showImagePreview(this)">
+                  </div>
+                  <div class="group bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <img src="public/timeline/Banma Smart Cockpit Solutions Product Department/image copy.png" alt="Banma Image 2" class="w-full h-64 object-contain cursor-pointer" onclick="showImagePreview(this)">
+                  </div>
+                  <div class="group bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <img src="public/timeline/Banma Smart Cockpit Solutions Product Department/image copy 2.png" alt="Banma Image 3" class="w-full h-64 object-contain cursor-pointer" onclick="showImagePreview(this)">
+                  </div>
+                  <div class="group bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <img src="public/timeline/Banma Smart Cockpit Solutions Product Department/image copy 3.png" alt="Banma Image 4" class="w-full h-64 object-contain cursor-pointer" onclick="showImagePreview(this)">
+                  </div>
                 </div>
               </div>
             </div>
@@ -1167,11 +1246,21 @@
                   </li>
                 </ul>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-10 mt-6">
-                  <img src="public/timeline/Taobao Consulting Product Department/image copy.png" alt="Taobao Consulting Image 2" class="w-full h-64 object-contain rounded-lg shadow-sm cursor-pointer" onclick="showImagePreview(this)">
-                  <img src="public/timeline/Taobao Consulting Product Department/image copy 2.png" alt="Taobao Consulting Image 3" class="w-full h-64 object-contain rounded-lg shadow-sm cursor-pointer" onclick="showImagePreview(this)">
-                  <img src="public/timeline/Taobao Consulting Product Department/image copy 3.png" alt="Taobao Consulting Image 4" class="w-full h-64 object-contain rounded-lg shadow-sm cursor-pointer" onclick="showImagePreview(this)">
-                  <img src="public/timeline/Taobao Consulting Product Department/image copy 4.png" alt="Taobao Consulting Image 5" class="w-full h-64 object-contain rounded-lg shadow-sm cursor-pointer" onclick="showImagePreview(this)">
-                  <img src="public/timeline/Taobao Consulting Product Department/image copy 5.png" alt="Taobao Consulting Image 6" class="w-full h-64 object-contain rounded-lg shadow-sm cursor-pointer" onclick="showImagePreview(this)">
+                  <div class="group bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <img src="public/timeline/Taobao Consulting Product Department/image copy.png" alt="Taobao Consulting Image 2" class="w-full h-64 object-contain cursor-pointer" onclick="showImagePreview(this)">
+                  </div>
+                  <div class="group bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <img src="public/timeline/Taobao Consulting Product Department/image copy 2.png" alt="Taobao Consulting Image 3" class="w-full h-64 object-contain cursor-pointer" onclick="showImagePreview(this)">
+                  </div>
+                  <div class="group bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <img src="public/timeline/Taobao Consulting Product Department/image copy 3.png" alt="Taobao Consulting Image 4" class="w-full h-64 object-contain cursor-pointer" onclick="showImagePreview(this)">
+                  </div>
+                  <div class="group bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <img src="public/timeline/Taobao Consulting Product Department/image copy 4.png" alt="Taobao Consulting Image 5" class="w-full h-64 object-contain cursor-pointer" onclick="showImagePreview(this)">
+                  </div>
+                  <div class="group bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <img src="public/timeline/Taobao Consulting Product Department/image copy 5.png" alt="Taobao Consulting Image 6" class="w-full h-64 object-contain cursor-pointer" onclick="showImagePreview(this)">
+                  </div>
                 </div>
               </div>
             </div>
@@ -1202,9 +1291,15 @@
                   </li>
                 </ul>
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-10 mt-6">
-                  <img src="public/timeline/Logistics & After-Sales Product Department/image.png" alt="Logistics Image 1" class="w-full h-64 object-contain rounded-lg shadow-sm cursor-pointer" onclick="showImagePreview(this)">
-                  <img src="public/timeline/Logistics & After-Sales Product Department/image copy.png" alt="Logistics Image 2" class="w-full h-64 object-contain rounded-lg shadow-sm cursor-pointer" onclick="showImagePreview(this)">
-                  <img src="public/timeline/Logistics & After-Sales Product Department/image copy 2.png" alt="Logistics Image 3" class="w-full h-64 object-contain rounded-lg shadow-sm cursor-pointer" onclick="showImagePreview(this)">
+                  <div class="group bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <img src="public/timeline/Logistics & After-Sales Product Department/image.png" alt="Logistics Image 1" class="w-full h-64 object-contain cursor-pointer" onclick="showImagePreview(this)">
+                  </div>
+                  <div class="group bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <img src="public/timeline/Logistics & After-Sales Product Department/image copy.png" alt="Logistics Image 2" class="w-full h-64 object-contain cursor-pointer" onclick="showImagePreview(this)">
+                  </div>
+                  <div class="group bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <img src="public/timeline/Logistics & After-Sales Product Department/image copy 2.png" alt="Logistics Image 3" class="w-full h-64 object-contain cursor-pointer" onclick="showImagePreview(this)">
+                  </div>
                 </div>
               </div>
             </div>
@@ -1550,6 +1645,7 @@
             ${description ? `<div class="toast-description">${description}</div>` : ''}
           </div>
           ${action ? `<button class="toast-action">${action.text}</button>` : ''}
+          <button class="toast-close" aria-label="Close">&times;</button>
         `;
         
         toastContainer.appendChild(toast);
@@ -1571,6 +1667,14 @@
           });
         }
 
+        // Add click event to close button
+        const closeButton = toast.querySelector('.toast-close');
+        if (closeButton) {
+          closeButton.addEventListener('click', () => {
+            removeToast(toast);
+          });
+        }
+
         return toast;
       }
       
@@ -1584,7 +1688,7 @@
       function showPortfolioToast() {
         showToast({
           title: 'Looking for more?',
-          description: 'Explore my portfolio and unlock more wonderful projects',
+          description: 'Explore my portfolio and see more projects',
           action: {
             text: 'See',
             url: 'https://www.notion.so/qiansui/Sui-Qian-Portfolio-c6be6c3fe60c420faf915f35f73bb408'
@@ -1677,6 +1781,7 @@
           <div class="toast-description">${description}</div>
         </div>
         ${actionButtonHTML}
+        <button class="toast-close" aria-label="Close">&times;</button>
       `;
 
       if (actionButtonHTML) {
@@ -1717,6 +1822,16 @@
         }
       );
     }
+
+    // Add event listener for the close button
+    document.addEventListener('click', function(event) {
+      if (event.target.classList.contains('toast-close')) {
+        const toast = event.target.closest('.toast');
+        if (toast) {
+          removeToast(toast);
+        }
+      }
+    });
 
     // **NEW** Hero Highlight Mouse Tracking
     const heroSection = document.getElementById('home');

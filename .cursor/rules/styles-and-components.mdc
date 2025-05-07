@@ -1,0 +1,79 @@
+---
+description: Guide to the styling patterns and components used in the website
+globs: 
+ruleType: agentRequested
+---
+# Styling and Components Guide
+
+The website uses Tailwind CSS (via CDN) with custom styling for components and animations.
+
+## CSS Structure
+
+All styles are contained within the `<style>` tag in [copy_index.html](mdc:copy_index.html):
+
+- Base styles (body, html)
+- Navigation styles
+- Section styles
+- Animation styles (fade-in, etc.)
+- Component-specific styles
+- Responsive media queries
+
+## Key Components
+
+### Cards
+
+Cards are used throughout the site for projects, experiences, and capabilities:
+- Background color: #23262b
+- Border-radius: 18px or 12px
+- Box-shadow for depth
+- Hover effects with scale transform
+
+### Timeline
+
+The experience timeline has:
+- Left vertical line (blue)
+- Circle indicators for each entry
+- Cards for content
+- Image galleries organized in grid layouts
+
+### Capability Map Tabs
+
+Interactive component with:
+- Sidebar tabs on desktop, horizontal scrolling tabs on mobile
+- Content panes that swap on tab click
+- Active state indicators (left border on desktop, bottom border on mobile)
+
+### Toast Notifications
+
+Pop-up notification system with:
+- Container positioned at bottom-right
+- Animated entry/exit
+- Title, description, and action button
+- Close button
+
+### Testimonials Carousel
+
+Auto-scrolling image showcase with:
+- Two rows scrolling in opposite directions
+- Automatic duplication of images for continuous scroll
+- Pause on hover
+- Gradient shading at edges
+
+## Responsive Design
+
+Mobile optimizations include:
+- Font size adjustments
+- Section padding and margin reductions
+- Layout shifts (multi-column to single-column)
+- Scrollable horizontal elements
+- Reduced animation complexity
+
+## JavaScript Functionality
+
+The site includes several interactive features:
+- Intersection Observer for fade-in animations
+- Animated counters for statistics
+- Tab system for capability map
+- Toast notification system
+- Mouse tracking for hero section highlight
+- Image lightbox with navigation

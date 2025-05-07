@@ -1,0 +1,129 @@
+---
+description: Guide to understanding the JavaScript functionality of the website
+globs: 
+ruleType: agentRequested
+---
+# JavaScript Functionality Guide
+
+This guide explains the key JavaScript functionality present in the personal resume website.
+
+## Core JavaScript Functions
+
+The website includes several JavaScript features defined in `<script>` tags at the bottom of [copy_index.html](mdc:copy_index.html):
+
+### Intersection Observer Animation
+
+```javascript
+const fadeElements = document.querySelectorAll('.fade-in');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+});
+fadeElements.forEach(element => {
+  observer.observe(element);
+});
+```
+
+This code creates a fade-in animation when elements with the `.fade-in` class enter the viewport.
+
+### Animated Counters
+
+```javascript
+const countElements = document.querySelectorAll('[data-count]');
+countElements.forEach(element => {
+  const target = parseInt(element.getAttribute('data-count'));
+  // Animation logic for counting up to target number
+});
+```
+
+This feature animates number counting for statistics in the achievements section.
+
+### Capability Map Tabs
+
+```javascript
+const capabilityTabs = document.querySelectorAll('.capability-tab');
+const capabilityContents = document.querySelectorAll('.capability-content');
+
+capabilityTabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    // Logic for showing/hiding content based on selected tab
+  });
+});
+```
+
+This implements the interactive tab system in the capability map section.
+
+### Toast Notifications
+
+```javascript
+function showToast(options) {
+  const { title, description, action } = options;
+  // Logic for creating and displaying toast notifications
+}
+```
+
+This creates and manages the toast notification system used for prompting visitors about the portfolio.
+
+### Hero Section Highlight Effect
+
+```javascript
+const heroSection = document.getElementById('home');
+if (heroSection) {
+  heroSection.addEventListener('mousemove', (e) => {
+    // Logic for tracking mouse movement and creating highlight effect
+  });
+}
+```
+
+This creates the interactive highlight effect that follows the mouse in the hero section.
+
+### Image Carousel/Lightbox
+
+```javascript
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('image-modal');
+  // Logic for implementing image preview and navigation
+});
+```
+
+This implements the lightbox functionality for viewing timeline images with previous/next navigation.
+
+## Initialization
+
+Most JavaScript features are initialized in the `DOMContentLoaded` event listener to ensure the DOM is fully loaded before attempting to access elements:
+
+```javascript
+document.addEventListener('DOMContentLoaded', function() {
+  // Feature initialization
+});
+```
+
+## Lucide Icons Initialization
+
+The website uses Lucide icons which are initialized with:
+
+```javascript
+document.addEventListener('DOMContentLoaded', function() {
+  lucide.createIcons();
+});
+```
+
+## Event Handling
+
+The website uses a mix of event delegation and direct event binding:
+
+- Direct binding for known elements (tabs, carousel controls)
+- Delegation for dynamically created elements (toast close buttons)
+
+## Best Practices When Modifying
+
+When modifying JavaScript functionality:
+
+1. Keep related functionality grouped together
+2. Initialize features after DOM is loaded
+3. Clean up event listeners to prevent memory leaks
+4. Use constants for repeated values
+5. Maintain the existing pattern of progressive enhancement
