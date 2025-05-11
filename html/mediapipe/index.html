@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediaPipe Hand Tracking Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="title">3D Beat Synth</h1>
+  <div class="gesture-guide">
+    <h2>Gesture Guide</h2>
+    <ul>
+      <li><strong>Pinch</strong> - Pinch your thumb and index finger together to trigger sounds</li>
+      <li><strong>Open Hand</strong> - Spread your fingers to control volume</li>
+      <li><strong>Fist</strong> - Close your hand to stop sounds</li>
+      <li><strong>Point</strong> - Extend your index finger to select different sounds</li>
+      <li><strong>Hand Position</strong> - Move your hand in 3D space to control pitch and effects</li>
+    </ul>
+  </div>
+  <div id="webcam-container" draggable="true">
+    <div class="container-header">❖ Camera Feed</div>
+    <video id="webcam" autoplay playsinline></video>
+    <canvas id="overlay"></canvas>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
+ 
