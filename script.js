@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initHeroHighlight();
   initTestimonialsCarousel();
   initImageModal();
+  initCounterAnimations();
   
   // 初始化Lucide图标
   if (typeof lucide !== 'undefined') {
@@ -69,6 +70,35 @@ function initScrollAnimations() {
   // 观察所有需要动画的元素
   document.querySelectorAll('.fade-in').forEach(el => {
     observer.observe(el);
+  });
+}
+
+// 数字计数器动画初始化
+function initCounterAnimations() {
+  const countElements = document.querySelectorAll('[data-count]');
+  countElements.forEach(element => {
+    const target = parseInt(element.getAttribute('data-count'));
+    const duration = 2000;
+    const step = target / (duration / 16);
+    let current = 0;
+    const updateCount = () => {
+      current += step;
+      if (current < target) {
+        element.textContent = Math.floor(current).toLocaleString();
+        requestAnimationFrame(updateCount);
+      } else {
+        element.textContent = target.toLocaleString();
+      }
+    };
+    const countObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          updateCount();
+          countObserver.unobserve(entry.target);
+        }
+      });
+    });
+    countObserver.observe(element);
   });
 }
 
