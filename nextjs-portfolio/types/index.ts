@@ -61,6 +61,32 @@ export interface PersonalInfo {
   }>;
 }
 
+export interface Achievement {
+  id: string;
+  title: string;
+  description: string;
+  value: number;
+  unit: string;
+  category: string;
+}
+
+export interface Patent {
+  id: string;
+  title: string;
+  patentNumber: string;
+  url?: string;
+  description?: string;
+}
+
+export interface Education {
+  id: string;
+  institution: string;
+  degree: string;
+  field: string;
+  duration: string;
+  description?: string;
+}
+
 export interface SiteData {
   personalInfo: PersonalInfo;
   projectVideos: ProjectVideo[];
@@ -72,4 +98,7 @@ export interface SiteData {
     row1: TestimonialImage[];
     row2: TestimonialImage[];
   };
+  achievements: Achievement[];
+  patents: Patent[];
+  education: Education[];
 }

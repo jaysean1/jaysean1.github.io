@@ -38,6 +38,11 @@ export default function Testimonials() {
         const animationName = index === 0 ? 'scroll-left' : 'scroll-right';
         row.style.animation = `${animationName} 30s linear infinite`;
         
+        // Calculate total width and adjust animation speed
+        const totalWidth = row.scrollWidth / 2; // Half because we have duplicated content
+        const speed = Math.max(totalWidth / 60, 20); // Minimum 20s
+        row.style.animationDuration = `${speed}s`;
+        
         // Pause on hover
         row.addEventListener('mouseenter', () => {
           row.style.animationPlayState = 'paused';
@@ -49,7 +54,25 @@ export default function Testimonials() {
       });
     };
 
-    setupCarousel();
+    // Preload images before starting animation
+    const preloadImages = (imageElements: Element[]) => {
+      return Promise.all(Array.from(imageElements).map(imgElement => {
+        const img = imgElement.querySelector('img');
+        if (!img) return Promise.resolve();
+        if (img.complete) return Promise.resolve();
+        return new Promise(resolve => {
+          img.onload = resolve;
+          img.onerror = resolve; // Continue even if some images fail
+        });
+      }));
+    };
+
+    // Wait for images to load, then setup carousel
+    const allImages = document.querySelectorAll('.testimonial-image');
+    preloadImages(Array.from(allImages)).then(() => {
+      setupCarousel();
+    });
+
     window.addEventListener('resize', setupCarousel);
     
     return () => window.removeEventListener('resize', setupCarousel);
@@ -60,46 +83,46 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeInSection>
           {/* Testimonials Carousel Container */}
-          <div className="relative w-full overflow-hidden py-5 mb-10">
+          <div className="testimonials-carousel-container">
             {/* First Row */}
-            <div ref={row1Ref} className="flex gap-5 py-5 px-20 overflow-hidden w-fit mb-5">
+            <div ref={row1Ref} className="testimonials-row">
               {testimonialImages.row1.map((image, index) => (
                 <div
                   key={index}
-                  className="testimonial-image flex-shrink-0 w-[480px] h-80 overflow-hidden rounded-xl shadow-md bg-gray-100"
+                  className="testimonial-image"
                 >
                   <Image
                     src={image.src}
                     alt={image.alt}
                     width={480}
                     height={320}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                    className="object-cover"
                   />
                 </div>
               ))}
             </div>
             
             {/* Second Row */}
-            <div ref={row2Ref} className="flex gap-5 py-5 px-20 overflow-hidden w-fit">
+            <div ref={row2Ref} className="testimonials-row">
               {testimonialImages.row2.map((image, index) => (
                 <div
                   key={index}
-                  className="testimonial-image flex-shrink-0 w-[480px] h-80 overflow-hidden rounded-xl shadow-md bg-gray-100"
+                  className="testimonial-image"
                 >
                   <Image
                     src={image.src}
                     alt={image.alt}
                     width={480}
                     height={320}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                    className="object-cover"
                   />
                 </div>
               ))}
             </div>
             
             {/* Gradient overlays */}
-            <div className="absolute top-0 bottom-0 left-0 w-30 pointer-events-none z-10 bg-gradient-to-r from-card to-transparent"></div>
-            <div className="absolute top-0 bottom-0 right-0 w-30 pointer-events-none z-10 bg-gradient-to-l from-card to-transparent"></div>
+            <div className="testimonials-shade-left"></div>
+            <div className="testimonials-shade-right"></div>
           </div>
         </FadeInSection>
       </div>

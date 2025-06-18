@@ -153,15 +153,48 @@ export const siteData: SiteData = {
       companyUrl: "https://www.ebanma.com/",
       achievements: [
         "Merchant Support Chatbot: Supported 20,000 daily conversations, with 80% resolved by AI.",
-        "Taobao Hybrid Service Desk: Created 110,000 job opportunities, serving 50+ international enterprises."
+        "AI-Hybrid Service Desk: Served over 50 international enterprises, achieving product sales of over 21,000,000 RMB.",
+        "Inclusive Product For Disabled: Created 110,000 job opportunities for disabled individuals, saving $2M per month."
       ],
       images: [
-        "/images/timeline/Taobao Consulting Product Department/image.png",
         "/images/timeline/Taobao Consulting Product Department/image copy.png",
         "/images/timeline/Taobao Consulting Product Department/image copy 2.png",
         "/images/timeline/Taobao Consulting Product Department/image copy 3.png",
-        "/images/timeline/Taobao Consulting Product Department/image copy 4.png"
+        "/images/timeline/Taobao Consulting Product Department/image copy 4.png",
+        "/images/timeline/Taobao Consulting Product Department/image copy 5.png"
       ]
+    },
+    {
+      id: "alibaba-logistics",
+      company: "Alibaba Group - Logistics & After-Sales Product Department",
+      position: "Product Expert",
+      duration: "Mar 2016 - Sept 2018",
+      location: "Hangzhou",
+      description: "Product Expert: Provided logistics and after-sales solutions for platform merchants.",
+      companyLogo: "/images/company-icons/alibaba.png",
+      achievements: [
+        "Warehouse Video Intelligent Inspection Solution: Sold 50,000 units, saving $24M annually, and filed a technology patent.",
+        "Logistics Service AI Plugin: Integrated with ERP systems to send over 60,000 abnormal logistics alerts daily, reducing refund rates by 30%."
+      ],
+      images: [
+        "/images/timeline/Logistics & After-Sales Product Department/image.png",
+        "/images/timeline/Logistics & After-Sales Product Department/image copy.png",
+        "/images/timeline/Logistics & After-Sales Product Department/image copy 2.png"
+      ]
+    },
+    {
+      id: "alibaba-security",
+      company: "Alibaba Group - Transaction Security Product Department",
+      position: "Product Manager",
+      duration: "Nov 2014 - Mar 2016",
+      location: "Hangzhou",
+      description: "Product Manager: Responsible for identifying high-risk transactions and providing VIP services.",
+      companyLogo: "/images/company-icons/alibaba.png",
+      achievements: [
+        "Risk Transaction Prevention Product: Detected an average of 1,000,000 high-risk orders per month with a 20% automated processing rate.",
+        "VIP Service Product: Provided dedicated account managers for the top 200 core merchants on the Alibaba platform."
+      ],
+      images: []
     }
   ],
   
@@ -217,6 +250,68 @@ export const siteData: SiteData = {
         "My implemented smart cockpit and warehouse systems demonstrate my IoT integration capabilities. Through developing chatbots, voice assistants, and intelligent video analysis systems.",
         "Personal projects of mine have developed OOTD assistant, Storyboard AI, and Golden Relationship Assistant using current large language models (LLMs). I have a profound understanding of current large language models."
       ]
+    }
+  ],
+  
+  achievements: [
+    {
+      id: "product-sales",
+      title: "Product Sales",
+      description: "Total revenue generated from product sales",
+      value: 21000000,
+      unit: "RMB",
+      category: "financial"
+    },
+    {
+      id: "device-coverage",
+      title: "In-Vehicle Device Coverage",
+      description: "Smart cockpit cloud application deployed devices",
+      value: 200000,
+      unit: "devices",
+      category: "technical"
+    },
+    {
+      id: "job-opportunities",
+      title: "Job Opportunities",
+      description: "Employment opportunities created for disabled individuals",
+      value: 110000,
+      unit: "jobs",
+      category: "social"
+    },
+    {
+      id: "warehouse-units",
+      title: "Warehouse Units Sold",
+      description: "Intelligent inspection system units sold",
+      value: 50000,
+      unit: "units",
+      category: "commercial"
+    }
+  ],
+  
+  patents: [
+    {
+      id: "information-processing",
+      title: "Information Processing Method and Device & Electronic Device",
+      patentNumber: "CN113327114A",
+      url: "https://eureka.patsnap.com/patent-CN113327114A",
+      description: "Technology patent for intelligent inspection and automation systems"
+    }
+  ],
+  
+  education: [
+    {
+      id: "master-degree",
+      institution: "Zhejiang University of Technology",
+      degree: "Master of Applied Economics",
+      field: "Applied Economics",
+      duration: "Sep 2012 - Apr 2015"
+    },
+    {
+      id: "bachelor-degree",
+      institution: "Zhejiang University of Technology Zhijiang College",
+      degree: "Bachelor's Degree",
+      field: "International Economics and Trade",
+      duration: "Sep 2008 - Sep 2012"
     }
   ],
   
