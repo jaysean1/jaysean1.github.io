@@ -10,11 +10,12 @@
 • 9 years of experience as a Technical Product Leader, expertise in AI and IoT solutions.  
 • Led the merchant support service on Alibaba. The product sales reached 21 million RMB, providing services including smart logistics solutions to over 50 leading companies.  
 • Designed smart cockpit solutions, the cloud applications have been installed on 200,000 in-vehicle devices.  
-• Created over 110,000 job opportunities for people with disabilities.
+• Created over 110,000 job opportunities for people with disabilities.  
+• 5 years participating in Alibaba Hackathon, holding national technology patents.
 
 ## Work Experience
 
-### Independent Developer - AI Software Applications & Consulting Services (Remote) | May 2021 - Present
+### Independent Developer - AI Software Applications & Consulting Services (Remote) | Oct 2023 - Present
 
 AI Software Development and Paid Consulting Services，with 12K ARR.
 
