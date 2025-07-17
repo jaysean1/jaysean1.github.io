@@ -560,9 +560,9 @@
         height: 48px !important;
       }
       .hero-highlight-container {
-        min-height: 300px;
+        min-height: 280px;
         height: auto !important;
-        padding: 24px 0 12px 0;
+        padding: 72px 0 12px 0;
       }
       .fade-in {
         padding: 8px 0;
@@ -646,6 +646,15 @@
         scrollbar-width: none;
       }
     }
+    
+    /* 针对低高度设备的媒体查询 */
+    @media (max-height: 500px) {
+      .hero-highlight-container {
+        min-height: 200px !important;
+        padding: 60px 0 8px 0 !important;
+      }
+    }
+    
     /* 企业 logo 容器样式 */
     .company-logos {
       display: flex;
@@ -749,7 +758,7 @@
   </nav>
 
   <!-- Home / Hero Section -->
-  <section id="home" class="relative h-[60vh] flex items-center justify-center bg-[#191c20] hero-highlight-container group">
+  <section id="home" class="relative min-h-[calc(75vh-4rem)] pt-20 flex items-center justify-center bg-[#191c20] hero-highlight-container group">
     <div class="dot-pattern"></div>
     <div class="mouse-highlight"></div>
     <!-- Removed background image and gradient overlay -->
