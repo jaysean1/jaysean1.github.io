@@ -1,0 +1,270 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+%\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=false,
+linkcolor=black,
+urlcolor=black,
+citecolor=black,
+anchorcolor=black,
+filecolor=black,
+menucolor=black,
+runcolor=black,
+allcolors=black,
+pdfborder={0 0 1},
+pdfborderstyle={/S/U/W 1}
+}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.25in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.5in}
+
+%\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-6pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{}
+\newcommand{\resumeSubHeadingListEnd}{}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Sui Qian} & Email: \href{mailto:jaysean.qian@gmail.com}{jaysean.qian@gmail.com}\\
+  Portfolio\href{https://jaysean1.github.io/}{ jaysean1.github.io} & Mobile:~~~+86-159-8817-1024 \\
+  Project\href{https://qiansui.notion.site/Sui-Qian-Portfolio-c6be6c3fe60c420faf915f35f73bb408}{ qiansui.notion.site} & \\
+\end{tabular*}
+
+%-----------SUMMARY-----------------
+\section{Summary}
+\begin{itemize}[leftmargin=*]
+
+  \item{Led the merchant support service on Alibaba. The product sales reached 21 million RMB, providing services including smart logistics solutions to over 50 leading companies.}
+  \vspace{-5pt}
+ \item{Designed smart cockpit solutions, the cloud applications have been installed on 200,000 in-vehicle devices.}
+\vspace{-5pt}
+\item{Created over 110,000 job opportunities for people with disabilities.}
+\vspace{-5pt}
+\item{5 years participating in Alibaba Hackathon, holding national technology patents.}
+
+
+\end{itemize}
+%     \resumeSubItem{Mac Setup}
+%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+
+%-----------work EXPERIENCE-----------------
+\vspace{-15pt}
+\section{Work Experience}
+
+\resumeSubHeadingListStart
+\resumeSubheading{Independent Developer - AI Software Applications \& Consulting Services}{Remote}
+  {AI Software Development and Paid Consulting Services, with 12K ARR.}{Oct 2023 - present}
+  \resumeItemListStart
+    \resumeItem{Product Development Portfolio}
+      {Developed multiple AI-powered applications including job-seeker (automated job application system), auto-fill (chrome extension), capcam (ios app), and various custom AI solutions for business automation and productivity enhancement.}
+    \resumeItem{Paid Consulting for Social Media Influencers}
+      {Provided specialized consulting services to social media influencers, developing custom software systems to optimize workflow efficiency, including business collaboration automation, personalized LoRA package customization for content creation, and AI-driven operation tools.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+      {Alibaba Cloud - Banma Smart Cockpit Solutions Product Department }{Shanghai, China} {Product Leader of In-Vehicle Interactive Cloud Application \& Intelligent Voice Assistant}{May 2021 - Oct 2023}
+      \resumeItemListStart
+      \item {{\textbf{In-Vehicle Citylife Service Cloud Application:}}}
+      {Covered 200,000 in-vehicle devices, with 10\% average weekly active users rate. \href{https://bmgw.oss-cn-shanghai.aliyuncs.com/%E5%AA%92%E4%BD%93%E8%B5%84%E6%96%99%E5%BA%93/%E5%AA%92%E4%BD%93%E8%B5%84%E6%96%99%E5%BA%932-%20%E7%82%B9%E5%92%96%E5%95%A1.mp4}{[promotion video]}\href{https://bmgw.oss-cn-shanghai.aliyuncs.com/%E5%AA%92%E4%BD%93%E8%B5%84%E6%96%99%E5%BA%93/%E5%AA%92%E4%BD%93%E8%B5%84%E6%96%99%E5%BA%933-%20%E5%8A%A0%E6%B2%B9.mp4}{ [demo video]}}
+      \vspace{-5pt}
+       \item {\textbf{In-Vehicle AI Voice Assistant:}} 
+      {Developed for LS6 engineering vehicles and exhibited at \textit{Chengdu International Auto Show}. Features include office assistance and traffic violation identification. }
+      \resumeItemListEnd
+
+\vspace{5pt}
+ \resumeSubheading
+      {Alibaba.inc - Taobao Consulting Product Department
+}{Hangzhou, China} {Product Leader - Taobao Platform Consulting Services Product}{Sept 2018 - May 2021}
+      \resumeItemListStart
+      \item {{\textbf{Merchant Support Chatbot}:}}
+      {Supported 20,000 daily conversations, 80\% resolved by AI.\href{https://xixikf.com/}{ [website]}}
+          \vspace{-5pt}
+       \item {{\textbf{AI-Hybrid Service Desk}:}}
+      {Provided services to over 50 international enterprises, resolving the remaining 20\% of customer inquiries through AI assistance, with product sales exceeding 21 million.\href{    https://xixikf.com/xixi.htm#/customer-service}{ [website]}}
+        \vspace{-5pt}
+       \item {{\textbf{Inclusive Product For Disabled}:}}
+      {Provided employment opportunities for 110,000 disabled people, saved \$2M/month in costs. \href{https://baike.baidu.com/item/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E4%BA%91%E5%AE%A2%E6%9C%8D/52704969?fr=ge_ala}{[website]}}
+      \resumeItemListEnd
+
+\vspace{5pt}
+
+\resumeSubheading {Alibaba.inc - Logistics \& After-Sales Product Department
+}{Hangzhou, China} {Product Expert - Provided logistics and after-sales products to platform merchants}{Mar 2016 - Sept 2018}
+      \resumeItemListStart
+      \item {{\textbf{Warehouse Video Intelligent Inspection Solution}:}}
+      {Sold 50,000 units, saved \$24M costs annually, filed technology patent. \href{https://gtxwsy.yuque.com/gtxwsy/miv5ag/ih3dqq?}{[demo video]}}
+          \vspace{-5pt}
+       \item {\textbf{Logistics Service AI Plugin}:}
+      {Integrated the ERP systems, sending over 60,000 abnormal logistics reminders to merchants daily, reducing Alibaba consumers refund rates by 30\%. \href{https://aligenius.taobao.com/}{[website]}}
+      \resumeItemListEnd      
+\vspace{5pt}
+
+\resumeSubheading
+      {Alibaba.inc - Transaction Security Product Department}{Hangzhou, China} {Product Manager - Identified risky transactions and provided VIP  service}{Nov 2014 - Mar 2016}
+      \resumeItemListStart
+      \item {\textbf{Risk Transaction Prevention Product:}}
+      {Identified 1 million high-risk orders on average per month, with an automated processing rate reaching 20\%. }
+        \vspace{-5pt}
+       \item {\textbf{VIP Service Product}:}
+      {Provided dedicated account managers for top 200 core merchants on Alibaba platform. \href{http://alikey.tmall.com/}{[website]}}
+      \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{5pt}
+
+%-----------PATENTS-----------------
+\section{Patents}
+\begin{itemize}[leftmargin=*]
+  \item {\textbf{Sui Qian}, F. Xiao, W. Bin; \textbf{\href{https://eureka.patsnap.com/patent-CN113327114A}{Information processing method and device and electronic device}}; {\\CN113327114A} (Pending)}
+  
+  {An information processing method and a technology of terminal equipment, which are applied in the fields of information processing methods, devices and electronic equipment, and can solve the problems of high business processing pressure and the like.}
+\end{itemize}
+
+
+
+\vspace{5pt}
+
+
+%-----------PROJECTS----------------
+\vspace{5pt}
+
+\section{Selected Owned Products}
+  \resumeSubHeadingListStart
+   \resumeSubheading{Car Intelligent Cockpit}{Banma AliOS}{Product Leader }{Dec 2022 - Sep 2023}
+    \resumeItemListStart
+        \resumeItem{Visual Perception-Based Identification of Traffic Violations}
+        {Developed a combined software and hardware product: identify illegal lane change by RANSAC Algorithm; recorde traffic violations by vehicle-mounted camera; automatically generate violation reports for vehicle owners to submitted to transportation authorities at one click. }
+          \resumeItem{AI Voice Assistance for In-Vehicle Office Work}
+          {Provided a seamless cross-device in-transit working experience by integrating office software suites on smartphone, in-vehicle display and laptops. Realized intelligent generation of work information summaries, email replies, and to-do processing, etc., through voice control.}
+      \resumeItemListEnd
+\vspace{5pt}
+
+   \resumeSubheading{AI-Hybrid Service Desk \href{https://gtxwsy.yuque.com/gtxwsy/miv5ag/ih3dqq?}{[website]}}{Alibaba}
+    {Product Expert}{Dec 2019 - Sep 2021}
+    \resumeItemListStart
+        \resumeItem{Crowdsourcing Mode}
+        {Utilized a social crowdsourcing model to automatically allocate 200K daily manual consultations to the public, reducing enterprise costs by 2M monthly.}
+          \resumeItem{AI-based Intent Classification Algorithm}
+          {Categorized 200,000 daily manual consultations by RNN intent identification algorithm, accurately distributing them to appropriate skill groups with 90\% precision.}
+          \resumeItem{Social Impact}
+          {Provided employment opportunities for over 110,000 people with disabilities.}
+      \resumeItemListEnd
+
+\vspace{5pt}
+
+
+  
+   \resumeSubheading{Warehouse Video Intelligent Inspection Solution \href{https://gtxwsy.yuque.com/gtxwsy/miv5ag/ih3dqq?}{[website]}
+}{Alibaba}
+    {Product Expert}{May 2021 - May 2022}
+    \resumeItemListStart
+        \resumeItem{IOT Creative Solution}
+          {Identified potential issues with efficiency and safety in e-commerce merchant refund logistics. Utilized intelligent hardware barcode scanners combined with warehouse management to upgrade 10\% return acceptance efficiency.}
+           \resumeItem{Rapid Prototype}
+          {Completed a functional prototype within 1 month. Led and coordinated 4 technical teams for joint debugging, fully validating the feasibility and efficacy of the idea.}
+          \resumeItem{Business Implementation}
+          {Launched a pilot program with leading retailer, Adidas, iterating IoT solutions. Sold over 50,000 units, 15,000,000 Yuan.}
+        
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+
+\vspace{5pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Zhejiang University of Technology}{Hangzhou, China}
+      {Master of Applied Economics}{Sep 2012 - Apr 2015}
+        \vspace{10pt}   
+    \resumeSubheading
+      {Zhejiang University of Technology Zhijiang College}{Hangzhou, China}
+      {Bachelor's Degree in International Economics and Trade}{Sep 2008 - Sep 2012}
+
+
+  \resumeSubHeadingListEnd
+\vspace{10pt}
+
+%-------------------------------------------
+%-----------publicantion-----------------
+\section{Publications}
+\begin{itemize}[leftmargin=*]
+\item {Wang, Q.X, \textbf{Qian, S}, \& Pang, Y(2017). The changing relationship between industrialization and urbanization in China under environmental constraints: An efficiency analysis perspective. Geographical Sciences, 37(1), 92-101.}
+
+\vspace{-5pt}
+\item {\textbf{Qian, S}. (2014). Efficiency of China's industrialization and urbanization under environmental constraints (Master's thesis). Zhejiang University of Technology, China.}
+\vspace{-5pt}
+\item {Wu, T. \textbf{Qian, S}. (2014). Factors influencing labor income percentage of GDP: Empirical evidence from Chinese provincial panel data. Modern Marketing (Late Edition), (06).}
+\vspace{-5pt}
+\item {\textbf{Qian, S}. Wu, T. (2014). Mechanisms and impacts of industrialization driving urbanization in China. Modern Marketing (Late Edition), (06).}
+
+\end{itemize}
+
+
+
+\end{document}
