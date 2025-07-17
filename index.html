@@ -426,6 +426,44 @@
     .hero-highlight-container:hover .mouse-highlight {
       opacity: 1;
     }
+    
+    /* Hero Image Glow and Tooltip Styles */
+    .hero-image-link {
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .hero-image {
+      transition: all 0.3s ease;
+      box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+    }
+    
+    .hero-image-link:hover .hero-image {
+      box-shadow: 0 0 30px rgba(99, 102, 241, 0.6), 0 0 40px rgba(99, 102, 241, 0.4);
+      transform: scale(1.02);
+    }
+    
+    .hero-image-tooltip {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+    }
+    
+    .hero-image-link:hover .hero-image-tooltip {
+      opacity: 1;
+    }
     .text-highlight {
       position: relative;
       display: inline-block;
@@ -645,6 +683,21 @@
         -ms-overflow-style: none;
         scrollbar-width: none;
       }
+      
+      /* Hero Image Mobile Responsive */
+      .hero-image {
+        box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+      }
+      
+      .hero-image-link:hover .hero-image {
+        box-shadow: 0 0 20px rgba(99, 102, 241, 0.5), 0 0 30px rgba(99, 102, 241, 0.3);
+        transform: scale(1.01);
+      }
+      
+      .hero-image-tooltip {
+        font-size: 13px;
+        padding: 6px 12px;
+      }
     }
     
     /* 针对低高度设备的媒体查询 */
@@ -788,7 +841,10 @@
         </div>
         <!-- 右侧图片 -->
         <div class="w-full lg:w-1/2 flex justify-center items-center h-full">
-          <img src="public/img/ChatGPT Image 2025年4月27日 10_16_47.png" alt="Hero Image" class="max-w-md w-full h-[320px] lg:h-[380px] rounded-2xl shadow-lg object-cover" style="border:none;">
+          <a href="https://jaysean1.github.io/terminal_website/" target="_blank" rel="noopener noreferrer" class="hero-image-link relative block">
+            <img src="public/img/ChatGPT Image 2025年4月27日 10_16_47.png" alt="Hero Image" class="max-w-md w-full h-[320px] lg:h-[380px] rounded-2xl shadow-lg object-cover hero-image" style="border:none;">
+            <div class="hero-image-tooltip">see in terminal</div>
+          </a>
         </div>
       </div>
     </div>
