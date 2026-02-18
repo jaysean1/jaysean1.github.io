@@ -4,12 +4,22 @@
 **Mobile:** +86-159-8817-1024  
 
 ## SUMMARY
-- 9 years of experience as a Technical Product Leader, expertise in AI and IoT solutions.
+- 12+ years of experience as a Technical Product Leader, expertise in AI and logistics solutions.
+- Leading product strategy for Australia's largest freight marketplace at Loadshift, serving tens of thousands of shippers and carriers, with over 160K loads posted and 34M+ km of freight transported across Australia.
 - Led the merchant support service on Alibaba. The product sales reached 21 million RMB, providing services including smart logistics solutions to over 50 leading companies.
 - Designed smart cockpit solutions, the cloud applications have been installed on 200,000 in-vehicle devices.
 - Created over 110,000 job opportunities for people with disabilities.
 
 ## WORK EXPERIENCE
+
+### Loadshift (Freelancer.com) - Australia's Largest Trucking Marketplace
+**Sydney, Australia**
+**Technical Product Manager (Lead Product Owner)**
+**Jul 2025 - Present**
+- **Platform Scale:** Leading product strategy for Australia's largest freight marketplace, connecting tens of thousands of shippers and carriers, with over 160K loads posted and 34M+ km of freight distance covered.
+- **AI-Driven Efficiency:** Driving AI initiatives to automate heavy follow-up workflows for awarded jobs, freeing ops capacity to recover unawarded jobs lost to competitors, improving award rate optimization.
+- **User Retention & acquisition:** Designing new carrier membership model and AI-powered smart lead exploration to boost platform user engagement and reactivation.
+- **Enterprise & Growth:** Spearheading enterprise client product support and growth strategy, including enterprise analytics, reporting tools, and dedicated account management.
 
 ### Alibaba Cloud - Banma Smart Cockpit Solutions Product Department  
 **Shanghai, China**  
