@@ -6,60 +6,68 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is Sui Qian's personal resume portfolio website hosted on GitHub Pages. The repository contains:
 
-1. **Main Portfolio Website** (`index.html`) - A comprehensive HTML/CSS/JavaScript personal resume website with dark theme (legacy static site, currently active)
+1. **Main Portfolio Website** (root files) - A refactored static site with separated CSS, JS, and JSON content management
 2. **Interactive MediaPipe Demo** (`html/mediapipe/`) - A 3D hand tracking application using MediaPipe and Three.js
 
-> **Note:** The `nextjs-portfolio/` folder exists in the repository but is not the active site. The currently deployed website is `index.html` (legacy static version).
+> **Note:** The `nextjs-portfolio/` folder exists in the repository but is not the active site. The `legacy-static/` folder contains the old single-file reference. The currently active site uses the refactored multi-file structure at the root.
 
-## Legacy Static Website Structure
-- **Single-page application** built with vanilla HTML, CSS, and JavaScript
-- **Dark theme** with custom styling (`#15171a` background, `#23262b` section backgrounds)
-- **External dependencies**: TailwindCSS (CDN), Font Awesome, ECharts, Lucide Icons, Google Fonts
-- **Analytics**: Google Analytics integration (gtag.js)
-- **Responsive design** with smooth scrolling and fade-in animations
+## Website Architecture (Current)
 
-## MediaPipe Demo Structure
-- **Interactive 3D visualization** using Three.js and MediaPipe Hands
-- **Real-time hand tracking** with gesture controls:
-  - Right hand pinch controls sphere size
-  - Right hand rotation controls sphere rotation
-  - Left hand index finger touch changes sphere color
-- **Draggable camera feed** overlay with hand landmarks visualisation
-- **Smooth animations** with configurable smoothing factors
+The site is a **pure static site** (no build system, no Node.js). Content is managed via JSON files loaded at runtime.
 
-## Legacy Website Testing
-```bash
-# Serve locally (any HTTP server)
-python -m http.server 8000
-# or
-npx serve .
+### File Structure
+```
+/index.html         — ~187-line skeleton HTML (hero hardcoded, all other sections are content slots)
+/styles.css         — All custom CSS (~725 lines, extracted from the old inline <style> block)
+/script.js          — All interactive JS features (~360 lines, exposes initAllFeatures() globally)
+/content-loader.js  — Fetches JSON files and renders each section into content slots (~400 lines)
+/content/
+  manifest.json     — Lists all sections and their JSON file paths
+  videos.json       — Product video grid (YouTube embeds)
+  projects.json     — Selected owner projects
+  about.json        — About Me text, skill cards, profile image
+  capabilities.json — Capability Map (5 tabs: Product Design, Innovation, Agile, Commercialisation, Technical)
+  work-history.json — Work History cards (Alibaba + eBanma)
+  experience.json   — Timeline experience (5 entries with images)
+  achievements.json — Counter stats, patents, industry impact
+  education.json    — Education background
+  contact.json      — Contact details
+  testimonials.json — Photo carousel rows
+  footer.json       — Footer links and contact info
+/public/            — Static assets (unchanged)
+/favicon.PNG        — Site favicon
+/legacy-static/     — Reference copy of the original single-file version
 ```
 
-### MediaPipe Demo Testing
-```bash
-# Must serve via HTTPS or localhost for camera access
-# MediaPipe demo is at: html/mediapipe/index.html
-```
+### How Content Loading Works
+1. `content-loader.js` fires on `DOMContentLoaded`
+2. Fetches `content/manifest.json` to get all section file paths
+3. Parallel-fetches all JSON files with `Promise.all()`
+4. Calls each `render*()` function to build HTML and inject into `[data-section="..."]` slots
+5. Calls `initAllFeatures()` from `script.js` after all content is in the DOM
 
-## Deployment
-- **Active Site**: GitHub Pages serving `index.html` from root
-- **Domain**: jaysean1.github.io
-- **Branch**: main (auto-deployed)
+### Key Rules for Editing
+- **To update content** (text, links, images): edit the relevant `content/*.json` file
+- **To update styles**: edit `styles.css`
+- **To update interactions** (animations, tabs, modals): edit `script.js`
+- **To update section HTML structure**: edit the `render*()` functions in `content-loader.js`
+- **Hero section** is hardcoded in `index.html` (intentional — no loading delay for first screen)
+- **`⚠️ DO NOT`** add `<script>` or `<style>` blocks back into `index.html`
 
-## File Organisation
+### Capability Tabs
+- Tab buttons use `data-tab` attribute (NOT `data-target`)
+- Content panels use matching `id` values (e.g. `id="product-design"`)
 
-### Legacy Structure
-- `/index.html` - Main portfolio website
-- `/public/` - Static assets (images, icons, company logos)
-  - `/img/` - General images and screenshots
-  - `/company_icon/` - Company logos for work experience
-  - `/row_1/`, `/row_2/` - Grid layout images
-  - `/timeline/` - Work experience timeline images organised by company
-- `/html/mediapipe/` - Interactive 3D hand tracking demo
-  - `index.html` - Demo HTML structure
-  - `main.js` - Hand tracking and Three.js logic
-  - `style.css` - Demo-specific styling
-- `/favicon.PNG` - Website favicon
+### Toast Notifications
+- `showToast()` uses positional args: `showToast(title, description, actionText, actionCallback)`
+
+## External Dependencies (all via CDN)
+- TailwindCSS — utility classes
+- Font Awesome 6.4.0 — icons
+- ECharts 5.5.0 — charts
+- Lucide Icons — tab icons (initialised via `lucide.createIcons()`)
+- Google Fonts (Pacifico)
+- Google Analytics (G-J4RKB1D6WY)
 
 ## Visual Theme
 ```css
@@ -71,12 +79,28 @@ accent: #2563eb (primary blue)
 secondary: #60a5fa (hover blue)
 ```
 
-## Important Notes
+## Testing Locally
+```bash
+# Must use an HTTP server — JSON fetch will fail with file:// protocol
+cd /Users/jayseanqian/Desktop/on_board/jaysean1.github.io
+python3 -m http.server 8000
+# then open http://localhost:8000
+```
 
-### Legacy Website
-- Camera permission required for MediaPipe demo
-- All dependencies loaded via CDN (no local npm packages)
+## Deployment
+- **Active Site**: GitHub Pages serving `index.html` from root
+- **Domain**: jayseanqian.com
+- **Branch**: main (auto-deployed)
+
+## MediaPipe Demo
+- **Location**: `html/mediapipe/`
+- **Interactive 3D visualisation** using Three.js and MediaPipe Hands
+- Must be served via HTTPS or localhost for camera access
+- Chinese debug messages in the demo code
+
+## Important Notes
+- All dependencies loaded via CDN (no local npm packages, no build step)
 - Responsive design optimised for various screen sizes
-- Chinese debug messages in MediaPipe demo code
 - Google Analytics tracking enabled (G-J4RKB1D6WY)
-- Resume content is maintained in `README.md` at the repository root
+- Resume content source of truth is `README.md` at repository root
+- Image paths in JSON files are relative to the site root (e.g. `public/img/about-me.png`)

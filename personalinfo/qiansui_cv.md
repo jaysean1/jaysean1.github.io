@@ -2,7 +2,7 @@
 
 **Email:** jaysean.qian@gmail.com  
 **Mobile:** +86-159-8817-1024  
-**Portfolio:** jaysean1.github.io  
+**Portfolio:** jayseanqian.com  
 **Project:** qiansui.notion.site
 
 ## Summary
