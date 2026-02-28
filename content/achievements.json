@@ -1,0 +1,30 @@
+{
+  "title": "Achievements &amp; Patents",
+  "stats": [
+    { "count": 21000000, "label": "Product Sales <span class=\"highlight-achievement\">(RMB)</span>" },
+    { "count": 200000, "label": "<span class=\"highlight-product\">In-Vehicle Device</span> Coverage" },
+    { "count": 110000, "label": "Job <span class=\"highlight-achievement\">Opportunities</span>" },
+    { "count": 50000, "label": "<span class=\"highlight-product\">Warehouse Units</span> Sold" }
+  ],
+  "patents": [
+    {
+      "title": "<span class=\"highlight-tech\">Information Processing Method and Device</span> &amp; Electronic Device",
+      "patentNo": "CN113327114A",
+      "link": "https://eureka.patsnap.com/patent-CN113327114A"
+    }
+  ],
+  "industryImpact": [
+    {
+      "title": "200,000 In-Vehicle Device Coverage",
+      "description": "Smart cockpit cloud application deployed on <strong class=\"font-bold text-primary\">200,000</strong> devices."
+    },
+    {
+      "title": "50+ International Enterprises Served",
+      "description": "Hybrid AI service desk efficiently supports over <strong class=\"font-bold text-primary\">50</strong> international enterprises."
+    },
+    {
+      "title": "110,000 Job Opportunities",
+      "description": "Inclusive product created <strong class=\"font-bold text-primary\">110,000</strong> employment opportunities for the disabled."
+    }
+  ]
+}

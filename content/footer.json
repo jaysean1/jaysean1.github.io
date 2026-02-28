@@ -1,0 +1,16 @@
+{
+  "name": "Sui Qian",
+  "tagline": "<strong class=\"font-bold text-primary\">Senior Internet Product Manager</strong> | <strong class=\"font-bold text-primary\">AI &amp; IoT Expert</strong>",
+  "quickLinks": [
+    { "href": "#about", "label": "About Me" },
+    { "href": "#experience", "label": "Experience" },
+    { "href": "#projects", "label": "Projects" },
+    { "href": "#personal-projects", "label": "Personal Projects" }
+  ],
+  "contact": [
+    { "label": "Email", "value": "jaysean.qian@gmail.com" },
+    { "label": "Phone", "value": "+86-159-8817-1024" },
+    { "label": "Address", "value": "Chaoyang District, Beijing" }
+  ],
+  "copyright": "&copy; 2024 Personal Resume Website. All rights reserved."
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Education",
+  "items": [
+    {
+      "school": "Zhejiang University of Technology",
+      "degree": "Master of <span class=\"highlight-skill\">Applied Economics</span>",
+      "period": "<strong class=\"font-bold text-primary highlight-achievement\">Sep 2012 - Apr 2015</strong>"
+    },
+    {
+      "school": "Zhejiang University of Technology Zhijiang College",
+      "degree": "Bachelor's Degree in <span class=\"highlight-skill\">International Economics and Trade</span>",
+      "period": "<strong class=\"font-bold text-primary highlight-achievement\">Sep 2008 - Sep 2012</strong>"
+    }
+  ]
+}

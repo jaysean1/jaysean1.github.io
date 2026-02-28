@@ -1,0 +1,23 @@
+{
+  "title": "Selected Owner Project",
+  "items": [
+    {
+      "image": "public/img/Smart Cockpit Solution.png",
+      "title": "Smart Cockpit Solution",
+      "description": "Combines <span class=\"highlight-tech\">visual perception</span> and <span class=\"highlight-tech\">intelligent voice technology</span> to automatically detect <span class=\"highlight-product\">traffic violations</span> and enable an <span class=\"highlight-product\">in-vehicle office experience</span>.",
+      "link": "https://www.notion.so/qiansui/Intelligent-In-Vehicle-Office-Assistant-198cbf6f641b818ca100d8dbf831f8eb"
+    },
+    {
+      "image": "public/img/Hybrid AI Service Desk.jpg",
+      "title": "Hybrid AI Service Desk",
+      "description": "Utilises a <span class=\"highlight-skill\">crowdsourcing model</span> and <span class=\"highlight-tech\">RNN intent recognition algorithm</span> to support <strong class=\"font-bold text-primary\">20,000</strong> daily consultations, serving over <strong class=\"font-bold text-primary\">50</strong> international enterprises and creating <strong class=\"font-bold text-primary\">110,000</strong> job opportunities.",
+      "link": "https://www.notion.so/qiansui/AI-Hybrid-Service-Desk-198cbf6f641b81fdb304c1da55e53e6a"
+    },
+    {
+      "image": "public/img/Warehouse Video Intelligent Inspection.png",
+      "title": "Warehouse Video Intelligent Inspection",
+      "description": "A <span class=\"highlight-tech\">computer vision</span>-based intelligent inspection system for warehouses, successfully sold <strong class=\"font-bold text-primary\">50,000</strong> units while saving <strong class=\"font-bold text-primary\">$24M</strong> annually.",
+      "link": "https://www.notion.so/qiansui/Warehouse-Video-Intelligent-Inspection-Solution-198cbf6f641b813d9b15e234a85245f4"
+    }
+  ]
+}

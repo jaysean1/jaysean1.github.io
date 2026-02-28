@@ -1,0 +1,99 @@
+{
+  "title": "Experience",
+  "items": [
+    {
+      "logo": "public/company_icon/freelancer.png",
+      "company": "Loadshift (Freelancer.com) - Freight Marketplace Product",
+      "companyUrl": "https://www.loadshift.com.au/",
+      "period": "Jul 2025 - Present | Sydney",
+      "summary": "Senior Product Manager: Leading product strategy for Australia's largest freight marketplace platform.",
+      "bullets": [
+        "<strong class=\"font-bold text-primary\">AI-Powered Freight Matching:</strong> Driving the development of <strong class=\"font-bold text-primary\">AI-driven matching algorithms</strong> to connect shippers with the most suitable carriers, improving match rate and reducing manual effort for <strong class=\"font-bold text-primary\">200,000+</strong> monthly quote requests.",
+        "<strong class=\"font-bold text-primary\">Membership Model Redesign:</strong> Redesigned the <strong class=\"font-bold text-primary\">carrier subscription model</strong>, introducing tiered plans that increased paid membership conversion and improved <strong class=\"font-bold text-primary\">platform revenue per user</strong>.",
+        "<strong class=\"font-bold text-primary\">Enterprise Client Solutions:</strong> Built <strong class=\"font-bold text-primary\">B2B product features</strong> for enterprise shippers including bulk booking, API integrations, and dedicated account management tools to grow the high-value customer segment.",
+        "<strong class=\"font-bold text-primary\">Data-Driven Product Strategy:</strong> Established <span class=\"highlight-tech\">product analytics frameworks</span> and <span class=\"highlight-skill\">OKR-driven roadmaps</span> to align cross-functional teams across engineering, design, and commercial on key growth metrics."
+      ],
+      "images": []
+    },
+    {
+      "icon": "fas fa-laptop-code",
+      "company": "Independent Developer - AI Software Applications & Consulting Services",
+      "period": "Oct 2023 - Jun 2025 | Remote",
+      "summary": "AI Software Development and Paid Consulting Services, with <strong class=\"font-bold text-primary\">12K ARR</strong>.",
+      "bullets": [
+        "<strong class=\"font-bold text-primary\">Product Development Portfolio:</strong> Developed multiple AI-powered applications including <span class=\"highlight-product\">job-seeker</span> (automated job application system), <span class=\"highlight-product\">auto-fill</span> (chrome extension), <span class=\"highlight-product\">capcam</span> (ios app), and various custom AI solutions for business automation and productivity enhancement.",
+        "<strong class=\"font-bold text-primary\">Consulting for Graduates & Content Creators:</strong> Provided specialised consulting for recent graduates and content creators, focusing on career planning, content strategy, and AI tool integration to boost efficiency and build personal brand value."
+      ],
+      "images": [
+        { "src": "public/timeline/KOL Manager/6-1.png", "alt": "Job Seeker CLI Project" },
+        { "src": "public/timeline/KOL Manager/6-2.png", "alt": "Auto-Fill Chrome Extension" },
+        { "src": "public/timeline/KOL Manager/6-3.png", "alt": "Auto-Fill Features" },
+        { "src": "public/timeline/KOL Manager/image.png", "alt": "Independent Developer Image 4" },
+        { "src": "public/timeline/KOL Manager/image copy.png", "alt": "Independent Developer Image 5" },
+        { "src": "public/timeline/KOL Manager/image copy 2.png", "alt": "Independent Developer Image 6" }
+      ]
+    },
+    {
+      "logo": "public/company_icon/阿里云官方-英文LOGO.png",
+      "company": "Alibaba Cloud - Banma Smart Cockpit Solutions Product Department",
+      "companyUrl": "https://www.ebanma.com/",
+      "period": "May 2021 - Oct 2023 | Shanghai",
+      "summary": "Product Leader: Responsible for the planning and implementation of the in-vehicle interactive cloud application and intelligent voice assistant.",
+      "bullets": [
+        "<strong class=\"font-bold text-primary\">In-Vehicle Citylife Service Cloud Application:</strong> Covered <strong class=\"font-bold text-primary\">200,000</strong> in-vehicle devices, with <strong class=\"font-bold text-primary\">10%</strong> average weekly active users rate.",
+        "<strong class=\"font-bold text-primary\">In-Vehicle AI Voice Assistant:</strong> Developed for <strong class=\"font-bold text-primary\">LS6</strong> engineering vehicles and exhibited at <strong class=\"font-bold text-primary\">Chengdu International Auto Show</strong>. Features include <span class=\"highlight-skill\">office assistance</span> and <span class=\"highlight-tech\">traffic violation identification</span>."
+      ],
+      "images": [
+        { "src": "public/timeline/Banma Smart Cockpit Solutions Product Department/image.png", "alt": "Banma Image 1" },
+        { "src": "public/timeline/Banma Smart Cockpit Solutions Product Department/image copy.png", "alt": "Banma Image 2" },
+        { "src": "public/timeline/Banma Smart Cockpit Solutions Product Department/image copy 2.png", "alt": "Banma Image 3" },
+        { "src": "public/timeline/Banma Smart Cockpit Solutions Product Department/image copy 3.png", "alt": "Banma Image 4" }
+      ]
+    },
+    {
+      "logo": "public/company_icon/阿里巴巴.png",
+      "company": "Alibaba Group - Taobao Consulting Product Department",
+      "companyUrl": "https://www.ebanma.com/",
+      "period": "Sept 2018 - May 2021 | Hangzhou",
+      "summary": "Product Leader: Oversaw the design and implementation of Taobao platform consulting services.",
+      "bullets": [
+        "<strong class=\"font-bold text-primary highlight-product\"><a href=\"https://helpcenter.taobao.com/servicehall/home\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"inline-flex items-center\">Merchant Support Chatbot:<i data-lucide=\"external-link\" class=\"w-4 h-4 ml-1\"></i></a></strong> Supported <strong class=\"font-bold text-primary highlight-achievement\">20,000</strong> daily conversations, <strong class=\"font-bold text-primary highlight-achievement\">80%</strong> resolved by <span class=\"highlight-tech\">AI</span>.",
+        "<strong class=\"font-bold text-primary highlight-product\"><a href=\"https://xixikf.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"inline-flex items-center\">AI-Hybrid Service Desk:<i data-lucide=\"external-link\" class=\"w-4 h-4 ml-1\"></i></a></strong> Provided services to over <strong class=\"font-bold text-primary highlight-achievement\">50</strong> international enterprises, resolving the remaining 20% of customer inquiries through AI assistance, with product sales exceeding <strong class=\"font-bold text-primary highlight-achievement\">21 million</strong>.",
+        "<strong class=\"font-bold text-primary highlight-product\"><a href=\"https://baike.baidu.com/item/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E4%BA%91%E5%AE%A2%E6%9C%8D/52704969?fr=ge_ala\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"inline-flex items-center\">Inclusive Product For Disabled:<i data-lucide=\"external-link\" class=\"w-4 h-4 ml-1\"></i></a></strong> Provided employment opportunities for <strong class=\"font-bold text-primary highlight-achievement\">110,000</strong> disabled people, saved <strong class=\"font-bold text-primary highlight-achievement\">$2M/month</strong> in costs."
+      ],
+      "images": [
+        { "src": "public/timeline/Taobao Consulting Product Department/image copy.png", "alt": "Taobao Consulting Image 2" },
+        { "src": "public/timeline/Taobao Consulting Product Department/image copy 2.png", "alt": "Taobao Consulting Image 3" },
+        { "src": "public/timeline/Taobao Consulting Product Department/image copy 3.png", "alt": "Taobao Consulting Image 4" },
+        { "src": "public/timeline/Taobao Consulting Product Department/image copy 4.png", "alt": "Taobao Consulting Image 5" },
+        { "src": "public/timeline/Taobao Consulting Product Department/image copy 5.png", "alt": "Taobao Consulting Image 6" }
+      ]
+    },
+    {
+      "logo": "public/company_icon/阿里巴巴.png",
+      "company": "Alibaba Group - Logistics &amp; After-Sales Product Department",
+      "period": "Mar 2016 - Sept 2018 | Hangzhou",
+      "summary": "Product Expert: Provided logistics and after-sales solutions for platform merchants.",
+      "bullets": [
+        "<strong class=\"font-bold text-primary highlight-product\"><a href=\"https://www.notion.so/qiansui/Warehouse-Video-Intelligent-Inspection-Solution-198cbf6f641b813d9b15e234a85245f4\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"inline-flex items-center\">Warehouse Video Intelligent Inspection Solution:<i data-lucide=\"external-link\" class=\"w-4 h-4 ml-1\"></i></a></strong> Sold <strong class=\"font-bold text-primary highlight-achievement\">50,000</strong> units, saved <strong class=\"font-bold text-primary highlight-achievement\">$24M</strong> costs annually, filed technology patent.",
+        "<strong class=\"font-bold text-primary highlight-product\"><a href=\"https://aligenius.taobao.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"inline-flex items-center\">Logistics Service AI Plugin:<i data-lucide=\"external-link\" class=\"w-4 h-4 ml-1\"></i></a></strong> Integrated the <span class=\"highlight-tech\">ERP systems</span>, sending over <strong class=\"font-bold text-primary highlight-achievement\">60,000</strong> abnormal logistics reminders to merchants daily, reducing Alibaba consumers refund rates by <strong class=\"font-bold text-primary highlight-achievement\">30%</strong>."
+      ],
+      "images": [
+        { "src": "public/timeline/Logistics & After-Sales Product Department/image.png", "alt": "Logistics Image 1" },
+        { "src": "public/timeline/Logistics & After-Sales Product Department/image copy.png", "alt": "Logistics Image 2" },
+        { "src": "public/timeline/Logistics & After-Sales Product Department/image copy 2.png", "alt": "Logistics Image 3" }
+      ]
+    },
+    {
+      "logo": "public/company_icon/阿里巴巴.png",
+      "company": "Alibaba Group - Transaction Security Product Department",
+      "period": "Nov 2014 - Mar 2016 | Hangzhou",
+      "summary": "Product Manager: Responsible for identifying high-risk transactions and providing VIP services.",
+      "bullets": [
+        "<strong class=\"font-bold text-primary highlight-product\">Risk Transaction Prevention Product:</strong> Identified <strong class=\"font-bold text-primary highlight-achievement\">1 million</strong> high-risk orders on average per month, with an automated processing rate reaching <strong class=\"font-bold text-primary highlight-achievement\">20%</strong>.",
+        "<strong class=\"font-bold text-primary highlight-product\">VIP Service Product:</strong> Provided dedicated account managers for top <strong class=\"font-bold text-primary highlight-achievement\">200</strong> core merchants on Alibaba platform."
+      ],
+      "images": []
+    }
+  ]
+}

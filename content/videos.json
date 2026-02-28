@@ -1,0 +1,60 @@
+{
+  "title": "Product Videos",
+  "subtitle": "Explore my projects and achievements",
+  "items": [
+    {
+      "youtubeId": "aCCHTP_BOcc",
+      "youtubeUrl": "https://www.youtube.com/watch?v=aCCHTP_BOcc",
+      "title": "Intelligent Inspection",
+      "description": "A <span class=\"text-primary\">computer vision</span>-based intelligent inspection system, sold <span class=\"font-bold text-primary\">50,000</span> units, saving <span class=\"font-bold text-primary\">$24M</span> annually."
+    },
+    {
+      "youtubeId": "6D3PtrpCy7Y",
+      "youtubeUrl": "https://www.youtube.com/watch?v=6D3PtrpCy7Y",
+      "title": "Storyboard AI",
+      "description": "<span class=\"text-primary\">Storyboard AI</span> is my personal project, built on the <span class=\"text-primary\">qwen2.5pro model</span>, enabling video generation from storyboards."
+    },
+    {
+      "youtubeId": "K--wfslZpvI",
+      "youtubeUrl": "https://www.youtube.com/watch?v=K--wfslZpvI",
+      "title": "Intelligent Cockpit",
+      "description": "Demonstration of the intelligent cockpit deploying a <span class=\"text-primary\">large model</span> on an in-vehicle computer for voice interaction, combining geolocation data to place orders."
+    },
+    {
+      "youtubeId": "gpInVA8Qo_Y",
+      "youtubeUrl": "https://www.youtube.com/watch?v=gpInVA8Qo_Y",
+      "title": "Merchant Support Chatbot",
+      "description": "Dynamically embedded within the <span class=\"text-primary\">Alibaba Merchant Workbench</span>, combining self-service and live support to provide high-quality service."
+    },
+    {
+      "youtubeId": "RUnq9KUwUYM",
+      "youtubeUrl": "https://www.youtube.com/watch?v=RUnq9KUwUYM",
+      "title": "In-Vehicle Mini Program",
+      "description": "Provides music, navigation, voice assistant, meal ordering, and more without downloads, directly on the car infotainment system, achieving <span class=\"font-bold text-primary\">10%</span> monthly active usage."
+    },
+    {
+      "youtubeId": "tRlVbto5exU",
+      "youtubeUrl": "https://www.youtube.com/watch?v=tRlVbto5exU",
+      "title": "AI Study Desk",
+      "description": "Automates <span class=\"text-primary\">80%</span> of children's homework tutoring using Python Tkinter, Flask, and Qwen-Omni-VL."
+    },
+    {
+      "youtubeId": "3OsG4tORupY",
+      "youtubeUrl": "https://www.youtube.com/watch?v=3OsG4tORupY",
+      "title": "3D hand tracking",
+      "description": "Use 3D video tracking technology to control the changes of the virtual ball."
+    },
+    {
+      "youtubeId": "K2iEEjpbchk",
+      "youtubeUrl": "https://youtu.be/K2iEEjpbchk",
+      "title": "Job Seeker",
+      "description": "Automatically crawl and match the job opportunities that best match your <span class=\"text-primary\">resume</span>, score them, generate a <span class=\"text-primary\">cover letter</span> for high-scoring opportunities, and finally generate a tracking list."
+    },
+    {
+      "youtubeId": "J5a13R4XQ84",
+      "youtubeUrl": "https://www.youtube.com/watch?v=J5a13R4XQ84",
+      "title": "Terminal-style Website",
+      "description": "Deepseek R1 0528 to create a terminal-style personal website. I uploaded my resume information, and then the model completely handled all the tasks for me."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Contact",
+  "items": [
+    {
+      "icon": "fas fa-envelope",
+      "label": "Email",
+      "value": "<strong class=\"font-bold text-primary\">jaysean.qian@gmail.com</strong>"
+    },
+    {
+      "icon": "fas fa-phone",
+      "label": "Phone",
+      "value": "<strong class=\"font-bold text-primary\">+86-159-8817-1024</strong>"
+    },
+    {
+      "icon": "fab fa-linkedin",
+      "label": "LinkedIn",
+      "value": "<a href=\"https://www.linkedin.com/in/sui-qian-7504892a0/\" target=\"_blank\" class=\"text-primary hover:text-primary/90\"><strong class=\"font-bold text-primary\">View Profile</strong></a>"
+    }
+  ]
+}

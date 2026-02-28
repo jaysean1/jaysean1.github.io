@@ -1,0 +1,16 @@
+{
+  "rows": [
+    [
+      { "src": "public/row_1/image.png", "alt": "Image 1" },
+      { "src": "public/row_1/image copy.png", "alt": "Image 2" },
+      { "src": "public/row_1/image copy 2.png", "alt": "Image 3" },
+      { "src": "public/row_1/image copy 3.png", "alt": "Image 4" }
+    ],
+    [
+      { "src": "public/row_2/image.png", "alt": "Image 6" },
+      { "src": "public/row_2/image copy.png", "alt": "Image 7" },
+      { "src": "public/row_2/image copy 2.png", "alt": "Image 8" },
+      { "src": "public/row_2/image copy 3.png", "alt": "Image 9" }
+    ]
+  ]
+}

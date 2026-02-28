@@ -1,0 +1,15 @@
+{
+  "sections": [
+    { "id": "product-videos", "file": "content/videos.json" },
+    { "id": "projects", "file": "content/projects.json" },
+    { "id": "about", "file": "content/about.json" },
+    { "id": "capabilities", "file": "content/capabilities.json" },
+    { "id": "work-history", "file": "content/work-history.json" },
+    { "id": "experience", "file": "content/experience.json" },
+    { "id": "achievements", "file": "content/achievements.json" },
+    { "id": "education", "file": "content/education.json" },
+    { "id": "contact", "file": "content/contact.json" },
+    { "id": "testimonials", "file": "content/testimonials.json" },
+    { "id": "footer", "file": "content/footer.json" }
+  ]
+}

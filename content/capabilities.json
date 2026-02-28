@@ -1,0 +1,62 @@
+{
+  "title": "Capability Map",
+  "tabs": [
+    {
+      "id": "product-design",
+      "icon": "layout-dashboard",
+      "label": "Product Design",
+      "heading": "Product Design",
+      "intro": "I possess <strong class=\"font-bold text-primary\">solid product design capabilities</strong>, specialising in transforming potential user needs into tangible product features:",
+      "bullets": [
+        "In smart cockpit and hybrid AI customer service projects, I can <span class=\"highlight-skill\">identify user pain points</span> in current experiences, creating more user-friendly and impactful products.",
+        "My inclusive design philosophy is reflected in systems developed for visually impaired users, ensuring that even visually impaired users can enjoy a <span class=\"highlight-skill\">high-quality experience</span>."
+      ]
+    },
+    {
+      "id": "innovation",
+      "icon": "lightbulb",
+      "label": "Innovation Capability",
+      "heading": "Innovation Capability",
+      "intro": "I also possess <strong class=\"font-bold text-primary\">excellent product innovation capabilities</strong>:",
+      "bullets": [
+        "In my logistics domain products, I <span class=\"highlight-skill\">significantly improved warehouse inspection efficiency and security</span> by combining intelligent IoT devices with our RPA service operating system, and completed a patent application (<span class=\"highlight-achievement\">CN113327114A</span>).",
+        "I designed a cloud service distribution product that can be <span class=\"highlight-tech\">quickly deployed to the cloud during peak service periods</span>, similar to Uber, allowing users to enjoy better service experiences without waiting.",
+        "Developed a <span class=\"highlight-product\">traffic violation detection system based on visual perception</span>, using a reverse product perspective to provide users with a better experience during complex traffic situations."
+      ]
+    },
+    {
+      "id": "agile",
+      "icon": "users",
+      "label": "Agile & Collaboration",
+      "heading": "Agile & Collaboration",
+      "intro": "During my time at Alibaba, I led cross-functional teams to deliver complex projects, demonstrating <strong class=\"font-bold text-primary\">excellent application of agile methodologies</strong> and stakeholder management capabilities:",
+      "bullets": [
+        "Successfully drove large-scale project implementation (covering <span class=\"highlight-achievement\">200,000 devices</span>, serving <span class=\"highlight-achievement\">50+ enterprises</span>), maintaining efficient execution within complex organisational structures. The project that created <span class=\"highlight-achievement\">110,000 job opportunities</span> showcased my ability to build inclusive collaborative environments.",
+        "In the intelligent inspection project, after <span class=\"highlight-skill\">one month of rapid iteration</span>, I led the team to complete the product prototype from scratch and successfully pushed it live, gaining recognition from the business unit."
+      ]
+    },
+    {
+      "id": "commercialisation",
+      "icon": "trending-up",
+      "label": "Product Commercialisation",
+      "heading": "Product Commercialisation",
+      "intro": "I have excellent experience in product commercialisation:",
+      "bullets": [
+        "In the intelligent inspection project, my product achieved <span class=\"highlight-achievement\">¥21 million in product sales</span>, <span class=\"highlight-achievement\">50,000 warehouse units sold</span>, saving <span class=\"highlight-achievement\">$24M in costs annually</span>.",
+        "In the intelligent cockpit product, my product achieved a <span class=\"highlight-achievement\">10% weekly active rate</span>. (The stock of cars in Shanghai reaches 10 million. With a 10% penetration rate of intelligent cockpits, there are 1 million cars.)",
+        "In the customer service workstation project, I created more than <span class=\"highlight-achievement\">110,000 jobs</span>."
+      ]
+    },
+    {
+      "id": "technical",
+      "icon": "code",
+      "label": "Technical Capability",
+      "heading": "Technical Capability",
+      "intro": "I have <strong class=\"font-bold text-primary\">deep technical expertise</strong> in AI and IoT fields, covering <span class=\"highlight-tech\">large language model fine-tuning</span>, <span class=\"highlight-tech\">computer vision detection systems</span>, and <span class=\"highlight-tech\">RNN intent recognition</span>.",
+      "bullets": [
+        "My implemented smart cockpit and warehouse systems demonstrate my <span class=\"highlight-tech\">IoT integration capabilities</span>. Through developing chatbots, voice assistants, and intelligent video analysis systems.",
+        "Personal projects of mine have developed <span class=\"highlight-product\">OOTD assistant</span>, <span class=\"highlight-product\">Storyboard AI</span>, and <span class=\"highlight-product\">Golden Relationship Assistant</span> using current large language models (LLMs). I have a <span class=\"highlight-skill\">profound understanding of current large language models</span>."
+      ]
+    }
+  ]
+}

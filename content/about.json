@@ -1,0 +1,19 @@
+{
+  "title": "About Me",
+  "description": "I am a technical product leader with <strong class=\"font-bold text-primary\">12 years</strong> of experience in internet product management, specialising in <strong class=\"font-bold text-primary\">AI</strong> and <strong class=\"font-bold text-primary\">IoT</strong> solutions. I have led key projects at top-tier companies such as <strong class=\"font-bold text-primary\">Alibaba</strong>, overseeing the entire process from concept to implementation for products like <strong class=\"font-bold text-primary\">smart cockpits</strong>, <strong class=\"font-bold text-primary\">hybrid AI service desks</strong>, and <strong class=\"font-bold text-primary\">warehouse video intelligent inspection systems</strong>, while also promoting <strong class=\"font-bold text-primary\">technological innovation</strong> and <strong class=\"font-bold text-primary\">social inclusion</strong>.",
+  "skills": [
+    {
+      "title": "Product Planning",
+      "description": "Led key projects from <span class=\"highlight-skill\">concept to launch</span>"
+    },
+    {
+      "title": "Team Management",
+      "description": "Coordinated <span class=\"highlight-skill\">cross-functional teams</span> for efficient delivery"
+    },
+    {
+      "title": "Patent Achievement",
+      "description": "1 Patent Application (<strong class=\"font-bold text-primary\">CN113327114A</strong>)"
+    }
+  ],
+  "image": "public/img/about-me.png"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "Work History",
+  "items": [
+    {
+      "logo": "public/company_icon/freelancer.png",
+      "name": "Loadshift (Freelancer.com)",
+      "introduction": "Australia's largest <strong class=\"font-bold text-primary highlight-company\">freight marketplace platform</strong>, connecting shippers with transport providers across the country. Part of the global <strong class=\"font-bold text-primary highlight-skill\">Freelancer.com</strong> network, enabling <strong class=\"font-bold text-primary highlight-skill\">seamless freight booking</strong> and providing <strong class=\"font-bold text-primary highlight-skill\">data-driven logistics solutions</strong>.",
+      "responsibilities": "I am responsible for <strong class=\"font-bold text-primary highlight-product\">product strategy and roadmap</strong>, driving <strong class=\"font-bold text-primary highlight-tech\">AI-powered matching</strong> between shippers and carriers, designing the <strong class=\"font-bold text-primary highlight-product\">membership model</strong>, and managing <strong class=\"font-bold text-primary highlight-tech\">enterprise client solutions</strong> to grow platform GMV."
+    },
+    {
+      "logo": "public/company_icon/阿里巴巴.png",
+      "name": "Alibaba",
+      "introduction": "A comprehensive <strong class=\"font-bold text-primary highlight-company\">global e-commerce platform</strong> that connects buyers and sellers from all corners of the world. It serves as a hub for a vast array of products and services, enabling <strong class=\"font-bold text-primary highlight-skill\">seamless transactions</strong> and providing a <strong class=\"font-bold text-primary highlight-skill\">user-friendly experience</strong>.",
+      "responsibilities": "I was responsible for <strong class=\"font-bold text-primary highlight-product\">after-sales service products</strong> in the e-commerce department, including <strong class=\"font-bold text-primary highlight-tech\">chatbots</strong>, <strong class=\"font-bold text-primary highlight-product\">customer service workstations</strong>, and <strong class=\"font-bold text-primary highlight-tech\">logistics service automation</strong>."
+    },
+    {
+      "logo": "public/company_icon/阿里云官方-英文LOGO.png",
+      "name": "eBanma-Alibaba Cloud",
+      "introduction": "An <strong class=\"font-bold text-primary highlight-company\">intelligent driving solutions</strong> company under Alibaba Group, providing solutions such as <strong class=\"font-bold text-primary highlight-product\">autonomous driving</strong> and <strong class=\"font-bold text-primary highlight-product\">smart cockpits</strong> for enterprises.",
+      "responsibilities": "I was primarily responsible for <strong class=\"font-bold text-primary highlight-product\">In-Vehicle Citylife Service Cloud Application</strong> and <strong class=\"font-bold text-primary highlight-product\">In-Vehicle AI Voice Assistant</strong>."
+    }
+  ]
+}
