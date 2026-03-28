@@ -6,12 +6,13 @@
       "company": "Loadshift (Freelancer.com) - Freight Marketplace Product",
       "companyUrl": "https://www.loadshift.com.au/",
       "period": "Jul 2025 - Present | Sydney",
-      "summary": "Senior Product Manager: Leading product strategy for Australia's largest freight marketplace platform.",
+      "summary": "Lead Product Owner: Leading product strategy for Australia's largest freight marketplace platform.",
       "bullets": [
-        "<strong class=\"font-bold text-primary\">AI-Powered Freight Matching:</strong> Driving the development of <strong class=\"font-bold text-primary\">AI-driven matching algorithms</strong> to connect shippers with the most suitable carriers, improving match rate and reducing manual effort for <strong class=\"font-bold text-primary\">200,000+</strong> monthly quote requests.",
-        "<strong class=\"font-bold text-primary\">Membership Model Redesign:</strong> Redesigned the <strong class=\"font-bold text-primary\">carrier subscription model</strong>, introducing tiered plans that increased paid membership conversion and improved <strong class=\"font-bold text-primary\">platform revenue per user</strong>.",
-        "<strong class=\"font-bold text-primary\">Enterprise Client Solutions:</strong> Built <strong class=\"font-bold text-primary\">B2B product features</strong> for enterprise shippers including bulk booking, API integrations, and dedicated account management tools to grow the high-value customer segment.",
-        "<strong class=\"font-bold text-primary\">Data-Driven Product Strategy:</strong> Established <span class=\"highlight-tech\">product analytics frameworks</span> and <span class=\"highlight-skill\">OKR-driven roadmaps</span> to align cross-functional teams across engineering, design, and commercial on key growth metrics."
+        "<strong class=\"font-bold text-primary\">Platform Scale:</strong> Leading product strategy for Australia's largest freight marketplace, connecting tens of thousands of shippers and carriers, with over <strong class=\"font-bold text-primary\">160K</strong> loads posted and <strong class=\"font-bold text-primary\">34M+</strong> km of freight distance covered.",
+        "<strong class=\"font-bold text-primary\">AI-Driven Efficiency:</strong> Driving <span class=\"highlight-tech\">AI initiatives</span> to automate heavy follow-up for awarded jobs, freeing ops capacity to recover unawarded jobs lost to competitors and improve award-rate optimization.",
+        "<strong class=\"font-bold text-primary\">User Growth &amp; Retention (Data-Driven):</strong> Designing product features for acquisition and retention grounded in <span class=\"highlight-tech\">data</span>—metrics, experiments, and funnel analysis—to improve onboarding, engagement, and reactivation.",
+        "<strong class=\"font-bold text-primary\">Enterprise &amp; Growth:</strong> Enterprise analytics, reporting, and dedicated account management; collaboration with major accounts including <strong class=\"font-bold text-primary\">Kennards</strong>, <strong class=\"font-bold text-primary\">Freight</strong>, <strong class=\"font-bold text-primary\">Finance Assist</strong>, <strong class=\"font-bold text-primary\">Cotes</strong>, and <strong class=\"font-bold text-primary\">Pickles</strong>.",
+        "<strong class=\"font-bold text-primary\">AI Harness Workflow:</strong> Leading a ~10-person team using a <span class=\"highlight-tech\">Claude Code / Codex</span> harness for an end-to-end, AI-accelerated workflow with human oversight: <strong class=\"font-bold text-primary\">business idea → data analysis → PRD → mockups → tech spec → implementation → QA</strong>, materially improving delivery speed."
       ],
       "images": []
     },

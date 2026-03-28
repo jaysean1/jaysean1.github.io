@@ -164,7 +164,7 @@ function renderWorkHistory(data) {
           <div class="bg-white p-6 rounded-lg shadow-sm">
             <div class="flex items-center mb-4">
               <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mr-4">
-                <img src="${item.logo}" alt="${item.name} Logo" class="w-15 h-15 object-contain">
+                <img src="${item.logo}" alt="${item.name} Logo" class="w-14 h-14 object-contain">
               </div>
               <h4 class="text-xl font-bold text-gray-900">${item.name}</h4>
             </div>

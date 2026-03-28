@@ -60,7 +60,8 @@
             <a href="#home" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Home</a>
             <a href="#about" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">About Me</a>
             <a href="#experience" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Experience</a>
-            <a href="#projects" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Achievements & Patents</a>
+            <a href="#projects" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Selected Owned Projects</a>
+            <a href="#achievements" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Achievements &amp; Patents</a>
             <a href="#contact" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Contact</a>
           </div>
         </div>
@@ -78,7 +79,7 @@
           <h1 class="text-5xl font-bold text-gray-900 mb-4">Sui Qian</h1>
           <h2 class="text-3xl font-semibold text-gray-200 mb-6">Senior Internet Product Manager / Technical Product Leader</h2>
           <p class="text-xl text-gray-700 mb-8">
-            <span class="text-highlight"><strong class="font-bold text-black">12 years</strong></span> of product experience | <span class="text-highlight"><strong class="font-bold text-black">Overseas Experience</strong></span> <span class="text-highlight"><strong class="font-bold text-black">Based in Sydney, AU</strong></span> | <span class="text-highlight"><strong class="font-bold text-black">After-sales service in e-commerce</strong></span>, <span class="text-highlight"><strong class="font-bold text-black">Logistics services</strong></span>, <span class="text-highlight"><strong class="font-bold text-black">New energy vehicles</strong></span>, <span class="text-highlight"><strong class="font-bold text-black">Freight Marketplace</strong></span>
+            <span class="text-highlight"><strong class="font-bold text-black">10+ years</strong></span> of product experience | <span class="text-highlight"><strong class="font-bold text-black">Overseas Experience</strong></span> <span class="text-highlight"><strong class="font-bold text-black">Based in Sydney, AU</strong></span> | <span class="text-highlight"><strong class="font-bold text-black">After-sales service in e-commerce</strong></span>, <span class="text-highlight"><strong class="font-bold text-black">Logistics services</strong></span>, <span class="text-highlight"><strong class="font-bold text-black">New energy vehicles</strong></span>, <span class="text-highlight"><strong class="font-bold text-black">Freight Marketplace</strong></span>
           </p>
           <div class="company-logos flex flex-wrap gap-6 mb-6">
             <div class="company-logo flex items-center bg-[#23262b] rounded-lg p-3 transition-transform duration-300 hover:scale-105 hover:shadow-lg">
@@ -87,8 +88,11 @@
             <div class="company-logo flex items-center bg-[#23262b] rounded-lg p-3 transition-transform duration-300 hover:scale-105 hover:shadow-lg">
               <img src="public/company_icon/阿里云官方-英文LOGO.png" alt="Alibaba Cloud Logo" class="w-12 h-12 object-contain">
             </div>
-            <div class="company-logo flex items-center bg-[#23262b] rounded-lg p-3 transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-              <img src="public/company_icon/freelancer.png" alt="Freelancer.com Logo" class="w-12 h-12 object-contain">
+            <div class="company-logo flex items-center bg-[#23262b] rounded-lg px-4 py-3 transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+              <img src="public/company_icon/freelancer-logo-light.svg" alt="Freelancer.com Logo" class="h-8 w-auto max-w-[min(160px,42vw)] object-contain object-left">
+            </div>
+            <div class="company-logo flex items-center bg-[#23262b] rounded-lg px-4 py-3 transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+              <img src="public/company_icon/loadshift-logo-white.svg" alt="Loadshift Logo" class="h-8 w-auto max-w-[min(148px,42vw)] object-contain object-left">
             </div>
           </div>
           <div class="mt-2">
@@ -108,25 +112,9 @@
     </div>
   </section>
 
-  <!-- Product Videos Section -->
-  <section id="product-videos" class="py-20 bg-gray-900">
+  <!-- Work History (kept in main flow; About + Capability Map moved below) -->
+  <section class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="content-slot" data-section="product-videos"></div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="content-slot" data-section="projects"></div>
-    </div>
-  </section>
-
-  <!-- About Me Section (includes Capabilities and Work History) -->
-  <section id="about" class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="content-slot" data-section="about"></div>
-      <div class="content-slot" data-section="capabilities"></div>
       <div class="content-slot" data-section="work-history"></div>
     </div>
   </section>
@@ -135,6 +123,13 @@
   <section id="experience" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="content-slot" data-section="experience"></div>
+    </div>
+  </section>
+
+  <!-- Selected Owned Projects (projects.json) -->
+  <section id="projects" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="content-slot" data-section="projects"></div>
     </div>
   </section>
 
@@ -158,6 +153,21 @@
       <div class="content-slot" data-section="contact"></div>
     </div>
   </section>
+
+  <!-- Product Videos, About Me, Capability Map — above testimonials -->
+  <section id="product-videos" class="py-20 bg-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="content-slot" data-section="product-videos"></div>
+    </div>
+  </section>
+
+  <section id="about" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="content-slot" data-section="about"></div>
+    </div>
+  </section>
+
+  <div class="content-slot" data-section="capabilities"></div>
 
   <!-- Testimonials Album Section -->
   <section id="testimonials" class="py-20 bg-gray-50">

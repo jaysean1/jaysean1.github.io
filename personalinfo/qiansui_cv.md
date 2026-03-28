@@ -1,26 +1,37 @@
 # Sui Qian
 
 **Email:** jaysean.qian@gmail.com  
-**Mobile:** +86-159-8817-1024  
-**Portfolio:** jayseanqian.com  
+**Mobile:** +61 412 678 142 (AU)  
+**Portfolio:** https://jayseanqian.com  
 **Project:** qiansui.notion.site
 
 ## Summary
 
-• 9 years of experience as a Technical Product Leader, expertise in AI and IoT solutions.  
-• Led the merchant support service on Alibaba. The product sales reached 21 million RMB, providing services including smart logistics solutions to over 50 leading companies.  
-• Designed smart cockpit solutions, the cloud applications have been installed on 200,000 in-vehicle devices.  
+• 10+ years of experience as a Technical Product Leader, with expertise in AI and logistics solutions.  
+• Leading product strategy for Australia's largest freight marketplace at Loadshift, serving tens of thousands of shippers and carriers, with over 160K loads posted and 34M+ km of freight transported across Australia.  
+• Led merchant support services on Alibaba; product sales reached 21 million RMB, providing smart logistics and related services to over 50 leading companies.  
+• Designed smart cockpit solutions; cloud applications installed on 200,000 in-vehicle devices.  
 • Created over 110,000 job opportunities for people with disabilities.  
-• 5 years participating in Alibaba Hackathon, holding national technology patents.
+• Active in innovation and IP: participation in Alibaba Hackathon and a national technology patent application.
 
 ## Work Experience
 
-### Independent Developer - AI Software Applications & Consulting Services (Remote) | Oct 2023 - Present
+### Technical Product Manager (Lead Product Owner) - Loadshift (Freelancer.com), Sydney, Australia | Jul 2025 - Present
 
-AI Software Development and Paid Consulting Services，with 12K ARR.
+Australia's largest trucking marketplace; part of the global Freelancer.com network.
 
-• Product Development Portfolio: Developed multiple AI-powered applications including job-seeker (automated job application system), auto-fill (chrome extension), capcam (ios app), and various custom AI solutions for business automation and productivity enhancement.  
-• Paid Consulting for Social Media Influencers: Provided specialized consulting services to social media influencers, developing custom software systems to optimize workflow efficiency, including business collaboration automation, personalized LoRA package customization for content creation, and AI-driven operation tools.  
+• **Platform scale:** Leading product strategy for Australia's largest freight marketplace, connecting tens of thousands of shippers and carriers, with over 160K loads posted and 34M+ km of freight distance covered.  
+• **AI-driven efficiency:** Driving AI initiatives to automate heavy follow-up workflows for awarded jobs, freeing ops capacity to recover unawarded jobs lost to competitors and improve award-rate optimization.  
+• **User growth & retention (data-driven):** Designing product features for acquisition and retention grounded in data—metrics, experiments, and funnel analysis—to improve onboarding, engagement, and reactivation.  
+• **Enterprise & growth:** Spearheading enterprise client product support and growth strategy, including enterprise analytics, reporting tools, and dedicated account management; collaboration with major accounts including Kennards, Freight, Finance Assist, Cotes, and Pickles.  
+• **AI harness workflow:** Leading a ~10-person team using a Claude Code / Codex–based harness for an end-to-end, AI-accelerated workflow with human oversight: **business idea → data analysis → PRD generation → mockup design → technical specification → implementation → QA**, materially improving delivery speed and consistency.
+
+### Independent Developer - AI Software Applications & Consulting Services (Remote) | Oct 2023 - Jun 2025
+
+AI software development and paid consulting services, with 12K ARR.
+
+• **Product development portfolio:** Developed multiple AI-powered applications including job-seeker (automated job application system), auto-fill (Chrome extension), capcam (iOS app), and custom AI solutions for business automation and productivity.  
+• **Paid consulting:** Provided specialized consulting to social media influencers and graduates, developing custom systems for workflow efficiency, business collaboration automation, LoRA/content tooling, and AI-driven operations.
 
 ### Product Leader - In-Vehicle Interactive Cloud Application & Intelligent Voice Assistant, Banma Smart Cockpit Solutions Product Department (Alibaba Cloud), Shanghai, China | May 2021 - Oct 2023
 
@@ -52,7 +63,7 @@ An information processing method and a technology of terminal equipment, which a
 
 ### Car Intelligent Cockpit, Banma AliOS | Product Leader (Dec 2022 - Sep 2023)
 
-• Visual Perception-Based Identification of Traffic Violations: Developed a combined software and hardware product: identify illegal lane change by RANSAC Algorithm; recorde traffic violations by vehicle-mounted camera; automatically generate violation reports for vehicle owners to submitted to transportation authorities at one click.  
+• Visual Perception-Based Identification of Traffic Violations: Developed a combined software and hardware product: identify illegal lane change by RANSAC Algorithm; records traffic violations by vehicle-mounted camera; automatically generate violation reports for vehicle owners to submitted to transportation authorities at one click.  
 • AI Voice Assistance for In-Vehicle Office Work: Provided a seamless cross-device in-transit working experience by integrating office software suites on smartphone, in-vehicle display and laptops. Realized intelligent generation of work information summaries, email replies, and to-do processing, etc., through voice control.
 
 ### AI-Hybrid Service Desk (Alibaba) | Product Expert (Dec 2019 - Sep 2021)

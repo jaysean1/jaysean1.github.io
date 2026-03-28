@@ -1,10 +1,11 @@
 # Sui Qian
 
 **Email:** jaysean.qian@gmail.com  
-**Mobile:** +86-159-8817-1024  
+**Mobile:** +61 412 678 142 (AU)  
+**Website:** https://jayseanqian.com  
 
 ## SUMMARY
-- 12+ years of experience as a Technical Product Leader, expertise in AI and logistics solutions.
+- 10+ years of experience as a Technical Product Leader, with expertise in AI and logistics solutions.
 - Leading product strategy for Australia's largest freight marketplace at Loadshift, serving tens of thousands of shippers and carriers, with over 160K loads posted and 34M+ km of freight transported across Australia.
 - Led the merchant support service on Alibaba. The product sales reached 21 million RMB, providing services including smart logistics solutions to over 50 leading companies.
 - Designed smart cockpit solutions, the cloud applications have been installed on 200,000 in-vehicle devices.
@@ -18,8 +19,9 @@
 **Jul 2025 - Present**
 - **Platform Scale:** Leading product strategy for Australia's largest freight marketplace, connecting tens of thousands of shippers and carriers, with over 160K loads posted and 34M+ km of freight distance covered.
 - **AI-Driven Efficiency:** Driving AI initiatives to automate heavy follow-up workflows for awarded jobs, freeing ops capacity to recover unawarded jobs lost to competitors, improving award rate optimization.
-- **User Retention & acquisition:** Designing new carrier membership model and AI-powered smart lead exploration to boost platform user engagement and reactivation.
-- **Enterprise & Growth:** Spearheading enterprise client product support and growth strategy, including enterprise analytics, reporting tools, and dedicated account management.
+- **User Growth & Retention:** Designing product features for acquisition and retention grounded in data—metrics, experiments, and funnel analysis—to improve onboarding, engagement, and reactivation without guessing.
+- **Enterprise & Growth:** Spearheading enterprise client product support and growth strategy, including enterprise analytics, reporting tools, and dedicated account management; working with major accounts such as Kennards, Freight, Finance Assist, Cotes, and Pickles.
+- **AI Harness Workflow:** Leading a ~10-person team using a Claude Code / Codex–based harness to run an end-to-end, AI-accelerated workflow with human oversight: **business idea → data analysis → PRD generation → mockup design → technical specification → implementation → QA**, materially improving delivery speed and consistency.
 
 ### Alibaba Cloud - Banma Smart Cockpit Solutions Product Department  
 **Shanghai, China**  
