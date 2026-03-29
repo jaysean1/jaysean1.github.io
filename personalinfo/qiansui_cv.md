@@ -12,7 +12,6 @@
 • Led merchant support services on Alibaba; product sales reached 21 million RMB, providing smart logistics and related services to over 50 leading companies.  
 • Designed smart cockpit solutions; cloud applications installed on 200,000 in-vehicle devices.  
 • Created over 110,000 job opportunities for people with disabilities.  
-• Active in innovation and IP: participation in Alibaba Hackathon and a national technology patent application.
 
 ## Work Experience
 
