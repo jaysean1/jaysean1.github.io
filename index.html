@@ -3,40 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Resume - Sui Qian</title>
-  <link rel="icon" type="image/png" href="favicon.PNG">
+  <title>Sui Qian — Senior Internet Product Manager</title>
+  <meta name="description" content="Sui Qian — Senior Internet Product Manager and Technical Product Leader. 10+ years of product experience across e-commerce, logistics, new energy vehicles, and freight marketplaces." />
+  <link rel="icon" type="image/png" href="favicon-64.png">
+  <meta name="theme-color" id="meta-theme-color" content="#F8F4ED">
+
+  <!-- Apply saved theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#2563eb',
-            secondary: '#3b82f6'
-          },
-          borderRadius: {
-            'none': '0px',
-            'sm': '2px',
-            DEFAULT: '4px',
-            'md': '8px',
-            'lg': '12px',
-            'xl': '16px',
-            '2xl': '20px',
-            '3xl': '24px',
-            'full': '9999px',
-            'button': '4px'
-          }
-        }
-      }
-    }
-  </script>
+
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/motion.css">
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-J4RKB1D6WY"></script>
   <script>
@@ -45,155 +34,162 @@
     gtag('js', new Date());
     gtag('config', 'G-J4RKB1D6WY');
   </script>
-  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-white">
-  <!-- Navigation -->
-  <nav class="fixed top-0 w-full bg-white bg-opacity-95 shadow-sm z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <div class="flex-shrink-0">
-          <span class="text-2xl font-['Pacifico'] text-primary">Sui Qian</span>
-        </div>
-        <div class="hidden md:block">
-          <div class="ml-10 flex items-baseline space-x-8">
-            <a href="#home" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Home</a>
-            <a href="#about" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">About Me</a>
-            <a href="#experience" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Experience</a>
-            <a href="#projects" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Selected Owned Projects</a>
-            <a href="#achievements" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Achievements &amp; Patents</a>
-            <a href="#contact" class="nav-link text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">Contact</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Home / Hero Section (hardcoded for instant load) -->
-  <section id="home" class="relative min-h-[calc(75vh-4rem)] pt-20 flex items-center justify-center bg-[#191c20] hero-highlight-container group">
-    <div class="dot-pattern"></div>
-    <div class="mouse-highlight"></div>
-    <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col lg:flex-row items-center justify-between h-full gap-8">
-        <div class="text-left w-full lg:w-1/2 flex flex-col justify-center h-full">
-          <h1 class="text-5xl font-bold text-gray-900 mb-4">Sui Qian</h1>
-          <h2 class="text-3xl font-semibold text-gray-200 mb-6">Senior Internet Product Manager / Technical Product Leader</h2>
-          <p class="text-xl text-gray-700 mb-8">
-            <span class="text-highlight"><strong class="font-bold text-black">10+ years</strong></span> of product experience | <span class="text-highlight"><strong class="font-bold text-black">Overseas Experience</strong></span> <span class="text-highlight"><strong class="font-bold text-black">Based in Sydney, AU</strong></span> | <span class="text-highlight"><strong class="font-bold text-black">After-sales service in e-commerce</strong></span>, <span class="text-highlight"><strong class="font-bold text-black">Logistics services</strong></span>, <span class="text-highlight"><strong class="font-bold text-black">New energy vehicles</strong></span>, <span class="text-highlight"><strong class="font-bold text-black">Freight Marketplace</strong></span>
-          </p>
-          <div class="company-logos flex flex-wrap gap-6 mb-6">
-            <div class="company-logo flex items-center bg-[#23262b] rounded-lg p-3 transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-              <img src="public/company_icon/阿里巴巴.png" alt="Alibaba Logo" class="w-12 h-12 object-contain">
-            </div>
-            <div class="company-logo flex items-center bg-[#23262b] rounded-lg p-3 transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-              <img src="public/company_icon/阿里云官方-英文LOGO.png" alt="Alibaba Cloud Logo" class="w-12 h-12 object-contain">
-            </div>
-            <div class="company-logo flex items-center bg-[#23262b] rounded-lg px-4 py-3 transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-              <img src="public/company_icon/freelancer-logo-light.svg" alt="Freelancer.com Logo" class="h-8 w-auto max-w-[min(160px,42vw)] object-contain object-left">
-            </div>
-            <div class="company-logo flex items-center bg-[#23262b] rounded-lg px-4 py-3 transition-transform duration-300 hover:scale-105 hover:shadow-lg">
-              <img src="public/company_icon/loadshift-logo-white.svg" alt="Loadshift Logo" class="h-8 w-auto max-w-[min(148px,42vw)] object-contain object-left">
-            </div>
+  <div class="scroll-progress" aria-hidden="true"><div class="scroll-progress__bar" id="scroll-progress-bar"></div></div>
+
+  <!-- Navigation -->
+  <header class="site-nav" id="site-nav">
+    <nav class="site-nav__inner" aria-label="Main navigation">
+      <a href="#home" class="site-nav__brand">Sui Qian</a>
+      <ul class="site-nav__links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#about" class="nav-link">About Me</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="site-nav__actions">
+        <button type="button" id="theme-toggle" class="icon-btn theme-toggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <button type="button" id="menu-toggle" class="icon-btn menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul class="mobile-menu__links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="home" class="hero" aria-label="Introduction">
+      <div class="dot-pattern" aria-hidden="true"></div>
+      <div class="mouse-highlight" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="hero__kicker">Senior Internet Product Manager · Technical Product Leader</p>
+          <h1 class="hero__title">Sui Qian</h1>
+          <p class="hero__role">Building AI-driven products across e-commerce, logistics, and mobility.</p>
+          <ul class="hero__chips" aria-label="Highlights">
+            <li class="chip">10+ years product experience</li>
+            <li class="chip chip--butter">Based in Sydney, AU</li>
+            <li class="chip chip--mint">Overseas experience</li>
+            <li class="chip chip--pink">E-commerce after-sales</li>
+            <li class="chip chip--lilac">Logistics services</li>
+            <li class="chip chip--mint">New energy vehicles</li>
+            <li class="chip">Freight marketplace</li>
+          </ul>
+          <div class="hero__logos" aria-label="Companies">
+            <span class="logo-chip"><img src="public/company_icon/阿里巴巴.png" alt="Alibaba" loading="lazy"></span>
+            <span class="logo-chip"><img src="public/company_icon/阿里云官方-英文LOGO.png" alt="Alibaba Cloud" loading="lazy"></span>
+            <span class="logo-chip">
+              <img class="only-light" src="public/company_icon/freelancer-logo-dark.svg" alt="Freelancer.com">
+              <img class="only-dark" src="public/company_icon/freelancer-logo-light.svg" alt="Freelancer.com">
+            </span>
+            <span class="logo-chip">
+              <img class="only-light" src="public/company_icon/loadshift-logo-navy.svg" alt="Loadshift">
+              <img class="only-dark" src="public/company_icon/loadshift-logo-white.svg" alt="Loadshift">
+            </span>
           </div>
-          <div class="mt-2">
-            <a href="https://www.notion.so/qiansui/Sui-Qian-Portfolio-c6be6c3fe60c420faf915f35f73bb408" target="_blank" class="inline-flex items-center px-6 py-3 !rounded-button bg-primary text-white font-medium hover:bg-primary/90 transition-colors whitespace-nowrap">
-              Project Detail
-              <i class="fas fa-arrow-right ml-2"></i>
+          <div class="hero__actions">
+            <a href="https://www.notion.so/qiansui/Sui-Qian-Portfolio-c6be6c3fe60c420faf915f35f73bb408" target="_blank" rel="noopener noreferrer" class="btn btn--brand">
+              Project Detail <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="https://jayseanqian.com/terminal_website/" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">
+              Terminal version
             </a>
           </div>
         </div>
-        <div class="w-full lg:w-1/2 flex justify-center items-center h-full">
-          <a href="https://jayseanqian.com/terminal_website/" target="_blank" rel="noopener noreferrer" class="hero-image-link relative block">
-            <img src="public/img/ChatGPT Image 2025年4月27日 10_16_47.png" alt="Hero Image" class="max-w-md w-full h-[320px] lg:h-[380px] rounded-2xl shadow-lg object-cover hero-image" style="border:none;">
-            <div class="hero-image-tooltip">see in terminal</div>
+        <div class="hero__media">
+          <a href="https://jayseanqian.com/terminal_website/" target="_blank" rel="noopener noreferrer" class="hero-image-link">
+            <img src="public/img/hero-portrait.jpg" alt="Illustration of Sui Qian" fetchpriority="high">
+            <span class="hero-image-tooltip">see in terminal</span>
           </a>
         </div>
       </div>
-    </div>
-  </section>
+      <a class="hero__scroll-cue" href="#work-history" aria-label="Scroll to content">
+        <span>Scroll</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+      </a>
+    </section>
 
-  <!-- Work History (kept in main flow; About + Capability Map moved below) -->
-  <section class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="content-slot" data-section="work-history"></div>
-    </div>
-  </section>
+    <!-- Content sheet -->
+    <div class="sheet">
+      <section id="work-history" class="chapter" aria-label="Work history">
+        <div class="container content-slot" data-section="work-history"></div>
+      </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="content-slot" data-section="experience"></div>
-    </div>
-  </section>
+      <section id="experience" class="chapter" aria-label="Experience">
+        <div class="container content-slot" data-section="experience"></div>
+      </section>
 
-  <!-- Selected Owned Projects (projects.json) -->
-  <section id="projects" class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="content-slot" data-section="projects"></div>
-    </div>
-  </section>
+      <section id="projects" class="chapter" aria-label="Selected projects">
+        <div class="container content-slot" data-section="projects"></div>
+      </section>
 
-  <!-- Achievements & Patents Section -->
-  <section id="achievements" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="content-slot" data-section="achievements"></div>
-    </div>
-  </section>
+      <section id="achievements" class="chapter" aria-label="Achievements and patents">
+        <div class="container content-slot" data-section="achievements"></div>
+      </section>
 
-  <!-- Education Section -->
-  <section id="education" class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="content-slot" data-section="education"></div>
-    </div>
-  </section>
+      <section id="education" class="chapter" aria-label="Education">
+        <div class="container content-slot" data-section="education"></div>
+      </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="content-slot" data-section="contact"></div>
-    </div>
-  </section>
+      <section id="contact" class="chapter" aria-label="Contact">
+        <div class="container content-slot" data-section="contact"></div>
+      </section>
 
-  <!-- Product Videos, About Me, Capability Map — above testimonials -->
-  <section id="product-videos" class="py-20 bg-gray-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="content-slot" data-section="product-videos"></div>
-    </div>
-  </section>
+      <section id="product-videos" class="chapter" aria-label="Product videos">
+        <div class="container content-slot" data-section="product-videos"></div>
+      </section>
 
-  <section id="about" class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="content-slot" data-section="about"></div>
-    </div>
-  </section>
+      <section id="about" class="chapter" aria-label="About me">
+        <div class="container content-slot" data-section="about"></div>
+      </section>
 
-  <div class="content-slot" data-section="capabilities"></div>
+      <section id="capabilities" class="chapter" aria-label="Capability map">
+        <div class="container content-slot" data-section="capabilities"></div>
+      </section>
 
-  <!-- Testimonials Album Section -->
-  <section id="testimonials" class="py-20 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="content-slot" data-section="testimonials"></div>
+      <section id="testimonials" class="chapter" aria-label="Testimonials">
+        <div class="container content-slot" data-section="testimonials"></div>
+      </section>
     </div>
-  </section>
+  </main>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="content-slot" data-section="footer"></div>
-    </div>
+  <footer class="site-footer">
+    <div class="container content-slot" data-section="footer"></div>
   </footer>
 
-  <!-- Toast Container -->
+  <!-- Toast container -->
   <div id="toast-container" class="toast-container"></div>
 
-  <!-- Image Preview Modal with Carousel -->
-  <div id="image-modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden z-50">
-    <button id="modal-prev" class="absolute left-6 top-1/2 -translate-y-1/2 bg-black bg-opacity-40 hover:bg-opacity-70 text-white text-3xl rounded-full w-12 h-12 flex items-center justify-center z-10 transition hidden" aria-label="Previous">&#8592;</button>
-    <img id="modal-img" class="max-w-full max-h-full rounded-lg shadow-lg" src="" alt="Preview">
-    <button id="modal-next" class="absolute right-6 top-1/2 -translate-y-1/2 bg-black bg-opacity-40 hover:bg-opacity-70 text-white text-3xl rounded-full w-12 h-12 flex items-center justify-center z-10 transition hidden" aria-label="Next">&#8594;</button>
-    <button id="modal-close" class="absolute top-4 right-4 text-white text-3xl">&times;</button>
+  <!-- Image preview modal with carousel -->
+  <div id="image-modal" class="img-modal hidden" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button id="modal-prev" class="img-modal__nav img-modal__nav--prev hidden" aria-label="Previous">&#8592;</button>
+    <img id="modal-img" src="" alt="Preview">
+    <button id="modal-next" class="img-modal__nav img-modal__nav--next hidden" aria-label="Next">&#8594;</button>
+    <button id="modal-close" class="img-modal__close" aria-label="Close">&times;</button>
   </div>
 
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
   <script src="script.js"></script>
   <script src="content-loader.js"></script>
 </body>
