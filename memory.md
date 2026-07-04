@@ -13,6 +13,14 @@ Long-term resume content and site workflow details belong in `README.md` and `AG
   - Content JSON unchanged except `about.json` image path now points to optimised `about-me.jpg`.
   - Old `styles.css` deleted; hero image optimised to `public/img/hero-portrait.jpg`; favicon to `favicon-64.png`.
 
+- 2026-07-05: SEO + LLM optimisation pass.
+  - Added `llms.txt` (canonical agent-readable profile), `robots.txt` (AI crawlers allowed), `sitemap.xml`.
+  - `index.html`: canonical, Open Graph, Twitter Card, JSON-LD Person schema, `<noscript>` profile summary fallback.
+  - Hero: "Tell your agent with a ready-to-use prompt" copy pill (aisa.one style); copy logic in `script.js` (`initAgentPrompt`), styles in `main.css` (`.hero__agent`, `.agent-prompt`).
+  - Content JSON: meaningful image alt texts, footer copyright to 2026, fixed dead `#personal-projects` link, added llms.txt footer link.
+  - Remember: when resume facts change, update `content/*.json` AND `llms.txt` together.
+  - Hero layout v2: kicker and role lines removed from visible hero (kept as `.sr-only` text for SEO/a11y); agent prompt pill sits between the H1 and the highlight chips, label reuses the Astryx brand-dash kicker motif; `.hero__copy { min-width: 0 }` prevents the nowrap prompt text from blowing out the grid on mobile.
+
 ## Scheduled Tasks
 
 - No `jaysean1.github.io/` scheduled task memory has been recorded yet.

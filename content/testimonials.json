@@ -1,16 +1,16 @@
 {
   "rows": [
     [
-      { "src": "public/row_1/image.png", "alt": "Image 1" },
-      { "src": "public/row_1/image copy.png", "alt": "Image 2" },
-      { "src": "public/row_1/image copy 2.png", "alt": "Image 3" },
-      { "src": "public/row_1/image copy 3.png", "alt": "Image 4" }
+      { "src": "public/row_1/image.png", "alt": "Sui Qian with the Tmall Double 11 team at Alibaba" },
+      { "src": "public/row_1/image copy.png", "alt": "Team moment from Sui Qian's product work at Alibaba" },
+      { "src": "public/row_1/image copy 2.png", "alt": "Sui Qian at a product team event" },
+      { "src": "public/row_1/image copy 3.png", "alt": "Workplace moment from Sui Qian's career" }
     ],
     [
-      { "src": "public/row_2/image.png", "alt": "Image 6" },
-      { "src": "public/row_2/image copy.png", "alt": "Image 7" },
-      { "src": "public/row_2/image copy 2.png", "alt": "Image 8" },
-      { "src": "public/row_2/image copy 3.png", "alt": "Image 9" }
+      { "src": "public/row_2/image.png", "alt": "Sui Qian with colleagues at a team gathering" },
+      { "src": "public/row_2/image copy.png", "alt": "Team celebration from Sui Qian's time at Alibaba" },
+      { "src": "public/row_2/image copy 2.png", "alt": "Sui Qian at a company event" },
+      { "src": "public/row_2/image copy 3.png", "alt": "Product team moment from Sui Qian's career" }
     ]
   ]
 }

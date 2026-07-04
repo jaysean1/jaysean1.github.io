@@ -1,0 +1,36 @@
+# jayseanqian.com — all crawlers welcome, including AI agents
+User-agent: *
+Allow: /
+
+# AI crawlers (explicitly allowed)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Machine-readable profile for LLMs and agents
+# See https://jayseanqian.com/llms.txt
+
+Sitemap: https://jayseanqian.com/sitemap.xml

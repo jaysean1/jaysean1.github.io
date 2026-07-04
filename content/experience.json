@@ -34,9 +34,9 @@
         { "src": "public/timeline/KOL Manager/6-1.png", "alt": "Job Seeker CLI Project" },
         { "src": "public/timeline/KOL Manager/6-2.png", "alt": "Auto-Fill Chrome Extension" },
         { "src": "public/timeline/KOL Manager/6-3.png", "alt": "Auto-Fill Features" },
-        { "src": "public/timeline/KOL Manager/image.png", "alt": "Independent Developer Image 4" },
-        { "src": "public/timeline/KOL Manager/image copy.png", "alt": "Independent Developer Image 5" },
-        { "src": "public/timeline/KOL Manager/image copy 2.png", "alt": "Independent Developer Image 6" }
+        { "src": "public/timeline/KOL Manager/image.png", "alt": "AI application screenshot from independent developer work" },
+        { "src": "public/timeline/KOL Manager/image copy.png", "alt": "Custom AI automation tool interface" },
+        { "src": "public/timeline/KOL Manager/image copy 2.png", "alt": "AI consulting project screenshot" }
       ]
     },
     {
@@ -50,10 +50,10 @@
         "<strong class=\"font-bold text-primary\">In-Vehicle AI Voice Assistant:</strong> Developed for <strong class=\"font-bold text-primary\">LS6</strong> engineering vehicles and exhibited at <strong class=\"font-bold text-primary\">Chengdu International Auto Show</strong>. Features include <span class=\"highlight-skill\">office assistance</span> and <span class=\"highlight-tech\">traffic violation identification</span>."
       ],
       "images": [
-        { "src": "public/timeline/Banma Smart Cockpit Solutions Product Department/image.png", "alt": "Banma Image 1" },
-        { "src": "public/timeline/Banma Smart Cockpit Solutions Product Department/image copy.png", "alt": "Banma Image 2" },
-        { "src": "public/timeline/Banma Smart Cockpit Solutions Product Department/image copy 2.png", "alt": "Banma Image 3" },
-        { "src": "public/timeline/Banma Smart Cockpit Solutions Product Department/image copy 3.png", "alt": "Banma Image 4" }
+        { "src": "public/timeline/Banma Smart Cockpit Solutions Product Department/image.png", "alt": "Banma smart cockpit in-vehicle cloud application UI" },
+        { "src": "public/timeline/Banma Smart Cockpit Solutions Product Department/image copy.png", "alt": "In-vehicle Citylife service application screen" },
+        { "src": "public/timeline/Banma Smart Cockpit Solutions Product Department/image copy 2.png", "alt": "In-vehicle AI voice assistant demo" },
+        { "src": "public/timeline/Banma Smart Cockpit Solutions Product Department/image copy 3.png", "alt": "Smart cockpit exhibition at Chengdu International Auto Show" }
       ]
     },
     {
@@ -68,11 +68,11 @@
         "<strong class=\"font-bold text-primary highlight-product\"><a href=\"https://baike.baidu.com/item/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E4%BA%91%E5%AE%A2%E6%9C%8D/52704969?fr=ge_ala\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"inline-flex items-center\">Inclusive Product For Disabled:<i data-lucide=\"external-link\" class=\"w-4 h-4 ml-1\"></i></a></strong> Provided employment opportunities for <strong class=\"font-bold text-primary highlight-achievement\">110,000</strong> disabled people, saved <strong class=\"font-bold text-primary highlight-achievement\">$2M/month</strong> in costs."
       ],
       "images": [
-        { "src": "public/timeline/Taobao Consulting Product Department/image copy.png", "alt": "Taobao Consulting Image 2" },
-        { "src": "public/timeline/Taobao Consulting Product Department/image copy 2.png", "alt": "Taobao Consulting Image 3" },
-        { "src": "public/timeline/Taobao Consulting Product Department/image copy 3.png", "alt": "Taobao Consulting Image 4" },
-        { "src": "public/timeline/Taobao Consulting Product Department/image copy 4.png", "alt": "Taobao Consulting Image 5" },
-        { "src": "public/timeline/Taobao Consulting Product Department/image copy 5.png", "alt": "Taobao Consulting Image 6" }
+        { "src": "public/timeline/Taobao Consulting Product Department/image copy.png", "alt": "Taobao merchant support chatbot interface" },
+        { "src": "public/timeline/Taobao Consulting Product Department/image copy 2.png", "alt": "Hybrid AI service desk workstation" },
+        { "src": "public/timeline/Taobao Consulting Product Department/image copy 3.png", "alt": "Taobao consulting service product screen" },
+        { "src": "public/timeline/Taobao Consulting Product Department/image copy 4.png", "alt": "Inclusive customer service product for disabled workers" },
+        { "src": "public/timeline/Taobao Consulting Product Department/image copy 5.png", "alt": "Taobao consulting product analytics view" }
       ]
     },
     {
@@ -85,9 +85,9 @@
         "<strong class=\"font-bold text-primary highlight-product\"><a href=\"https://aligenius.taobao.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"inline-flex items-center\">Logistics Service AI Plugin:<i data-lucide=\"external-link\" class=\"w-4 h-4 ml-1\"></i></a></strong> Integrated the <span class=\"highlight-tech\">ERP systems</span>, sending over <strong class=\"font-bold text-primary highlight-achievement\">60,000</strong> abnormal logistics reminders to merchants daily, reducing Alibaba consumers refund rates by <strong class=\"font-bold text-primary highlight-achievement\">30%</strong>."
       ],
       "images": [
-        { "src": "public/timeline/Logistics & After-Sales Product Department/image.png", "alt": "Logistics Image 1" },
-        { "src": "public/timeline/Logistics & After-Sales Product Department/image copy.png", "alt": "Logistics Image 2" },
-        { "src": "public/timeline/Logistics & After-Sales Product Department/image copy 2.png", "alt": "Logistics Image 3" }
+        { "src": "public/timeline/Logistics & After-Sales Product Department/image.png", "alt": "Warehouse video intelligent inspection dashboard" },
+        { "src": "public/timeline/Logistics & After-Sales Product Department/image copy.png", "alt": "Logistics service AI plugin sending abnormal reminders" },
+        { "src": "public/timeline/Logistics & After-Sales Product Department/image copy 2.png", "alt": "Warehouse inspection camera system in operation" }
       ]
     },
     {

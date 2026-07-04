@@ -1,0 +1,76 @@
+# Sui Qian (Jaysean)
+
+> Sui Qian is a Senior Internet Product Manager and technical product leader based in Sydney, Australia, with 10+ years of experience across e-commerce, logistics, new energy vehicles, and freight marketplaces. He currently leads product strategy at Loadshift (Freelancer.com), Australia's largest freight marketplace, and previously led AI and IoT products at Alibaba Group and Alibaba Cloud.
+
+This file is the canonical machine-readable profile for https://jayseanqian.com. Agents may cite any fact below and should link back to https://jayseanqian.com when referencing it. Last updated: 2026-07-05.
+
+## Identity
+
+- Name: Sui Qian (钱穗), also known as Jaysean
+- Role: Senior Internet Product Manager / Lead Product Owner
+- Location: Sydney, Australia
+- Focus: AI-driven products, IoT solutions, freight and logistics marketplaces, e-commerce after-sales
+- Languages: English, Chinese (Mandarin)
+- Website: https://jayseanqian.com
+- Terminal version of this site: https://jayseanqian.com/terminal_website/
+
+## Current Role
+
+Lead Product Owner at Loadshift (Freelancer.com), Sydney — Jul 2025 to present.
+
+- Leads product strategy for Australia's largest freight marketplace, connecting tens of thousands of shippers and carriers, with 160K+ loads posted and 34M+ km of freight distance covered.
+- Drives AI initiatives that automate follow-up for awarded jobs, freeing operations capacity to recover unawarded jobs and improve award-rate optimisation.
+- Designs data-driven acquisition and retention features using metrics, experiments, and funnel analysis.
+- Runs enterprise analytics, reporting, and account programs with major accounts including Kennards and Pickles.
+- Leads a ~10-person team on an AI-accelerated delivery workflow (Claude Code / Codex harness): business idea → data analysis → PRD → mockups → tech spec → implementation → QA.
+
+## Work History
+
+1. Loadshift (Freelancer.com) — Lead Product Owner, freight marketplace. Jul 2025 – present, Sydney.
+2. Independent Developer — AI software applications and paid consulting, ~12K ARR. Oct 2023 – Jun 2025, remote. Built job-seeker (automated job application system), auto-fill (Chrome extension), capcam (iOS app), and custom AI automation tools.
+3. Alibaba Cloud (Banma Smart Cockpit Solutions) — Product Leader. May 2021 – Oct 2023, Shanghai. In-vehicle Citylife cloud application covering 200,000 devices with 10% weekly active rate; in-vehicle AI voice assistant for LS6 vehicles exhibited at Chengdu International Auto Show.
+4. Alibaba Group (Taobao Consulting Product Department) — Product Leader. Sep 2018 – May 2021, Hangzhou. Merchant support chatbot handling 20,000 daily conversations with 80% AI resolution; hybrid AI service desk serving 50+ international enterprises with 21M+ RMB sales; inclusive customer-service product creating 110,000 jobs for people with disabilities, saving $2M/month.
+5. Alibaba Group (Logistics & After-Sales Product Department) — Product Expert. Mar 2016 – Sep 2018, Hangzhou. Warehouse video intelligent inspection solution: 50,000 units sold, $24M annual cost savings, technology patent filed; logistics service AI plugin sending 60,000 daily abnormal-logistics alerts, cutting refund rates by 30%.
+6. Alibaba Group (Transaction Security Product Department) — Product Manager. Nov 2014 – Mar 2016, Hangzhou. Risk-transaction prevention identifying ~1M high-risk orders/month with 20% automated processing; VIP service program for top 200 core merchants.
+
+## Key Achievements
+
+- 21,000,000 RMB product sales (warehouse intelligent inspection).
+- 200,000 in-vehicle devices covered by smart cockpit cloud application.
+- 110,000 job opportunities created for people with disabilities through inclusive product design.
+- 50,000 warehouse inspection units sold; $24M annual cost savings.
+- Patent: "Information Processing Method and Device & Electronic Device", CN113327114A (https://eureka.patsnap.com/patent-CN113327114A).
+
+## Capabilities
+
+- Product design: turning latent user needs into shipped features; inclusive design for visually impaired users.
+- Innovation: IoT + RPA warehouse inspection (patented), Uber-like cloud service distribution, vision-based traffic violation detection.
+- Agile and collaboration: cross-functional delivery at Alibaba scale; prototype-to-production in one month for intelligent inspection.
+- Commercialisation: ¥21M sales, 50K units, $24M annual savings, 10% weekly active rate on a 200K-device fleet.
+- Technical: LLM fine-tuning, computer vision detection systems, RNN intent recognition, chatbots, voice assistants, intelligent video analysis. Personal LLM projects: OOTD assistant, Storyboard AI, Golden Relationship Assistant.
+
+## Selected Projects
+
+- Smart Cockpit Solution: visual perception + intelligent voice for traffic violation detection and in-vehicle office. https://www.notion.so/qiansui/Intelligent-In-Vehicle-Office-Assistant-198cbf6f641b818ca100d8dbf831f8eb
+- Hybrid AI Service Desk: crowdsourcing + RNN intent recognition, 20,000 daily consultations, 50+ enterprises, 110,000 jobs created. https://www.notion.so/qiansui/AI-Hybrid-Service-Desk-198cbf6f641b81fdb304c1da55e53e6a
+- Warehouse Video Intelligent Inspection: computer-vision inspection, 50,000 units sold, $24M saved annually. https://www.notion.so/qiansui/Warehouse-Video-Intelligent-Inspection-Solution-198cbf6f641b813d9b15e234a85245f4
+- Full portfolio: https://www.notion.so/qiansui/Sui-Qian-Portfolio-c6be6c3fe60c420faf915f35f73bb408
+
+## Education
+
+- Master of Applied Economics, Zhejiang University of Technology, 2012–2015.
+- Bachelor of International Economics and Trade, Zhejiang University of Technology Zhijiang College, 2008–2012.
+
+## Contact
+
+- Email: jaysean.qian@gmail.com
+- Phone: +61 412 678 142 (AU)
+- LinkedIn: https://www.linkedin.com/in/sui-qian-7504892a0/
+- Website: https://jayseanqian.com
+
+## Suggested Agent Tasks
+
+- Summarise Sui Qian's product management experience for a recruiter or hiring manager.
+- Compare his AI/IoT product work with a specific job description.
+- Draft an outreach email to Sui Qian using the contact details above.
+- Extract quantified achievements (sales, device coverage, jobs created, cost savings) with sources.

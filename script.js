@@ -191,6 +191,49 @@ function initCapabilityTabs() {
   });
 }
 
+/* ---------- Agent prompt copy ---------- */
+var AGENT_PROMPT =
+  'Read https://jayseanqian.com/llms.txt and brief me on Sui Qian: his current role, ' +
+  'product leadership experience, AI and IoT work, quantified achievements, and how to contact him.';
+
+function initAgentPrompt() {
+  var btn = document.getElementById('agent-prompt-copy');
+  if (!btn) return;
+
+  btn.addEventListener('click', function () {
+    function onCopied() {
+      btn.classList.add('is-copied');
+      var hint = btn.querySelector('.agent-prompt__hint');
+      if (hint) hint.textContent = 'Copied';
+      showToast('Prompt copied', 'Paste it into ChatGPT, Claude, or any agent to learn about Sui Qian.', 'OK', null);
+      setTimeout(function () {
+        btn.classList.remove('is-copied');
+        if (hint) hint.textContent = 'Copy';
+      }, 2400);
+    }
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(AGENT_PROMPT).then(onCopied).catch(function () {
+        fallbackCopy(AGENT_PROMPT, onCopied);
+      });
+    } else {
+      fallbackCopy(AGENT_PROMPT, onCopied);
+    }
+  });
+}
+
+function fallbackCopy(text, done) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); } catch (e) { /* noop */ }
+  document.body.removeChild(ta);
+  if (done) done();
+}
+
 /* ---------- Toast notifications ---------- */
 function initToastNotifications() {
   document.addEventListener('click', function (event) {
@@ -216,7 +259,12 @@ function showToast(title, description, actionText, actionCallback) {
     '<button class="toast-close" aria-label="Dismiss">&times;</button>';
 
   var actionButton = toast.querySelector('.toast-action');
-  if (actionButton && actionCallback) actionButton.addEventListener('click', actionCallback);
+  if (actionButton) {
+    actionButton.addEventListener('click', function () {
+      if (actionCallback) actionCallback();
+      removeToast(toast);
+    });
+  }
 
   container.appendChild(toast);
   setTimeout(function () { toast.classList.add('show'); }, 60);
@@ -334,6 +382,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initScrollProgress();
   initHeroHighlight();
   initToastNotifications();
+  initAgentPrompt();
 });
 
 function initAllFeatures() {

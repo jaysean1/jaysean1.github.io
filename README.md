@@ -14,6 +14,9 @@ Use this README as the repo index and workflow guide. Resume and portfolio conte
 - `script.js` contains theme switching, scroll narrative, and interactive features.
 - `content-loader.js` loads structured content from `content/*.json`.
 - `CNAME` points GitHub Pages to `jayseanqian.com`.
+- `llms.txt` is the machine-readable profile for LLMs and AI agents; keep it in sync with `content/*.json`.
+- `robots.txt` and `sitemap.xml` support search and AI crawlers.
+- The hero includes a copy-to-clipboard agent prompt that points agents to `llms.txt`; `index.html` also carries JSON-LD Person schema, Open Graph tags, and a `<noscript>` summary for non-JS crawlers.
 
 The site follows the Astryx design language (see `.doc/astryx_redesign/redesign_plan.md`):
 warm cream / near-black themes, Figtree + Poppins type, pill buttons, a rounded
