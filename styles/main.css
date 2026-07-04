@@ -502,8 +502,14 @@ a.highlight-achievement:hover { filter: brightness(0.92); }
 /* ---------- Work history ---------- */
 .wh-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
+  align-items: stretch;
+}
+.wh-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .wh-card__head { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
 .wh-card__logo {
@@ -999,6 +1005,7 @@ a.highlight-achievement:hover { filter: brightness(0.92); }
 @media (max-width: 900px) {
   .hero__inner { grid-template-columns: 1fr; }
   .hero__media { max-width: 420px; }
+  .wh-grid { grid-template-columns: 1fr; }
   .about-grid { grid-template-columns: 1fr; }
   .about-photo { max-width: 440px; }
   .cap-shell { grid-template-columns: 1fr; }

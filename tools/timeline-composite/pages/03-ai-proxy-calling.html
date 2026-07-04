@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loadshift — AI Proxy Calling</title>
+  <link rel="stylesheet" href="../base.css">
+</head>
+<body>
+  <article class="composite composite--split">
+    <p class="composite__kicker">AI-Driven Ops Efficiency</p>
+    <h1 class="composite__title">AI proxy calling on the load detail</h1>
+    <p class="composite__desc">
+      Carriers reach shippers instantly through a <strong class="hl-tech">masked PSTN number</strong> — automating heavy follow-up
+      on awarded jobs and winning back unawarded loads, without either side exposing a personal number.
+    </p>
+    <div class="composite__stage">
+      <div class="composite__shot composite__explain">
+        <p class="composite__explain-kicker">Mobile → Proxy → Truck</p>
+        <div class="composite__diagram">
+          <svg viewBox="0 0 660 250" role="img" aria-label="PSTN proxy call routing: carrier through Loadshift proxy to shipper">
+            <style>
+              .ps-route { fill:none; stroke:#D8D3C6; stroke-width:3; stroke-dasharray:8 8; }
+              .ps-body { fill:#FFFFFF; stroke:#CBC6B8; stroke-width:2; }
+              .ps-screen { fill:#1A1917; }
+              .ps-icon { fill:none; stroke:#CC785C; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+              .ps-truck-accent { fill:rgba(204,120,92,0.16); stroke:#CC785C; stroke-width:2; }
+              .ps-wheel { fill:#1A1917; stroke:#8B8779; stroke-width:2; }
+              .ps-hub-ring { fill:rgba(204,120,92,0.16); stroke:#CC785C; stroke-width:2.5; }
+              .ps-label { fill:#1A1917; font-family:Inter,sans-serif; font-size:13px; font-weight:700; }
+              .ps-label.accent { fill:#CC785C; }
+              .ps-num { fill:#55524B; font-family:Georgia,serif; font-size:11.5px; }
+              .ps-num.fg { fill:#1A1917; font-weight:700; }
+              .ps-num-mask { fill:#CC785C; font-weight:700; }
+              .ps-sub { fill:#8B8779; font-family:Georgia,serif; font-size:10px; }
+              .ps-packet { fill:#CC785C; }
+              .ps-packet-ring { fill:none; stroke:#CC785C; stroke-width:2; opacity:0.4; }
+            </style>
+            <path class="ps-route" d="M115,116 H552"/>
+            <!-- Carrier mobile phone -->
+            <rect class="ps-body" x="46" y="62" width="68" height="108" rx="12"/>
+            <rect class="ps-screen" x="53" y="74" width="54" height="78" rx="4"/>
+            <g transform="translate(68,101)"><path class="ps-icon" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></g>
+            <!-- Shipper truck -->
+            <rect class="ps-body" x="520" y="88" width="58" height="46" rx="4"/>
+            <rect class="ps-truck-accent" x="528" y="96" width="18" height="16" rx="2"/>
+            <rect class="ps-truck-accent" x="550" y="96" width="18" height="16" rx="2"/>
+            <path class="ps-truck-accent" d="M578,100 h20 l14,16 v18 h-34 z"/>
+            <rect class="ps-screen" x="582" y="104" width="13" height="9" rx="2"/>
+            <circle class="ps-wheel" cx="540" cy="138" r="9"/>
+            <circle class="ps-wheel" cx="566" cy="138" r="9"/>
+            <circle class="ps-wheel" cx="600" cy="138" r="9"/>
+            <!-- Proxy hub -->
+            <circle class="ps-hub-ring" cx="330" cy="116" r="46"/>
+            <g transform="translate(318,104)"><path class="ps-icon" d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path class="ps-icon" d="m9 12 2 2 4-4"/></g>
+            <!-- static call packets on both legs -->
+            <g transform="translate(222,116)"><circle class="ps-packet-ring" r="11"/><circle class="ps-packet" r="5.5"/></g>
+            <g transform="translate(441,116)"><circle class="ps-packet-ring" r="11"/><circle class="ps-packet" r="5.5"/></g>
+            <!-- labels -->
+            <text class="ps-label" x="80" y="192" text-anchor="middle">Carrier</text>
+            <text class="ps-num" x="80" y="210" text-anchor="middle">+61 4<tspan class="ps-num-mask">•• ••• </tspan>678</text>
+            <text class="ps-sub" x="80" y="226" text-anchor="middle">mobile · real # hidden</text>
+            <text class="ps-label accent" x="330" y="192" text-anchor="middle">Loadshift Proxy</text>
+            <text class="ps-num fg" x="330" y="210" text-anchor="middle">+61 480 012 345</text>
+            <text class="ps-sub" x="330" y="226" text-anchor="middle">routes both sides</text>
+            <text class="ps-label" x="568" y="192" text-anchor="middle">Shipper</text>
+            <text class="ps-num" x="568" y="210" text-anchor="middle">+61 4<tspan class="ps-num-mask">•• ••• </tspan>321</text>
+            <text class="ps-sub" x="568" y="226" text-anchor="middle">truck · real # hidden</text>
+          </svg>
+        </div>
+        <div class="composite__features">
+          <div class="composite__feature">
+            <span class="composite__feature-icon"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+            <div><div class="composite__feature-title">Real numbers stay hidden</div><div class="composite__feature-desc">Both sides connect without ever seeing each other's number.</div></div>
+          </div>
+          <div class="composite__feature">
+            <span class="composite__feature-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="3"/><line x1="12" y1="22" x2="12" y2="8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/></svg></span>
+            <div><div class="composite__feature-title">Deals stay on Loadshift</div><div class="composite__feature-desc">Conversations run through us, reducing off-platform leakage.</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="composite__shot composite__shot--fit">
+        <img src="../assets/ai-proxy-calling.png" alt="Loadshift load detail with PSTN proxy calling modal">
+        <span class="composite__tag">Call the shipper · proxy number</span>
+      </div>
+    </div>
+  </article>
+</body>
+</html>

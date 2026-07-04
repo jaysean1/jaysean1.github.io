@@ -1,0 +1,214 @@
+/* Portfolio timeline composite — Anthropic-inspired aesthetic */
+/* Warm ivory canvas, Fraunces serif display, Styrene-like sans body, rust accent. */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 2160px;
+  height: 1216px;
+  overflow: hidden;
+  background: #F0EEE6;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1F1E1B;
+  -webkit-font-smoothing: antialiased;
+}
+
+.composite {
+  width: 2160px;
+  height: 1216px;
+  padding: 104px 132px 72px;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(1400px 700px at 88% -8%, rgba(204, 120, 92, 0.10), transparent 60%),
+    #F0EEE6;
+}
+
+.composite__kicker {
+  margin: 0 0 14px;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #B15A3C;
+}
+
+.composite__title {
+  margin: 0 0 18px;
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  font-size: 58px;
+  font-weight: 600;
+  line-height: 1.06;
+  letter-spacing: -0.01em;
+  color: #1A1917;
+}
+
+.composite__desc {
+  margin: 0 0 30px;
+  max-width: 1760px;
+  font-size: 22px;
+  line-height: 1.6;
+  color: #55524B;
+}
+
+.composite__desc strong,
+.composite__desc .hl {
+  font-weight: 600;
+  color: #CC785C;
+}
+
+.composite__desc .hl-product { color: #CC785C; }
+.composite__desc .hl-tech { color: #4B6BB0; }
+.composite__desc .hl-achievement { color: #3F7A55; }
+
+.composite__stage {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 26px;
+}
+
+.composite__shot {
+  background: #FFFFFF;
+  border: 1px solid #E4E0D5;
+  border-radius: 20px;
+  box-shadow: 0 24px 60px rgba(31, 30, 27, 0.14), 0 4px 12px rgba(31, 30, 27, 0.06);
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+
+.composite__shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+/* Split — two shots side by side */
+.composite--split .composite__stage {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Contain — show the whole source card without cropping (used for maps) */
+.composite__shot--contain {
+  background: #F7F6F1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 26px;
+}
+.composite__shot--contain img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* Fit — show a full UI screenshot width, top-aligned (no edge cropping) */
+.composite__shot--fit {
+  background: #FFFFFF;
+  padding: 0;
+}
+.composite__shot--fit img {
+  object-fit: contain;
+  object-position: top center;
+}
+
+/* Frame — full screenshot matted on a warm panel (nothing cropped).
+   Single shadow only: the outer .composite__shot carries it; the inner image
+   gets a hairline border for definition (no second, overlapping shadow). */
+.composite__shot--frame {
+  background: #F1EFE8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 44px 56px;
+}
+.composite__shot--frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid #E4E0D5;
+  box-shadow: none;
+}
+
+/* Phone — device frame already carries its own bezel + shadow */
+.composite__shot--phone {
+  padding: 0;
+}
+.composite__shot--phone img {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Explainer card — an SVG diagram plus supporting feature rows */
+.composite__explain {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 44px;
+  gap: 26px;
+}
+.composite__explain-kicker {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #B15A3C;
+}
+.composite__diagram {
+  background: #F7F6F1;
+  border: 1px solid #EBE7DC;
+  border-radius: 16px;
+  padding: 26px 30px;
+}
+.composite__diagram svg { width: 100%; height: auto; display: block; }
+.composite__features {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: auto;
+}
+.composite__feature {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+.composite__feature-icon {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 13px;
+  background: rgba(204, 120, 92, 0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.composite__feature-icon svg { width: 26px; height: 26px; stroke: #CC785C; fill: none; stroke-width: 2; }
+.composite__feature-title { font-size: 23px; font-weight: 600; color: #1A1917; }
+.composite__feature-desc { font-size: 18px; line-height: 1.5; color: #55524B; margin-top: 3px; }
+
+/* Optional caption chip pinned to a shot */
+.composite__tag {
+  position: absolute;
+  left: 22px;
+  bottom: 22px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(26, 25, 23, 0.82);
+  color: #F6F3EC;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  backdrop-filter: blur(4px);
+}

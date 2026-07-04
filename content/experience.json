@@ -14,7 +14,12 @@
         "<strong class=\"font-bold text-primary\">Enterprise &amp; Growth:</strong> Enterprise analytics, reporting, and dedicated account management; collaboration with major accounts including <strong class=\"font-bold text-primary\">Kennards</strong>, <strong class=\"font-bold text-primary\">Freight</strong>, <strong class=\"font-bold text-primary\">Finance Assist</strong>, <strong class=\"font-bold text-primary\">Cotes</strong>, and <strong class=\"font-bold text-primary\">Pickles</strong>.",
         "<strong class=\"font-bold text-primary\">AI Harness Workflow:</strong> Leading a ~10-person team using a <span class=\"highlight-tech\">Claude Code / Codex</span> harness for an end-to-end, AI-accelerated workflow with human oversight: <strong class=\"font-bold text-primary\">business idea → data analysis → PRD → mockups → tech spec → implementation → QA</strong>, materially improving delivery speed."
       ],
-      "images": []
+      "images": [
+        { "src": "public/timeline/Loadshift/image.png", "alt": "Loadshift NHVR heavy-vehicle route insight maps" },
+        { "src": "public/timeline/Loadshift/image copy.png", "alt": "Loadshift Canada — transparent quotes and Troilus fleet console" },
+        { "src": "public/timeline/Loadshift/image copy 2.png", "alt": "Loadshift AI proxy calling on the load detail" },
+        { "src": "public/timeline/Loadshift/image copy 3.png", "alt": "Loadshift guided carrier onboarding hub" }
+      ]
     },
     {
       "icon": "fas fa-laptop-code",

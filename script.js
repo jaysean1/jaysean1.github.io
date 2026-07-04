@@ -344,6 +344,19 @@ function initAllFeatures() {
   initImageModal();
   initCounterAnimations();
 
+  if (new URLSearchParams(location.search).get('preview') === 'all') {
+    document.querySelectorAll('[data-reveal]').forEach(function (el) {
+      el.classList.add('is-visible');
+    });
+    var previewSection = new URLSearchParams(location.search).get('section') || (location.hash ? location.hash.slice(1) : '');
+    if (previewSection) {
+      var target = document.getElementById(previewSection);
+      if (target) {
+        window.scrollTo(0, target.offsetTop - 88);
+      }
+    }
+  }
+
   if (typeof lucide !== 'undefined') {
     lucide.createIcons();
   }
